@@ -1,0 +1,147 @@
+.remove-heigh-input-radio {
+    height: auto !important;
+}
+
+.text-label {
+    font-weight: bold;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.title-form-recruit,
+.footer-menu-align {
+    text-align: center;
+}
+
+.alt-services .icon-box {
+    margin-top: 6px;
+}
+
+.label-choose-us {
+    margin-top: 10px;
+}
+
+
+.alt-services .icon-box label a {
+    color: #000;
+    transition: 0.3s;
+}
+
+.alt-services .icon-box label a:hover {
+    color: var(--color-primary);
+}
+
+/*TIME LINE */
+/*==============================================*/
+
+.hori-timeline .events {
+    border-top: 3px solid #e9ecef;
+}
+
+.hori-timeline .events .event-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 4em;
+    margin-right: 0;
+}
+
+.hori-timeline .events .event-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+}
+
+.hori-timeline .events .event-list .event-date {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+@media (min-width: 1140px) {
+    .hori-timeline .events .event-list {
+        display: inline-block;
+        width: 10%;
+        padding-top: 38px;
+    }
+
+    .hori-timeline .events .event-list .event-date {
+        top: -12px;
+    }
+}
+
+.bg-soft-primary {
+    background-color: rgba(64, 144, 203, .3) !important;
+}
+
+.bg-soft-success {
+    background-color: rgba(71, 189, 154, .3) !important;
+}
+
+.bg-soft-danger {
+    background-color: rgba(231, 76, 94, .3) !important;
+}
+
+.bg-soft-warning {
+    background-color: rgba(249, 213, 112, .3) !important;
+}
+
+
+/*==============================================*/
+
+/*================OUR SERVICES===================*/
+.services .service-item {
+    padding: 17px;
+}
+
+/*==============================================*/
+
+.service-card {
+    text-align: center;
+    align-items: center !important;
+    background: #fff;
+    height: 100%;
+    width: 24.2%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.service-card h3 {
+    color: var(--color-default);
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding-bottom: 8px;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #ebebed;
+    transition: 0.3s;
+}
+
+.service-card .icon i {
+    color: var(--color-primary);
+    font-size: 40px;
+    transition: ease-in-out 0.3s;
+    z-index: 2;
+    position: relative;
+    line-height: 1.8;
+}
