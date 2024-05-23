@@ -103,7 +103,7 @@
 
       <div class="row gy-4">
 
-        <div class="col-lg-3 col-md-6 service-card" data-aos="fade-up" data-aos-delay="100">        
+        <div class="col-lg-3 col-md-6 col-sm-12 service-card" data-aos="fade-up" data-aos-delay="100">        
             <div class="icon">
               <i class="fa-solid fa-mountain-city"></i>
             </div>
@@ -114,7 +114,7 @@
             </p>
         </div>
 
-        <div class="col-lg-3 col-md-6 service-card" data-aos="fade-up" data-aos-delay="100">        
+        <div class="col-lg-3 col-md-6 col-sm-12 service-card" data-aos="fade-up" data-aos-delay="100">        
           <div class="icon">
             <i class="fa-solid fa-mountain-city"></i>
           </div>
@@ -125,7 +125,7 @@
           </p>
         </div>
 
-        <div class="col-lg-3 col-md-6 service-card" data-aos="fade-up" data-aos-delay="100">        
+        <div class="col-lg-3 col-md-6 col-sm-12 service-card" data-aos="fade-up" data-aos-delay="100">        
           <div class="icon">
             <i class="fa-solid fa-mountain-city"></i>
           </div>
@@ -136,7 +136,7 @@
           </p>
         </div>
 
-        <div class="col-lg-3 col-md-6 service-card" data-aos="fade-up" data-aos-delay="100">        
+        <div class="col-lg-3 col-md-6 col-sm-12 service-card" data-aos="fade-up" data-aos-delay="100">        
           <div class="icon">
             <i class="fa-solid fa-mountain-city"></i>
           </div>
@@ -152,7 +152,7 @@
   </section><!-- End Services Section -->
 
   <!-- ======= Our Projects Section ======= -->
-  <section id="projects" class="projects">
+  <section id="constructions" class="constructions">
     <div class="container" data-aos="fade-up">
 
       <div class="section-header">
@@ -182,6 +182,7 @@
           <div class="card-item">
             <div class="row">
               <div class="col-xl-5">
+                {{-- <img src="assets/img/constructions-2.jpg"/> --}}
                 <div class="card-bg" style="background-image: url(assets/img/constructions-2.jpg);"></div>
               </div>
               <div class="col-xl-7 d-flex align-items-center">

@@ -3,17 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-  <base href="" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">  
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-  <title>@yield('title', 'Maior Fluxo')</title>
+
+  <title>@yield('title', 'Beatriz')</title>
 
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{ URL::asset('assets/img/logo.jpg') }}" rel="icon">
+  <link href="{{ URL::asset('assets/img/logo2.png') }}" rel="icon">
   <link href="{{ URL::asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
@@ -27,19 +27,15 @@
   <!-- Template Main CSS File -->
   <link href="{{ URL::asset('assets/css/main.css') }}" rel="stylesheet">
   <link href="{{ URL::asset('assets/css/my_style.css') }}" rel="stylesheet">
-
 </head>
 
 <body>
-
     <!-- ======= Header ======= -->
     <header id="header" class="header d-flex align-items-center">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
     
             <a href="{{ route('index') }}" class="logo d-flex align-items-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1>Beatriz<span>.</span></h1>
+                <h1>Beatriz<span>.</span></h1>
             </a>
     
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -53,8 +49,7 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav><!-- .navbar -->
-    
+            </nav><!-- .navbar -->    
         </div>
     </header>
     <!-- End Header -->
@@ -74,19 +69,16 @@
 
                     <div class="col-md-4">
                     <div class="footer-info">
-                        <h3>MaiorFluxo</h3>
-                        <p> 
-                            Casa nº20. <br> 
-                            Rua Bromelia, Condo. Jardim de Eden Camama <br>
-                            Luanda - ANGOLA <br><br>
-                        
-                        <strong>Telefone:</strong> +244 947 011 796<br>
-                        <strong>Email:</strong> Recrutamento@maiofluxo.co.ao<br>
-                        </p>
+                        <image src="assets/img/logo.png" style="width: 170px;" /> 
+                        <span> 
+                            16 rue de la broque <br>67000 Strasbourg  <br><br>
+                            <strong>Telefone:</strong> +33 7 53 28 21 48<br>
+                            <strong>Email:</strong> beatriz-renovation67@outlook.fr<br>
+                        </span>
                         <div class="social-links d-flex mt-3">
                         <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
                         <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                        <a href="beatriz_renovation67" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
                         <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
@@ -121,11 +113,10 @@
         <div class="footer-legal text-center position-relative">
             <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>MaiorFluxo</span></strong>. All rights reserved
+                &copy; Copyright <strong><span>Beatriz</span></strong>. All rights reserved
             </div>
             </div>
         </div>
-
     </footer>
     <!-- End Footer -->
 
