@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Site\RecruitmentController;
@@ -18,4 +19,4 @@ Route::get('/', [HomeController::class, 'index'])->name('index');
 
 Route::get('/recrutamento', [RecruitmentController::class, 'index'])->name('recrutamento.index');
 Route::post('/recrutamento', [RecruitmentController::class, 'store'])->name('recrutamento.store');
-Route::get('/admin-mf', [RecruitmentController::class, 'admin'])->name('recrutamento.admin');
+Route::get('/admin-beatriz', [AdminController::class, 'index'])->name('admin');
