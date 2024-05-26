@@ -48,6 +48,13 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown"><a href="#"><span>Langues</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                          <li><a href="#">EN</a></li>
+                          <li><a href="#">FR</a></li>
+                          <li><a href="#">PT</a></li>
+                        </ul>
+                      </li>
                 </ul>
             </nav><!-- .navbar -->    
         </div>

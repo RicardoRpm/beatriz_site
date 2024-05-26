@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Maior Fluxo - Recruitment')
+@section('title', 'Beatriz')
 
 @section('content')
   <!-- ======= Breadcrumbs ======= -->

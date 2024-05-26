@@ -6,7 +6,7 @@
 
                 <div class="col-md-4">
                 <div class="footer-info">
-                    <h3>MaiorFluxo</h3>
+                    <h3>Beatriz</h3>
                     <p>
                     Urbamizaçã Nova Vida <br>
                     Casa Nº Apt 23, Ed 04 Rua 4<br><br>
