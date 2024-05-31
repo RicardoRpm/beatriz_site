@@ -20,3 +20,4 @@ Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/recrutamento', [RecruitmentController::class, 'index'])->name('recrutamento.index');
 Route::post('/recrutamento', [RecruitmentController::class, 'store'])->name('recrutamento.store');
 Route::get('/admin-beatriz', [AdminController::class, 'index'])->name('admin');
+Route::get('/admin-beatriz/services', [AdminController::class, 'services'])->name('admin.services');
