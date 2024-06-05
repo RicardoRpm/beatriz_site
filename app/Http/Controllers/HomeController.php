@@ -2,12 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return View('site.index');
+        $services = Service::all();
+
+        return View('site.index', [
+            'services' => $services,
+        ]);
     }
 }

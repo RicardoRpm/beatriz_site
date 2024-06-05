@@ -100,49 +100,15 @@
 
       <div class="row gy-4">
 
-        <div class="col-lg-3 col-md-6 col-sm-12 service-card" data-aos="fade-up" data-aos-delay="100">        
-            <div class="icon">
-              <i class="fa-solid fa-mountain-city"></i>
-            </div>
-            <h3>Manpower Services</h3>
-            <p >
-              With a rich database and na effective recrutment
-              process, we are able to provide our Clients in record
+        @foreach ($services as $service)
+          <div class="col-lg-3 col-md-6 col-sm-12 service-card pt-5" data-aos="fade-up" data-aos-delay="100">        
+              
+            <h3> {{ $service->title }} </h3>
+            <p> 
+              {{ $service->description }}
             </p>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 service-card" data-aos="fade-up" data-aos-delay="100">        
-          <div class="icon">
-            <i class="fa-solid fa-mountain-city"></i>
           </div>
-          <h3>Manpower Services</h3>
-          <p >
-            With a rich database and na effective recrutment
-            process, we are able to provide our Clients in record
-          </p>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 service-card" data-aos="fade-up" data-aos-delay="100">        
-          <div class="icon">
-            <i class="fa-solid fa-mountain-city"></i>
-          </div>
-          <h3>Manpower Services</h3>
-          <p >
-            With a rich database and na effective recrutment
-            process, we are able to provide our Clients in record
-          </p>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 service-card" data-aos="fade-up" data-aos-delay="100">        
-          <div class="icon">
-            <i class="fa-solid fa-mountain-city"></i>
-          </div>
-          <h3>Manpower Services</h3>
-          <p >
-            With a rich database and na effective recrutment
-            process, we are able to provide our Clients in record
-          </p>
-        </div>
+        @endforeach
       </div>
 
     </div>
