@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="col-12 ">
-    <form class="bg-secondary rounded h-100 p-4" action="{{ route('service.store') }}" method="POST">
+    <form class="bg-secondary rounded h-100 p-4" action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
         @if(session('status'))
             <div class="alert alert-success">
                 {{ session('status') }}
@@ -28,7 +28,7 @@
 
         <div class="mb-3">
             <label for="description">Imagem do projecto</label>
-            <input name="title" type="file" id="title" class="form-control" placeholder="Nome do Serviço">
+            <input name="img" type="file" id="img" class="form-control">
         </div>
         <button type="submit" class="btn btn-primary">Cadastrar Projecto</button>
     </form>

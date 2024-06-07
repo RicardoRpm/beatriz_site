@@ -32,20 +32,21 @@ class AdminController extends Controller
     }
 
     public function storeProjects(Request $request) {
+
         $request->validate([
-            'name' => 'required',
+            'title' => 'required',
             'description' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
-        $imageName = time().'.'.$request->image->extension();
-        $request->image->move(public_path('images'), $imageName);
+        $imageName = time().'.'.$request->img->extension();
+        $request->img->move(public_path('assets/img'), $imageName);
 
         $product = new Project();
-        $product->name = $request->name;
+        $product->title = $request->title;
         $product->description = $request->description;
-        $product->img = 'images/'.$imageName;
+        $product->img = 'assets/img/'.$imageName;
         $product->save();
-        return redirect()->route('admin.projects')->with('success', 'Product created successfully.');
+        return redirect()->route('admin.project')->with('success', 'Product created successfully.');
     }
 }

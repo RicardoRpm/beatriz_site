@@ -114,85 +114,40 @@
     </div>
   </section><!-- End Services Section -->
 
-  <!-- ======= Our Projects Section ======= -->
-  <section id="constructions" class="constructions">
-    <div class="container" data-aos="fade-up">
+  @if (count($projects) >= 1)
+    <!-- ======= Our Projects Section ======= -->
+    <section id="constructions" class="constructions">
+      <div class="container" data-aos="fade-up">
 
-      <div class="section-header">
-        <h2>Projects</h2>
-        <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto
-          accusamus fugit aut qui distinctio</p>
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto
+            accusamus fugit aut qui distinctio</p>
+        </div>
+        <div class="row gy-4">
+          @foreach ($projects as $project)
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg" style="background-image: url({{ $project->img }});"></div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title"> {{ $project->title }} </h4>
+                      <p>{{ $project->description }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          @endforeach
+        </div>
       </div>
-      <div class="row gy-4">
+    </section><!-- End Our Projects Section -->    
+  @endif
 
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="card-item">
-            <div class="row">
-              <div class="col-xl-5">
-                <div class="card-bg" style="background-image: url(assets/img/constructions-1.jpg);"></div>
-              </div>
-              <div class="col-xl-7 d-flex align-items-center">
-                <div class="card-body">
-                  <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
-                  <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Card Item -->
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="card-item">
-            <div class="row">
-              <div class="col-xl-5">
-                {{-- <img src="assets/img/constructions-2.jpg"/> --}}
-                <div class="card-bg" style="background-image: url(assets/img/constructions-2.jpg);"></div>
-              </div>
-              <div class="col-xl-7 d-flex align-items-center">
-                <div class="card-body">
-                  <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                  <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Card Item -->
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="card-item">
-            <div class="row">
-              <div class="col-xl-5">
-                <div class="card-bg" style="background-image: url(assets/img/constructions-3.jpg);"></div>
-              </div>
-              <div class="col-xl-7 d-flex align-items-center">
-                <div class="card-body">
-                  <h4 class="card-title">Error beatae dolor inventore aut</h4>
-                  <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia laboriosam odit. Ut sunt temporibus nulla culpa.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Card Item -->
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="card-item">
-            <div class="row">
-              <div class="col-xl-5">
-                <div class="card-bg" style="background-image: url(assets/img/constructions-4.jpg);"></div>
-              </div>
-              <div class="col-xl-7 d-flex align-items-center">
-                <div class="card-body">
-                  <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
-                  <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione dolores. Aut aliquid ea dolores libero nobis.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Card Item -->
-
-      </div>
-    </div>
-  </section><!-- End Our Projects Section -->
+  
 
   <!-- ======= Our Team Section ======= -->
   <section id="team" class="team section-bg">
@@ -208,58 +163,6 @@
       </div>
 
       <div class="row gy-5">
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-          <div class="member-img">
-            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-          <div class="member-img">
-            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Sarah Jhonson</h4>
-            <span>Product Manager</span>
-            <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
-          </div>
-        </div><!-- End Team Member -->
-
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-          <div class="member-img">
-            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
-          </div>
-        </div><!-- End Team Member -->
-
         <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
           <div class="member-img">
             <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
@@ -327,31 +230,25 @@
           <div class="stats-item d-flex align-items-center w-100 h-100">
             <i class="bi bi-person-vcard color-orange flex-shrink-0"></i>
             <div>
-              <p>24
-                Employees</p>
+              <p>{{ $statistic[0]->employees }} Employees</p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6">
           <div class="stats-item d-flex align-items-center w-100 h-100">
-            <i class="bi bi-geo-alt-fill color-green flex-shrink-0"></i>
+            <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
             <div>
-              <p>2
-                local sites
-                around Angola</p>
+              <p>{{ count($services) }} Services</p>
             </div>
           </div>
-        </div><!-- End Stats Item -->
-
+        </div>
+        
         <div class="col-lg-3 col-md-6">
           <div class="stats-item d-flex align-items-center w-100 h-100">
-            <i class="bi bi-globe-americas color-pink flex-shrink-0"></i>
+            <i class="fa-solid fa-helmet-safety color-pink flex-shrink-0"></i>
             <div>
-              <p>Presence via
-                Partnerships
-                in 5
-                Countries</p>
+              <p>{{ count($projects) }} Projects</p>
             </div>
           </div>
         </div>
@@ -360,17 +257,14 @@
           <div class="stats-item d-flex align-items-center w-100 h-100">
             <i class="bi bi-people color-pink flex-shrink-0"></i>
             <div>
-              <p>4 Partners & 3 Clients</p>
+              <p>{{ $statistic[0]->clients }} Clients</p>
             </div>
           </div>
         </div>
-        <!-- End Stats Item -->
 
       </div>
-
     </div>
   </section>
-  <!-- End Stats Counter Section -->
   
   <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -387,7 +281,7 @@
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-map"></i>
               <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>16 rue de la broque 67000 Strasbourg</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -395,7 +289,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
-              <p>contact@example.com</p>
+              <p>beatriz-renovation67@outlook.fr</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -403,7 +297,7 @@
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-telephone"></i>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <p>+33 7 53 28 21 48</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -424,6 +318,14 @@
                 <div class="col-lg-6 form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
+              </div>
+              <div class="form-group">
+                <select class="form-control"> 
+                  <option value="">Selecionar serviço</option>                   
+                  @foreach ($services as $service)
+                    <option value="{{ $service->title }}">{{ $service->title }}</option>                    
+                  @endforeach
+                </select>
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
