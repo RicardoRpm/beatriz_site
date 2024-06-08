@@ -76,13 +76,18 @@
 
                     <div class="col-md-4">
                     <div class="footer-info">
-                        <image src="assets/img/logo.png" style="width: 170px;" /> 
-                        <span> 
-                            16 rue de la broque <br>67000 Strasbourg  <br><br>
-                            <strong>Telefone:</strong> +33 7 53 28 21 48<br>
-                            <strong>Email:</strong> beatriz-renovation67@outlook.fr<br>
+                        <image src="assets/img/logo_2.svg" style="width: 20rem;" /> 
+                        <br>
+                        <br>
+                        <br>
+                         <span> 
+                            <strong>Endereço: </strong>16 rue de la broque 67000 Strasbourg <br>
+                            <strong>Telefone: </strong> +33 7 53 28 21 48<br>
+                            <strong>Email: </strong> beatriz-renovation67@outlook.fr<br>
                         </span>
-                        <div class="social-links d-flex mt-3">
+                        <br>
+                        <br>
+                        <div class="social-links d-flex mt-6">
                         <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
                         <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
                         <a href="beatriz_renovation67" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
@@ -94,21 +99,21 @@
                     <div class="col-md-4 footer-links footer-menu-align">
                     <h4>Most Used Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#" class="active">Recruitment</a></li>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#alt-services-2">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#constructions">Projects</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     </div><!-- End footer links column-->
 
                     <div class="col-md-4 footer-links footer-menu-align">
                     <h4>Our services</h4>
                     <ul>
-                        <li><a href="#">Manpower Services</a></li>
-                        <li><a href="#">Multi-techinical Services</a></li>
-                        <li><a href="#">Equipment Rental</a></li>
-                        <li><a href="#">Equipment Rental</a></li>
+                        @foreach ($services as $service)
+                            <li>{{ $service->title }}</a></li>                            
+                        @endforeach
                     </ul>
                     </div><!-- End footer links column-->
 

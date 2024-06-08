@@ -101,13 +101,26 @@
       <div class="row gy-4">
 
         @foreach ($services as $service)
-          <div class="col-lg-3 col-md-6 col-sm-12 service-card pt-5" data-aos="fade-up" data-aos-delay="100">        
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item  position-relative">
+            <div class="icon">
+              <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
+            </div>
+            <h3>{{ $service->title }}</h3>
+            <p>
+              {{ $service->description }}
+            </p>
+          </div>
+        </div>
+
+          {{-- <div class="col-lg-3 col-md-6 col-sm-12 service-card pt-5" data-aos="fade-up" data-aos-delay="100">        
               
             <h3> {{ $service->title }} </h3>
             <p> 
               {{ $service->description }}
             </p>
-          </div>
+          </div> --}}
         @endforeach
       </div>
 
@@ -310,7 +323,8 @@
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="{{ route('contact.store') }}" method="POST" class="php-email-form">
+              @csrf
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -320,7 +334,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <select class="form-control"> 
+                <select class="form-control" name="service"> 
                   <option value="">Selecionar serviço</option>                   
                   @foreach ($services as $service)
                     <option value="{{ $service->title }}">{{ $service->title }}</option>                    
@@ -331,13 +345,23 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="description" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
+              @if(session('sucess'))
+                <div class="alert alert-success">
+                  {{ session('sucess') }}
+                </div>
+              @else
+                <div class="alert alert-danger">
+                  {{ session('sucess') }}
+                </div>
+              @endif
+
+              {{-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+              </div> --}}
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div><!-- End Contact Form -->
