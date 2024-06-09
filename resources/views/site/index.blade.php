@@ -323,7 +323,7 @@
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
-            <form action="{{ route('contact.store') }}" method="POST" class="php-email-form">
+            <form action="javascript:void(0)" method="POST" class="php-email-form" id="form-contact">
               @csrf
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
@@ -334,7 +334,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <select class="form-control" name="service"> 
+                <select class="form-control" name="service" id="service"> 
                   <option value="">Selecionar serviço</option>                   
                   @foreach ($services as $service)
                     <option value="{{ $service->title }}">{{ $service->title }}</option>                    
@@ -345,31 +345,23 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="description" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="description" id="description" rows="5" placeholder="Message" required></textarea>
               </div>
-              @if(session('sucess'))
-                <div class="alert alert-success">
-                  {{ session('sucess') }}
-                </div>
-              @else
-                <div class="alert alert-danger">
-                  {{ session('sucess') }}
-                </div>
-              @endif
 
-              {{-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> --}}
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="alert alert-success" id="sucess-message" style="display: none">
+                Your message has been sent. Thank you!
+              </div>
+              
+              <div class="alert alert-danger" id="error-message" style="display: none">
+                Your message has been not sent. Thank you!
+              </div>
+
+               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div><!-- End Contact Form -->
-
+          </div>
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
 @endsection
 

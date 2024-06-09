@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -11,6 +12,8 @@
 
   <meta content="" name="description">
   <meta content="" name="keywords">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Favicons -->
   <link href="{{ URL::asset('assets/img/logo2.png') }}" rel="icon">
@@ -27,6 +30,8 @@
   <!-- Template Main CSS File -->
   <link href="{{ URL::asset('assets/css/main.css') }}" rel="stylesheet">
   <link href="{{ URL::asset('assets/css/my_style.css') }}" rel="stylesheet">
+
+  <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>
 
 <body>
@@ -147,10 +152,80 @@
     <script src="{{ URL::asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
     <script src="{{ URL::asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
     <script src="{{ URL::asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
-    <!--
-        <script src="'assets/vendor/php-email-form/validate.js"></script>
-    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    {{-- <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
 
+        $("#frm-create-post").validate({
+            submitHandler: function() {
+                var description = $("#description").val();
+                var status = $("#status").val();
+
+                // processing ajax request    
+                $.ajax({
+                    url: "{{ route('contact.store') }}",
+                    type: 'POST',
+                    dataType: "json",
+                    data: {
+                        name: name,
+                        description: description,
+                        status: status
+                    },
+                    success: function(data) {
+                        // log response into console
+                        console.log(data);
+                    }
+                });
+            }
+        });
+    </script> --}}
+    
+<script type="text/javascript">
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    $('#form-contact').submit(function(e) {
+        e.preventDefault();
+
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var service = $("#service").val();
+        var subject = $("#subject").val();
+        var description = $("#description").val();
+        
+        $.ajax({
+            type:'POST',
+            url: "/contact/store",
+            data: {
+                name: name,
+                email: email,
+                service: service,
+                subject: subject,
+                description: description
+            },
+            dataType: "json",
+            success: (response) => {
+                $("#name").val("");
+                $("#email").val("");
+                $("#service").val("Selecionar Serviço");
+                $("#subject").val("");
+                $("#description").val("");
+
+                $('#sucess-message').show();
+            },
+            error: function(response, data){
+                $('#error-message').show()
+            }
+        });      
+    });    
+</script>
+    
     <!-- Template Main JS File -->
     <script src="{{ URL::asset('assets/js/main.js') }}"></script>
 </body>

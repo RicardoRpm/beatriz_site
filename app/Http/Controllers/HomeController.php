@@ -25,19 +25,16 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'title' => 'required',
-        //     'description' => 'required',
-        //     'img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-        // ]);
+        Contact::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'service' => $request->service,
+            'subject' => $request->subject,
+            'description' => $request->description
+        ]);
 
-        $contact = new Contact();
-        $contact->name = $request->name;
-        $contact->email = $request->email;
-        $contact->service = $request->service;
-        $contact->subject = $request->subject;
-        $contact->description = $request->description;
-        $contact->save();
-        return redirect()->route('index')->with('success', 'Service criado com sucesso.');
+        return response()->json([
+            'success' => 'Service criado com sucesso.'
+        ]);
     }
 }

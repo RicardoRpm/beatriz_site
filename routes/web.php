@@ -5,7 +5,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::post('/', [HomeController::class, 'store'])->name('contact.store');
+Route::post('/contact/store', [HomeController::class, 'store'])->name('contact.store');
 
 Route::get('/admin-beatriz', [AdminController::class, 'index'])->name('admin');
 Route::get('/admin-beatriz/services', [AdminController::class, 'services'])->name('admin.service');
