@@ -16,6 +16,14 @@
        
         @csrf
         <h2 class="mb-4">Projectos</h2>
+        <div>
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="title">Projecto</label>
+                    <input name="title" type="text" id="title" class="form-control" placeholder="Nome do Serviço">
+                </div>                
+            </div>
+        </div>
         <div class="mb-3">
             <label for="title">Projecto</label>
             <input name="title" type="text" id="title" class="form-control" placeholder="Nome do Serviço">

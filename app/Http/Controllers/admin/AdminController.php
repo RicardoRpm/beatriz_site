@@ -20,8 +20,14 @@ class AdminController extends Controller
     public function store(Request $request) {
         $service = new Service();
         //dd($request);
-        $service->title = $request->title;
-        $service->description = $request->description;
+        $service->title_fr = $request->title_fr;
+        $service->title_pt = $request->title_pt;
+        $service->title_en = $request->title_en;
+
+        $service->description_fr = $request->description_fr;
+        $service->description_pt = $request->description_pt;
+        $service->description_en = $request->description_en;
+
         $service->save();
         return view('admin.service')->with('status', 'Blog Post Form Data Has Been inserted');
     }

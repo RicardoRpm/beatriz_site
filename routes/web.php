@@ -14,7 +14,7 @@ Route::get('/admin-beatriz/projects', [AdminController::class, 'projects'])->nam
 Route::post('/'.  session('locale') . 'admin-beatriz/projects', [AdminController::class, 'storeProjects'])->name('project.store');
 
 Route::group(['middleware' => ['setLocale']], function () {
-    Route::get('/' . session('locale') , [HomeController::class, 'index'])->name('index');
+    Route::get('/', [HomeController::class, 'index'])->name('index');
 });
 
 Route::get('change-language/{lang}', function($lang){

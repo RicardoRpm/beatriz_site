@@ -13,8 +13,12 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('description');
+            $table->string('title_fr');
+            $table->string('title_pt');
+            $table->string('title_en');
+            $table->string('description_fr');
+            $table->string('description_pt');
+            $table->string('description_en');
             $table->timestamps();
         });
     }
