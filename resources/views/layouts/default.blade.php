@@ -47,19 +47,50 @@
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             
             <nav id="navbar" class="navbar">
-                <ul>    
-                    <li><a href="{{ route('index') }}">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="dropdown"><a href="#"><span>Langues</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                          <li><a href="{{ route('change-language','fr') }}">FR</a></li>
-                          <li><a href="{{ route('change-language','en') }}">EN</a></li>
-                          <li><a href="{{ route('change-language','pt') }}">PT</a></li>
-                        </ul>
-                      </li>
+                <ul>
+                    @switch(session('locale'))
+                        @case('pt')
+                            <li><a href="{{ route('index') }}">Home</a></li>
+                            <li><a href="#about">Sobre Nós</a></li>
+                            <li><a href="#services">Serviços</a></li>
+                            <li><a href="#projects">Projectos</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                            <li class="dropdown"><a href="#"><span>Línguaguas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul>
+                                <li><a href="{{ route('change-language','fr') }}">FR</a></li>
+                                <li><a href="{{ route('change-language','en') }}">EN</a></li>
+                                <li><a href="{{ route('change-language','pt') }}">PT</a></li>
+                                </ul>
+                            </li>                            
+                            @break
+                        @case('en')
+                            <li><a href="{{ route('index') }}">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="dropdown"><a href="#"><span>Languages</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul>
+                                <li><a href="{{ route('change-language','fr') }}">FR</a></li>
+                                <li><a href="{{ route('change-language','en') }}">EN</a></li>
+                                <li><a href="{{ route('change-language','pt') }}">PT</a></li>
+                                </ul>
+                            </li>
+                            @break
+                        @default
+                            <li><a href="{{ route('index') }}">Maison</a></li>
+                            <li><a href="#about">Propos de nous</a></li>
+                            <li><a href="#services">Service</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="dropdown"><a href="#"><span>Langages</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul>
+                                <li><a href="{{ route('change-language','fr') }}">FR</a></li>
+                                <li><a href="{{ route('change-language','en') }}">EN</a></li>
+                                <li><a href="{{ route('change-language','pt') }}">PT</a></li>
+                                </ul>
+                            </li>
+                    @endswitch   
                 </ul>
             </nav><!-- .navbar -->    
         </div>
@@ -85,11 +116,28 @@
                         <br>
                         <br>
                         <br>
-                         <span> 
-                            <strong>Endereço: </strong>16 rue de la broque 67000 Strasbourg <br>
-                            <strong>Telefone: </strong> +33 7 53 28 21 48<br>
-                            <strong>Email: </strong> beatriz-renovation67@outlook.fr<br>
-                        </span>
+                        @switch(session('locale'))
+                            @case('pt')
+                                <span> 
+                                    <strong>Endereço: </strong>16 rue de la broque 67000 Strasbourg <br>
+                                    <strong>Telefone: </strong> +33 7 53 28 21 48<br>
+                                    <strong>Email: </strong> beatriz-renovation67@outlook.fr<br>
+                                </span>
+                                @break
+                            @case('en')
+                                <span> 
+                                    <strong>Address: </strong>16 rue de la broque 67000 Strasbourg <br>
+                                    <strong>Phone: </strong> +33 7 53 28 21 48<br>
+                                    <strong>E-mail: </strong> beatriz-renovation67@outlook.fr<br>
+                                </span>
+                                @break
+                            @default
+                                <span> 
+                                    <strong>Adresse: </strong>16 rue de la broque 67000 Strasbourg <br>
+                                    <strong>Téléphone: </strong> +33 7 53 28 21 48<br>
+                                    <strong>E-mail: </strong> beatriz-renovation67@outlook.fr<br>
+                                </span>
+                        @endswitch
                         <br>
                         <br>
                         <div class="social-links d-flex mt-6">
@@ -102,24 +150,56 @@
                     </div><!-- End footer info column-->
 
                     <div class="col-md-4 footer-links footer-menu-align">
-                    <h4>Most Used Links</h4>
-                    <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#alt-services-2">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#constructions">Projects</a></li>
-                        <li><a href="#team">Our Team</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                        @switch($type)
+                            @case('pt')
+                                <h4>Seções do Site</h4>
+                                <ul>
+                                    <li><a href="#hero">Home</a></li>
+                                    <li><a href="#alt-services-2">Sobre Nós</a></li>
+                                    <li><a href="#services">Serviços</a></li>
+                                    <li><a href="#constructions">Projectos</a></li>
+                                    <li><a href="#team">Nosso Time</a></li>
+                                    <li><a href="#contact">Contacto</a></li>
+                                </ul>
+                                @break
+                            @case('en')
+                                <h4>Sections of Site</h4>
+                                <ul>
+                                    <li><a href="#hero">Home</a></li>
+                                    <li><a href="#alt-services-2">About Us</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#constructions">Projects</a></li>
+                                    <li><a href="#team">Our Team</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                                @break
+                            @default
+                                <h4>Sections du Site</h4>
+                                <ul>
+                                    <li><a href="#hero">Maison</a></li>
+                                    <li><a href="#alt-services-2">Propos de Nous</a></li>
+                                    <li><a href="#services">Service</a></li>
+                                    <li><a href="#constructions">Projects</a></li>
+                                    <li><a href="#team">Notre Équipe</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                        @endswitch
                     </div><!-- End footer links column-->
 
                     <div class="col-md-4 footer-links footer-menu-align">
-                    <h4>Our services</h4>
-                    <ul>
-                        @foreach ($services as $service)
-                            <li>{{ $service->title }}</a></li>                            
-                        @endforeach
-                    </ul>
+                        @if (session('locale') === 'fr')
+                            <h4>Nos Services</h4>
+                        @elseif (session('locale') === 'en')
+                            <h4>Our services</h4>
+                        @elseif (session('locale') === 'pt')
+                            <h4>Nossos Serviços</h4>
+                        @endif    
+                        
+                        <ul>
+                            @foreach ($services as $service)
+                                <li>{{ $service->title }}</a></li>                            
+                            @endforeach
+                        </ul>
                     </div><!-- End footer links column-->
 
 
@@ -153,78 +233,48 @@
     <script src="{{ URL::asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
     <script src="{{ URL::asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
-    {{-- <script type="text/javascript">
+    
+    <script type="text/javascript">
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
+        $('#form-contact').submit(function(e) {
+            e.preventDefault();
 
-        $("#frm-create-post").validate({
-            submitHandler: function() {
-                var description = $("#description").val();
-                var status = $("#status").val();
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var service = $("#service").val();
+            var subject = $("#subject").val();
+            var description = $("#description").val();
+            
+            $.ajax({
+                type:'POST',
+                url: "/contact/store",
+                data: {
+                    name: name,
+                    email: email,
+                    service: service,
+                    subject: subject,
+                    description: description
+                },
+                dataType: "json",
+                success: (response) => {
+                    $("#name").val("");
+                    $("#email").val("");
+                    $("#service").val("Selecionar Serviço");
+                    $("#subject").val("");
+                    $("#description").val("");
 
-                // processing ajax request    
-                $.ajax({
-                    url: "{{ route('contact.store') }}",
-                    type: 'POST',
-                    dataType: "json",
-                    data: {
-                        name: name,
-                        description: description,
-                        status: status
-                    },
-                    success: function(data) {
-                        // log response into console
-                        console.log(data);
-                    }
-                });
-            }
-        });
-    </script> --}}
-    
-<script type="text/javascript">
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-    });
-    $('#form-contact').submit(function(e) {
-        e.preventDefault();
-
-        var name = $("#name").val();
-        var email = $("#email").val();
-        var service = $("#service").val();
-        var subject = $("#subject").val();
-        var description = $("#description").val();
-        
-        $.ajax({
-            type:'POST',
-            url: "/contact/store",
-            data: {
-                name: name,
-                email: email,
-                service: service,
-                subject: subject,
-                description: description
-            },
-            dataType: "json",
-            success: (response) => {
-                $("#name").val("");
-                $("#email").val("");
-                $("#service").val("Selecionar Serviço");
-                $("#subject").val("");
-                $("#description").val("");
-
-                $('#sucess-message').show();
-            },
-            error: function(response, data){
-                $('#error-message').show()
-            }
-        });      
-    });    
-</script>
+                    $('#sucess-message').show();
+                },
+                error: function(response, data){
+                    $('#error-message').show()
+                }
+            });      
+        });    
+    </script>
     
     <!-- Template Main JS File -->
     <script src="{{ URL::asset('assets/js/main.js') }}"></script>
