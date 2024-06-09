@@ -40,7 +40,7 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
     
             <a href="{{ route('index') }}" class="logo d-flex align-items-center">
-                <h1>Beatriz<span>.</span></h1>
+                <h1>Beatriz-Rénovation<span>.</span></h1>
             </a>
     
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -55,9 +55,9 @@
                     <li><a href="#contact">Contact</a></li>
                     <li class="dropdown"><a href="#"><span>Langues</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
-                          <li><a href="#">EN</a></li>
-                          <li><a href="#">FR</a></li>
-                          <li><a href="#">PT</a></li>
+                          <li><a href="{{ route('change-language','fr') }}">FR</a></li>
+                          <li><a href="{{ route('change-language','en') }}">EN</a></li>
+                          <li><a href="{{ route('change-language','pt') }}">PT</a></li>
                         </ul>
                       </li>
                 </ul>

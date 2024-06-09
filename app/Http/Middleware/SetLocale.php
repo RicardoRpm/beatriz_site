@@ -15,6 +15,11 @@ class SetLocale
      */
     public function handle(Request $request, Closure $next): Response
     {
+        if(is_null(session('locale')))
+            session(['locale'=> 'fr']); 
+        
+        app()->setLocale(session('locale')); 
+        
         return $next($request);
     }
 }

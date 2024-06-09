@@ -10,8 +10,16 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down">Bienvenue chez Beatriz Rénovation</h2>
-            <p data-aos="fade-up">Donnez vie à vos rêves de rénovation et profitez d'un nettoyage professionnel et complet. Explorez notre site pour découvrir nos services de rénovation et de nettoyage.</p>
+            @if (session('locale') === 'fr')
+              <h2 data-aos="fade-down">Bienvenue chez Beatriz Rénovation</h2>
+              <p data-aos="fade-up">Donnez vie à vos rêves de rénovation et profitez d'un nettoyage professionnel et complet. Explorez notre site pour découvrir nos services de rénovation et de nettoyage.</p>
+            @elseif (session('locale') === 'en')
+              <h2 data-aos="fade-down">Welcome to Beatriz Rénovation</h2>
+              <p data-aos="fade-up">Bring your renovation dreams to life and enjoy a professional and complete cleaning. Explore our site to discover our renovation and cleaning services.</p>          
+            @elseif (session('locale') === 'pt')
+              <h2 data-aos="fade-down">Bem-vindo à Beatriz Rénovation</h2>
+              <p data-aos="fade-up">Dê vida aos seus sonhos de renovação e desfrute de uma limpeza profissional e completa. Explore nosso site para descobrir nossos serviços de renovação e limpeza.</p>
+            @endif
           </div>
         </div>
       </div>
