@@ -150,7 +150,7 @@
                     </div><!-- End footer info column-->
 
                     <div class="col-md-4 footer-links footer-menu-align">
-                        @switch($type)
+                        @switch(session('locale'))
                             @case('pt')
                                 <h4>Seções do Site</h4>
                                 <ul>

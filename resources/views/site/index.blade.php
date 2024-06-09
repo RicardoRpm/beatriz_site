@@ -51,43 +51,127 @@
       <div class="row justify-content-around gy-4">
         <div class="col-lg-5 d-flex flex-column justify-content-center">
           <h3></h3>
-          <p>
-            Somos a Beatriz Renovation Industrielle, uma empresa dedicada a transformar espaços 
-            industriais e imobiliários, oferecendo soluções inovadoras e serviços de alta qualidade.
-            Nosso compromisso com a excelência e a satisfação do cliente é o que nos impulsiona a cada projeto.
-          </p>
-
-          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-            <i class="bi bi-easel flex-shrink-0"></i>
-            <div>
-              <h4><a href="" class="stretched-link">Visão</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-          </div><!-- End Icon Box -->
-
-          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-            <i class="bi bi-patch-check flex-shrink-0"></i>
-            <div>
-              <h4><a href="" class="stretched-link">Missão</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-          </div><!-- End Icon Box -->
-
-          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-            <i class="bi bi-brightness-high flex-shrink-0"></i>
-            <div>
-              <h4><a href="" class="stretched-link">Valores</a></h4>
-              <ul>
-                <li>Somos a Beatriz Renovation Industrielle</li>
-                <li>Somos a Beatriz Renovation Industrielle</li>
-                <li>Somos a Beatriz Renovation Industrielle</li>
-                <li>Somos a Beatriz Renovation Industrielle</li>
-              </ul>
-            </div>
-          </div><!-- End Icon Box -->
+          @switch(session('locale'))
+              @case('pt')
+                <p>
+                  Somos a Beatri-Rénovation, uma empresa dedicada a transformar espaços 
+                  industriais e imobiliários, oferecendo soluções inovadoras e serviços de alta qualidade.
+                  Nosso compromisso com a excelência e a satisfação do cliente é o que nos impulsiona a cada projeto.
+                </p>
+      
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-easel flex-shrink-0"></i>
+                  <div>
+                    <h4><a href="#" class="stretched-link">Visão</a></h4>
+                    <p>Liderar o mercado de renovação e transformação de espaços industriais e imobiliários, elevando os padrões de qualidade e inovação.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+      
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-patch-check flex-shrink-0"></i>
+                  <div>
+                    <h4><a href="#" class="stretched-link">Missão</a></h4>
+                    <p>Superar as expectativas dos clientes através de soluções criativas, expertise técnica e compromisso com a excelência.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+      
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-brightness-high flex-shrink-0"></i>
+                  <div>
+                    <h4><a href="#" class="stretched-link">Valores</a></h4>
+                    <ul>
+                      <li>Excelência</li>  
+                      <li>Inovação</li>  
+                      <li>Qualidade</li>  
+                      <li>Integridade</li>  
+                      <li>Colaboração</li>  
+                      <li>Satisfação do cliente</li>  
+                    </ul>
+                  </div>
+                </div><!-- End Icon Box -->        
+                @break
+              @case('en')
+                  <p>
+                    We are Beatri-Rénovation, a company dedicated to transforming spaces 
+                    industrial and real estate, offering innovative solutions and high quality services.
+                    Our commitment to excellence and customer satisfaction is what drives us with each project.
+                  </p>
+        
+                  <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+                    <i class="bi bi-easel flex-shrink-0"></i>
+                    <div>
+                      <h4><a href="#" class="stretched-link">Vision</a></h4>
+                      <p>
+                        Lead the market for the renovation and transformation of industrial and real estate spaces, raising quality and innovation standards.</p>
+                    </div>
+                  </div><!-- End Icon Box -->
+        
+                  <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-patch-check flex-shrink-0"></i>
+                    <div>
+                      <h4><a href="#" class="stretched-link">Mission</a></h4>
+                      <p>Exceed customer expectations through creative solutions, technical expertise and commitment to excellence.</p>
+                    </div>
+                  </div><!-- End Icon Box -->
+        
+                  <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-brightness-high flex-shrink-0"></i>
+                    <div>
+                      <h4><a href="#" class="stretched-link">Values</a></h4>
+                      <ul>
+                        <li>Excellence</li>
+                        <li>Innovation</li>
+                        <li>Quality</li>
+                        <li>Integrity</li>
+                        <li>Collaboration</li>
+                        <li>Customer satisfaction</li>
+                      </ul>
+                    </div>
+                  </div><!-- End Icon Box -->        
+                  @break
+              @default
+              <p>
+                Nous sommes Beatri-Rénovation, une entreprise dédiée à la transformation des espaces 
+                industriel et immobilier, proposant des solutions innovantes et des services de haute qualité.
+                Notre engagement envers l’excellence et la satisfaction de nos clients est ce qui nous anime dans chaque projet.
+              </p>
+    
+              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-easel flex-shrink-0"></i>
+                <div>
+                  <h4><a href="#" class="stretched-link">Vision</a></h4>
+                  <p>Leader du marché de la rénovation et de la transformation d'espaces industriels et immobiliers, en élevant les normes de qualité et d'innovation.</p>
+                </div>
+              </div><!-- End Icon Box -->
+    
+              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <div>
+                  <h4><a href="#" class="stretched-link">Mission</a></h4>
+                  <p>
+                    Dépasser les attentes des clients grâce à des solutions créatives, une expertise technique et un engagement envers l'excellence.</p>
+                </div>
+              </div><!-- End Icon Box -->
+    
+              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div>
+                  <h4><a href="#" class="stretched-link">Valeurs</a></h4>
+                  <ul>
+                    <li>Excellence</li>
+                    <li>Innovation</li>
+                    <li>Qualité</li>
+                    <li>Intégrité</li>
+                    <li>Collaboration</li>
+                    <li>Satisfaction du Client</li>
+                  </ul>
+                </div>
+              </div><!-- End Icon Box -->                          
+          @endswitch
+          
         </div>
 
-        <div class="col-lg-6 img-bg" style="background-image: url(assets/img/alt-services-2.jpg);" data-aos="zoom-in" data-aos-delay="100"></div>
+        <div class="col-lg-6 img-bg" style="background-image: url(assets/img/7.jpg);" data-aos="zoom-in" data-aos-delay="100"></div>
       </div>
 
     </div>
@@ -98,12 +182,32 @@
     <div class="container" data-aos="fade-up">
 
       <div class="section-header">
-        <h2>Services</h2>
-        <p>
-          Our company is committed to providing 
-          tailor-made solutions to meet the needs of our customers,
-          ensuring safety, efficiency and quality in each project.
-        </p>
+        @switch(session('locale'))
+            @case('pt')
+              <h2>Serviços</h2>
+              <p>
+                Nossa empresa está comprometida em fornecer 
+                soluções sob medida para atender às necessidades de nossos clientes,
+                garantindo segurança, eficiência e qualidade em cada projeto.
+              </p>  
+              @break
+            @case('en')
+              <h2>Services</h2>
+              <p>
+                Our company is committed to providing 
+                tailor-made solutions to meet the needs of our customers,
+                ensuring safety, efficiency and quality in each project.
+              </p>
+                @break
+            @default
+              <h2>Services</h2>
+              <p>                
+                Notre entreprise s'engage à fournir 
+                des solutions sur mesure pour répondre aux besoins de nos clients,
+                assurer la sécurité, l’efficacité et la qualité de chaque projet.
+              </p>
+        @endswitch
+       
       </div>
 
       <div class="row gy-4">
@@ -121,14 +225,6 @@
             </p>
           </div>
         </div>
-
-          {{-- <div class="col-lg-3 col-md-6 col-sm-12 service-card pt-5" data-aos="fade-up" data-aos-delay="100">        
-              
-            <h3> {{ $service->title }} </h3>
-            <p> 
-              {{ $service->description }}
-            </p>
-          </div> --}}
         @endforeach
       </div>
 
@@ -139,12 +235,28 @@
     <!-- ======= Our Projects Section ======= -->
     <section id="constructions" class="constructions">
       <div class="container" data-aos="fade-up">
+        @switch(session('locale'))
+            @case('pt')
+            <div class="section-header">
+              <h2>Projectos</h2>
+              <p>Nossa equipe especializada realiza projetos sob medida, priorizando qualidade, inovação e satisfação do cliente.</p>
+            </div>
+              @break
+            @case('en')
+            <div class="section-header">
+              <h2>Projects</h2>
+              <p>Our specialized team carries out tailor-made projects, prioritizing quality, innovation and customer satisfaction.</p>
+            </div>
+              @break
+            @default
+            <div class="section-header">
+              <h2>Projects</h2>
+              <p>Notre équipe spécialisée réalise des projets sur mesure, en privilégiant la qualité, l’innovation et la satisfaction client.</p>
+            </div>
+        @endswitch
 
-        <div class="section-header">
-          <h2>Projects</h2>
-          <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto
-            accusamus fugit aut qui distinctio</p>
-        </div>
+        
+
         <div class="row gy-4">
           @foreach ($projects as $project)
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -173,15 +285,25 @@
   <!-- ======= Our Team Section ======= -->
   <section id="team" class="team section-bg">
     <div class="container" data-aos="fade-up">
-
-      <div class="section-header">
-        <h2>Our Team</h2>
-        <!--<p>
-          Combining talent and experience, we seek to offer innovative and
-          quality to meet the needs of our customers
-        </p>-->
-        <p>Meet some members of our team</p>
-      </div>
+      @switch(session('locale'))
+          @case('pt')
+            <div class="section-header">
+              <h2>Nosso Time</h2>
+              <p>Conheça alguns membros da nossa equipe</p>
+            </div>              
+            @break
+          @case('en')
+          <div class="section-header">
+            <h2>Our Team</h2>
+            <p>Meet some members of our team</p>
+          </div>  
+            @break
+          @default
+          <div class="section-header">
+            <h2>Notre Équipe</h2>
+            <p>Rencontrez quelques membres de notre équipe</p>
+          </div>
+      @endswitch
 
       <div class="row gy-5">
         <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
@@ -243,65 +365,175 @@
 
   <!-- ======= Stats Counter Section ======= -->
   <section id="stats-counter" class="stats-counter section-bg">
-    <div class="container">
-
-      <div class="row gy-4">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item d-flex align-items-center w-100 h-100">
-            <i class="bi bi-person-vcard color-orange flex-shrink-0"></i>
-            <div>
-              <p>{{ $statistic[0]->employees }} Employees</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item d-flex align-items-center w-100 h-100">
-            <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
-            <div>
-              <p>{{ count($services) }} Services</p>
-            </div>
-          </div>
-        </div>
+    @switch(session('locale'))
+            @case('pt')
+            <div class="container">
+              <div class="row gy-4">
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="bi bi-person-vcard color-orange flex-shrink-0"></i>
+                    <div>
+                      <p>{{ $statistic[0]->employees }} Funcionários</p>
+                    </div>
+                  </div>
+                </div>
         
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item d-flex align-items-center w-100 h-100">
-            <i class="fa-solid fa-helmet-safety color-pink flex-shrink-0"></i>
-            <div>
-              <p>{{ count($projects) }} Projects</p>
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
+                    <div>
+                      <p>{{ count($services) }} Serviços</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="fa-solid fa-helmet-safety color-pink flex-shrink-0"></i>
+                    <div>
+                      <p>{{ count($projects) }} Projectos</p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="bi bi-people color-pink flex-shrink-0"></i>
+                    <div>
+                      <p>{{ $statistic[0]->clients }} Clientes</p>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item d-flex align-items-center w-100 h-100">
-            <i class="bi bi-people color-pink flex-shrink-0"></i>
-            <div>
-              <p>{{ $statistic[0]->clients }} Clients</p>
+                @break
+            @case('en')
+            <div class="container">
+              <div class="row gy-4">
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="bi bi-person-vcard color-orange flex-shrink-0"></i>
+                    <div>
+                      <p>{{ $statistic[0]->employees }} Employees</p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
+                    <div>
+                      <p>{{ count($services) }} Services</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="fa-solid fa-helmet-safety color-pink flex-shrink-0"></i>
+                    <div>
+                      <p>{{ count($projects) }} Projects</p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="bi bi-people color-pink flex-shrink-0"></i>
+                    <div>
+                      <p>{{ $statistic[0]->clients }} Clients</p>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+            </div>                
+                @break
+            @default
+            <div class="container">
+              <div class="row gy-4">
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="bi bi-person-vcard color-orange flex-shrink-0"></i>
+                    <div>
+                      <p>{{ $statistic[0]->employees }} Employés</p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
+                    <div>
+                      <p>{{ count($services) }} Services</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="fa-solid fa-helmet-safety color-pink flex-shrink-0"></i>
+                    <div>
+                      <p>{{ count($projects) }} Projects</p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-6">
+                  <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="bi bi-people color-pink flex-shrink-0"></i>
+                    <div>
+                      <p>{{ $statistic[0]->clients }} Clientèle</p>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
             </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+        @endswitch
   </section>
   
   <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="section-header">
-          <h2>Contact</h2>
-          <p>
-            In order to ensure greater reliability in our work
-          </p>
+          @switch(session('locale'))
+              @case('pt')
+              <h2>Contacto</h2>
+              <p>
+                Para garantir maior confiabilidade em nosso trabalho
+              </p>
+                  @break
+              @case('en')
+              <h2>Contact</h2>
+              <p>
+                In order to ensure greater reliability in our work
+              </p>
+                  @break
+              @default
+              <h2>Contact</h2>
+              <p>
+                Afin d'assurer une plus grande fiabilité dans notre travail
+              </p>
+          @endswitch
+
         </div>
 
         <div class="row gy-4">
           <div class="col-lg-6">
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-map"></i>
-              <h3>Our Address</h3>
+              @switch(session('locale'))
+                  @case('pt')
+                    <h3>Nosso Endereço</h3>  
+                    @break
+                  @case('en')
+                    <h3>Our Address</h3>                
+                    @break
+                  @default
+                    <h3>Notre Adresse</h3>  
+              @endswitch
               <p>16 rue de la broque 67000 Strasbourg</p>
             </div>
           </div><!-- End Info Item -->
@@ -309,7 +541,16 @@
           <div class="col-lg-3 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
+              @switch(session('locale'))
+                  @case('pt')
+                  <h3>Envia-nos um email</h3>  
+                    @break
+                  @case('en')
+                  <h3>Email Us</h3>                
+                    @break
+                  @default
+                  <h3>Envoyez-nous un email</h3>  
+              @endswitch
               <p>beatriz-renovation67@outlook.fr</p>
             </div>
           </div><!-- End Info Item -->
@@ -317,7 +558,16 @@
           <div class="col-lg-3 col-md-6">
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-telephone"></i>
-              <h3>Call Us</h3>
+              @switch(session('locale'))
+                @case('pt')
+                <h3>Ligue para nós</h3>  
+                  @break
+                @case('en')
+                <h3>Call Us</h3>                
+                  @break
+                @default
+                <h3>Appelez-nous</h3>  
+              @endswitch
               <p>+33 7 53 28 21 48</p>
             </div>
           </div><!-- End Info Item -->
@@ -335,36 +585,36 @@
               @csrf
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="{{ $name }}" required>
                 </div>
                 <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="{{ $email }}" required>
                 </div>
               </div>
               <div class="form-group">
                 <select class="form-control" name="service" id="service"> 
-                  <option value="">Selecionar serviço</option>                   
+                  <option value="">{{ $selectService }}</option>                   
                   @foreach ($services as $service)
                     <option value="{{ $service->title }}">{{ $service->title }}</option>                    
                   @endforeach
                 </select>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="{{ $subject }}" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="description" id="description" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="description" id="description" rows="5" placeholder="{{ $message }}" required></textarea>
               </div>
 
               <div class="alert alert-success" id="sucess-message" style="display: none">
-                Your message has been sent. Thank you!
+                {{ $messageSuccess }}
               </div>
               
               <div class="alert alert-danger" id="error-message" style="display: none">
-                Your message has been not sent. Thank you!
+                {{ $messageError }}
               </div>
 
-               <div class="text-center"><button type="submit">Send Message</button></div>
+               <div class="text-center"><button type="submit"> {{ $btnText }} </button></div>
             </form>
           </div>
         </div>
