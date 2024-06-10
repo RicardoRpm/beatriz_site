@@ -29,7 +29,7 @@ class AdminController extends Controller
         $service->description_en = $request->description_en;
 
         $service->save();
-        return view('admin.service')->with('status', 'Blog Post Form Data Has Been inserted');
+        return redirect()->route('admin.service')->with('status', 'Blog Post Form Data Has Been inserted');
     }
 
     //PROJECTS 
@@ -39,18 +39,27 @@ class AdminController extends Controller
 
     public function storeProjects(Request $request) {
 
-        $request->validate([
-            'title' => 'required',
-            'description' => 'required',
-            'img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-        ]);
+        // $request->validate([
+        //     'title' => 'required',
+        //     'description' => 'required',
+        //     'img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+        // ]);
 
         $imageName = time().'.'.$request->img->extension();
         $request->img->move(public_path('assets/img'), $imageName);
 
         $product = new Project();
-        $product->title = $request->title;
-        $product->description = $request->description;
+
+        $product->title_pt = $request->title_pt;
+        $product->title_fr = $request->title_fr;
+        $product->title_en = $request->title_en;
+        
+        $product->description_fr = $request->description_fr;
+        $product->description_pt = $request->description_pt;
+        $product->description_en = $request->description_en;
+
+        //dd($request);
+
         $product->img = 'assets/img/'.$imageName;
         $product->save();
         return redirect()->route('admin.project')->with('success', 'Product created successfully.');

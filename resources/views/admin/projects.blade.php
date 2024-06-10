@@ -16,22 +16,50 @@
        
         @csrf
         <h2 class="mb-4">Projectos</h2>
-        <div>
+        <div class="row">
             <div class="col-4">
                 <div class="mb-3">
-                    <label for="title">Projecto</label>
-                    <input name="title" type="text" id="title" class="form-control" placeholder="Nome do Serviço">
+                    <label for="title">Projecto - PT</label>
+                    <input name="title_pt" type="text" id="title_pt" class="form-control" placeholder="Nome do Serviço">
+                </div>                
+            </div>
+
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="title">Projecto - EN</label>
+                    <input name="title_en" type="text" id="title_en" class="form-control" placeholder="Nome do Serviço">
+                </div>                
+            </div>
+
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="title">Projecto - FR</label>
+                    <input name="title_fr" type="text" id="title_fr" class="form-control" placeholder="Nome do Serviço">
                 </div>                
             </div>
         </div>
-        <div class="mb-3">
-            <label for="title">Projecto</label>
-            <input name="title" type="text" id="title" class="form-control" placeholder="Nome do Serviço">
-        </div>
 
-        <div class="mb-3">
-            <label for="description">Descrição do Projecto</label>
-            <textarea name="description" id="description" class="form-control" placeholder="Descrição do sstado" ></textarea>
+        <div class="row">
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="description">Descrição do Projecto</label>
+                    <textarea name="description_pt" id="description_pt" class="form-control" placeholder="Descrição do sstado" ></textarea>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="description">Descrição do Projecto</label>
+                    <textarea name="description_fr" id="description_fr" class="form-control" placeholder="Descrição do sstado" ></textarea>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="description">Descrição do Projecto</label>
+                    <textarea name="description_en" id="description_en" class="form-control" placeholder="Descrição do sstado" ></textarea>
+                </div>
+            </div>
         </div>
 
         <div class="mb-3">

@@ -55,11 +55,11 @@
                             <li><a href="#services">Serviços</a></li>
                             <li><a href="#projects">Projectos</a></li>
                             <li><a href="#contact">Contacto</a></li>
-                            <li class="dropdown"><a href="#"><span>Línguaguas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                                <ul>
-                                <li><a href="{{ route('change-language','fr') }}">FR</a></li>
-                                <li><a href="{{ route('change-language','en') }}">EN</a></li>
-                                <li><a href="{{ route('change-language','pt') }}">PT</a></li>
+                            <li class="dropdown" style="background: transparent"><a href="#"><span>Línguaguas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul style="background-color: transparent">
+                                    <li style="background-color: transparent"><a href="{{ route('change-language','fr') }}">FR</a></li>
+                                    <li style="background-color: transparent"><a href="{{ route('change-language','en') }}">EN</a></li>
+                                    <li style="background-color: transparent"><a href="{{ route('change-language','pt') }}">PT</a></li>
                                 </ul>
                             </li>                            
                             @break
@@ -189,17 +189,27 @@
                     <div class="col-md-4 footer-links footer-menu-align">
                         @if (session('locale') === 'fr')
                             <h4>Nos Services</h4>
+                            <ul>
+                                @foreach ($services as $service)
+                                    <li>{{ $service->title_fr }}</a></li>                            
+                                @endforeach
+                            </ul>
                         @elseif (session('locale') === 'en')
                             <h4>Our services</h4>
+                            <ul>
+                                @foreach ($services as $service)
+                                    <li>{{ $service->title_en }}</a></li>                            
+                                @endforeach
+                            </ul>
                         @elseif (session('locale') === 'pt')
                             <h4>Nossos Serviços</h4>
+                            <ul>
+                                @foreach ($services as $service)
+                                    <li>{{ $service->title_pt }}</a></li>                            
+                                @endforeach
+                            </ul>
                         @endif    
                         
-                        <ul>
-                            @foreach ($services as $service)
-                                <li>{{ $service->title }}</a></li>                            
-                            @endforeach
-                        </ul>
                     </div><!-- End footer links column-->
 
 

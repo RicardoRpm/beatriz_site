@@ -219,10 +219,25 @@
             <div class="icon">
               <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
             </div>
-            <h3>{{ $service->title }}</h3>
-            <p>
-              {{ $service->description }}
-            </p>
+            @switch(session('locale'))
+                @case('pt')
+                  <h3>{{ $service->title_pt }}</h3>
+                  <p>
+                    {{ $service->description_pt }}
+                  </p>
+                  @break
+                @case('en')
+                  <h3>{{ $service->title_en }}</h3>
+                  <p>
+                    {{ $service->description_en }}
+                  </p>
+                  @break
+                @default
+                  <h3>{{ $service->title_fr }}</h3>
+                  <p>
+                    {{ $service->description_fr }}
+                  </p>  
+            @endswitch
           </div>
         </div>
         @endforeach
@@ -237,45 +252,83 @@
       <div class="container" data-aos="fade-up">
         @switch(session('locale'))
             @case('pt')
-            <div class="section-header">
-              <h2>Projectos</h2>
-              <p>Nossa equipe especializada realiza projetos sob medida, priorizando qualidade, inovação e satisfação do cliente.</p>
-            </div>
-              @break
+              <div class="section-header">
+                <h2>Projectos</h2>
+                <p>Nossa equipe especializada realiza projetos sob medida, priorizando qualidade, inovação e satisfação do cliente.</p>
+              </div>
+
+              <div class="row gy-4">
+                @foreach ($projects as $project)
+                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-item">
+                      <div class="row">
+                        <div class="col-xl-5">
+                          <div class="card-bg" style="background-image: url({{ $project->img }});"></div>
+                        </div>
+                        <div class="col-xl-7 d-flex align-items-center">
+                          <div class="card-body">
+                            <h4 class="card-title"> {{ $project->title_pt }} </h4>
+                            <p>{{ $project->description_pt }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                @endforeach
+              </div>d
+            @break
             @case('en')
-            <div class="section-header">
-              <h2>Projects</h2>
-              <p>Our specialized team carries out tailor-made projects, prioritizing quality, innovation and customer satisfaction.</p>
-            </div>
+              <div class="section-header">
+                <h2>Projects</h2>
+                <p>Our specialized team carries out tailor-made projects, prioritizing quality, innovation and customer satisfaction.</p>
+              </div>
+
+              <div class="row gy-4">
+                @foreach ($projects as $project)
+                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-item">
+                      <div class="row">
+                        <div class="col-xl-5">
+                          <div class="card-bg" style="background-image: url({{ $project->img }});"></div>
+                        </div>
+                        <div class="col-xl-7 d-flex align-items-center">
+                          <div class="card-body">
+                            <h4 class="card-title"> {{ $project->title_en }} </h4>
+                            <p>{{ $project->description_en }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                @endforeach
+              </div>
               @break
             @default
             <div class="section-header">
               <h2>Projects</h2>
               <p>Notre équipe spécialisée réalise des projets sur mesure, en privilégiant la qualité, l’innovation et la satisfaction client.</p>
             </div>
-        @endswitch
 
-        
-
-        <div class="row gy-4">
-          @foreach ($projects as $project)
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url({{ $project->img }});"></div>
-                  </div>
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title"> {{ $project->title }} </h4>
-                      <p>{{ $project->description }}</p>
+            <div class="row gy-4">
+              @foreach ($projects as $project)
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card-item">
+                    <div class="row">
+                      <div class="col-xl-5">
+                        <div class="card-bg" style="background-image: url({{ $project->img }});"></div>
+                      </div>
+                      <div class="col-xl-7 d-flex align-items-center">
+                        <div class="card-body">
+                          <h4 class="card-title"> {{ $project->title_fr }} </h4>
+                          <p>{{ $project->description_fr }}</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              @endforeach
             </div>
-          @endforeach
-        </div>
+        @endswitch
       </div>
     </section><!-- End Our Projects Section -->    
   @endif
