@@ -190,23 +190,23 @@
                         @if (session('locale') === 'fr')
                             <h4>Nos Services</h4>
                             <ul>
-                                @foreach ($services as $service)
-                                    <li>{{ $service->title_fr }}</a></li>                            
-                                @endforeach
+                                <li>Industriais</a></li>                            
+                                <li>Renovação</a></li>                            
+                                <li>Limpeza</a></li>
                             </ul>
                         @elseif (session('locale') === 'en')
                             <h4>Our services</h4>
                             <ul>
-                                @foreach ($services as $service)
-                                    <li>{{ $service->title_en }}</a></li>                            
-                                @endforeach
+                                <li>Industriais</a></li>                            
+                                <li>Renovação</a></li>                            
+                                <li>Limpeza</a></li>
                             </ul>
                         @elseif (session('locale') === 'pt')
                             <h4>Nossos Serviços</h4>
                             <ul>
-                                @foreach ($services as $service)
-                                    <li>{{ $service->title_pt }}</a></li>                            
-                                @endforeach
+                                <li>Industriais</a></li>                            
+                                <li>Renovação</a></li>                            
+                                <li>Limpeza</a></li>                            
                             </ul>
                         @endif    
                         

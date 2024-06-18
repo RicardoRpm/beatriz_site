@@ -10,7 +10,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
-            @if (session('locale') === 'fr')
+            @if (session('locale') === 'fr')  
               <h2 data-aos="fade-down">Bienvenue chez Beatriz Rénovation</h2>
               <p data-aos="fade-up">Donnez vie à vos rêves de rénovation et profitez d'un nettoyage professionnel et complet. Explorez notre site pour découvrir nos services de rénovation et de nettoyage.</p>
             @elseif (session('locale') === 'en')
@@ -47,18 +47,23 @@
   <!-- ======= Alt Services Section 2 ======= -->
   <section id="alt-services-2" class="alt-services ">
     <div class="container" data-aos="fade-up">
-
       <div class="row justify-content-around gy-4">
         <div class="col-lg-5 d-flex flex-column justify-content-center">
           <h3></h3>
           @switch(session('locale'))
               @case('pt')
                 <p>
-                  Somos a Beatri-Rénovation, uma empresa dedicada a transformar espaços 
-                  industriais e imobiliários, oferecendo soluções inovadoras e serviços de alta qualidade.
-                  Nosso compromisso com a excelência e a satisfação do cliente é o que nos impulsiona a cada projeto.
+                  Beatriz Rénovation é uma empresa
+                  dedicado à transformação e
+                  manutenção de espaços residenciais e
+                  comercial. Se você precisa
+                  limpeza, reforma ou
+                  desenvolvimento, nosso objetivo é
+                  fornecer soluções eficazes e
+                  personalizado para melhorar seu
+                  espaços de vida e de trabalho
                 </p>
-      
+                <h4>Pourquoi Choisir Beatriz Rénovation?</h4>
                 <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
                   <i class="bi bi-easel flex-shrink-0"></i>
                   <div>
@@ -131,40 +136,39 @@
                   @break
               @default
               <p>
-                Nous sommes Beatri-Rénovation, une entreprise dédiée à la transformation des espaces 
-                industriel et immobilier, proposant des solutions innovantes et des services de haute qualité.
-                Notre engagement envers l’excellence et la satisfaction de nos clients est ce qui nous anime dans chaque projet.
+                Beatriz Rénovation est une entreprise
+dédiée à la transformation et à
+l'entretien des espaces résidentiels et
+commerciaux. Que vous ayez besoin de
+services de nettoyage, de rénovation ou
+d'aménagement, notre objectif est de
+vous fournir des solutions efficaces et
+personnalisées pour améliorer vos
+espaces de vie et de travail
               </p>
-    
+              <h3>Pourquoi Choisir Beatriz Rénovation?</h3>
               <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-                <i class="bi bi-easel flex-shrink-0"></i>
                 <div>
-                  <h4><a href="#" class="stretched-link">Vision</a></h4>
-                  <p>Leader du marché de la rénovation et de la transformation d'espaces industriels et immobiliers, en élevant les normes de qualité et d'innovation.</p>
+                  <h4><a href="#" class="stretched-link">Qualidade e know-how</a></h4>
+                  <p>Nous offrons des services dehaute qualité en utilisant desmatériaux durables et destechniques éprouvées.</p>
                 </div>
               </div><!-- End Icon Box -->
     
               <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-patch-check flex-shrink-0"></i>
                 <div>
-                  <h4><a href="#" class="stretched-link">Mission</a></h4>
-                  <p>
-                    Dépasser les attentes des clients grâce à des solutions créatives, une expertise technique et un engagement envers l'excellence.</p>
+                  <h4><a href="#" class="stretched-link">Approche personnalisée</a></h4>
+                  <p>Chaque projet est unique. Nous
+                    proposons des solutions sur
+                    mesure adaptées à vos besoins.</p>
                 </div>
               </div><!-- End Icon Box -->
     
               <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-brightness-high flex-shrink-0"></i>
                 <div>
-                  <h4><a href="#" class="stretched-link">Valeurs</a></h4>
-                  <ul>
-                    <li>Excellence</li>
-                    <li>Innovation</li>
-                    <li>Qualité</li>
-                    <li>Intégrité</li>
-                    <li>Collaboration</li>
-                    <li>Satisfaction du Client</li>
-                  </ul>
+                  <h4><a href="#" class="stretched-link">Respect des délais</a></h4>
+                  <p>Nous respectons les délais
+                    convenus, tout en garantissant un
+                    travail soigné et de qualité.</p>
                 </div>
               </div><!-- End Icon Box -->                          
           @endswitch
@@ -206,43 +210,144 @@
                 des solutions sur mesure pour répondre aux besoins de nos clients,
                 assurer la sécurité, l’efficacité et la qualité de chaque projet.
               </p>
-        @endswitch
-       
+        @endswitch       
       </div>
 
       <div class="row gy-4">
-
-        @foreach ($services as $service)
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-item  position-relative">
-            <div class="icon">
-              <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
-            </div>
-            @switch(session('locale'))
-                @case('pt')
-                  <h3>{{ $service->title_pt }}</h3>
+        @switch(session('locale'))
+            @case('en')
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item  position-relative">
+                  <div class="icon">
+                    <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
+                  </div>
+                    <h3>Industriels</h3>
+                    <p>
+                      Nos services industriels sont conçus pour moderniser, 
+                      optimiser et entretenir vos installations industrielles. 
+                      Nous proposons des solutions complètes pour répondre à vos 
+                      besoins opérationnels et assurer la durabilité de vos infrastructures.
+                    </p>  
+                </div>
+              </div>  
+                @break
+            @case('pt')
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                <div class="icon">
+                  <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
+                </div>
+                  <h3>Industrial</h3>
                   <p>
-                    {{ $service->description_pt }}
-                  </p>
-                  @break
-                @case('en')
-                  <h3>{{ $service->title_en }}</h3>
-                  <p>
-                    {{ $service->description_en }}
-                  </p>
-                  @break
-                @default
-                  <h3>{{ $service->title_fr }}</h3>
-                  <p>
-                    {{ $service->description_fr }}
+                    Nossos serviços industriais são projetados para modernizar, 
+                    otimizar e manter suas instalações industriais. 
+                    Oferecemos soluções completas e personalizadas 
+                    para melhorar seu desempenho operacional e garantir 
+                    a sustentabilidade da sua infraestrutura. Seja para instalação 
+                    novos equipamentos, atualizando sistemas existentes ou 
+                    manutenção de rotina, temos a experiência para apoiar 
+                    suas operações industriais.
                   </p>  
-            @endswitch
-          </div>
-        </div>
-        @endforeach
-      </div>
+                  <a href="{{ route('services-details', 'in') }}" class="readmore stretched-link">Saber mais <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
 
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                <div class="icon">
+                  <i class="fa-solid fa-paint-roller color-green flex-shrink-0"></i>
+                </div>
+                  <h3>Renovação</h3>
+                  <p>
+                    Os nossos serviços de renovação visam transformar e melhorar o seu 
+                    espaços de estar e de trabalho, aliando estética e funcionalidade. 
+                    Cuidamos de projetos de todos os portes, desde reformas de 
+                    salas pequenas para completar a reforma de grandes espaços. Nossa abordagem para 
+                    medição garante que cada projeto reflita suas necessidades e preferências, criando 
+                    ambientes bonitos e práticos.
+                  </p>
+                  <a href="{{ route('services-details', 're') }}" class="readmore stretched-link">Saber mais <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                <div class="icon">
+                  <i class="fa-solid fa-broom color-green flex-shrink-0"></i>
+                </div>
+                  <h3>Limpeza</h3>
+                  <p>
+                    Oferecemos uma gama completa de serviços de limpeza para 
+                    garantir espaços impecáveis, saudáveis ​​e acolhedores. 
+                    Nossos serviços de limpeza se adaptam a diversos ambientes, sejam residenciais, 
+                    comercial ou industrial. Utilizamos técnicas e produtos de limpeza
+                    avançado para garantir uma limpeza ideal e manter altos padrões de higiene.
+                  </p>  
+                  <br>
+                  <a href="{{ route('services-details', 'ne') }}" class="readmore stretched-link">Saber mais <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+                @break
+            @default
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item  position-relative">
+                  <div class="icon">
+                    <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
+                  </div>
+                    <h3>Industriels</h3>
+                    <p>
+                      Nos services industriels sont conçus pour moderniser, 
+                      optimiser et entretenir vos installations industrielles. 
+                      Nous proposons des solutions complètes et personnalisées 
+                      pour améliorer vos performances opérationnelles et garantir 
+                      la durabilité de vos infrastructures. Que ce soit pour l'installation 
+                      de nouveaux équipements, la mise à jour de systèmes existants ou la 
+                      maintenance de routine, nous avons l'expertise nécessaire pour soutenir 
+                      vos opérations industrielles.
+                    </p>  
+                    <a href="{{ route('services-details', 'in') }}" class="readmore stretched-link">Apprendre encore plus <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item  position-relative">
+                  <div class="icon">
+                    <i class="fa-solid fa-paint-roller color-green flex-shrink-0"></i>
+                  </div>
+                    <h3>Rénovation</h3>
+                    <p>
+                      Nos services de rénovation visent à transformer et à améliorer vos 
+                      espaces de vie et de travail, en alliant esthétique et fonctionnalité. 
+                      Nous prenons en charge des projets de toutes tailles, de la rénovation de 
+                      petites pièces à la refonte complète de grands espaces. Notre approche sur 
+                      mesure garantit que chaque projet reflète vos besoins et préférences, créant 
+                      des environnements qui sont à la fois beaux et pratiques.
+                    </p>
+                    <br>
+                    <a href="{{ route('services-details', 're') }}" class="readmore stretched-link">Apprendre encore plus <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item  position-relative">
+                  <div class="icon">
+                    <i class="fa-solid fa-broom color-green flex-shrink-0"></i>
+                  </div>
+                    <h3>Nettoyage</h3>
+                    <p>
+                      Nous offrons une gamme complète de services de nettoyage pour 
+                      garantir des espaces impeccables, sains et accueillants. 
+                      Nos services de nettoyage s'adaptent à divers environnements, qu'ils soient résidentiels, 
+                      commerciaux ou industriels. Nous utilisons des techniques et produits de nettoyage
+                      avancés pour assurer une propreté optimale et maintenir des standards élevés d'hygiène.
+                    </p>  
+                    <br>
+                    <br>
+                    <a href="{{ route('services-details', 'ne') }}" class="readmore stretched-link">Apprendre encore plus <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+        @endswitch
+      </div>                
     </div>
   </section><!-- End Services Section -->
 
@@ -336,7 +441,7 @@
   
 
   <!-- ======= Our Team Section ======= -->
-  <section id="team" class="team section-bg">
+  {{-- <section id="team" class="team section-bg">
     <div class="container" data-aos="fade-up">
       @switch(session('locale'))
           @case('pt')
@@ -413,7 +518,7 @@
       </div>
 
     </div>
-  </section><!-- End Our Team Section -->
+  </section><!-- End Our Team Section --> --}}
 
 
   <!-- ======= Stats Counter Section ======= -->
@@ -422,38 +527,21 @@
             @case('pt')
             <div class="container">
               <div class="row gy-4">
-                <div class="col-lg-3 col-md-6">
+                
+                <div class="col-lg-6 col-md-6">
                   <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="bi bi-person-vcard color-orange flex-shrink-0"></i>
+                    <i class="fa-solid fa-location-dot color-green flex-shrink-0"></i>
                     <div>
-                      <p>{{ $statistic[0]->employees }} Funcionários</p>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="col-lg-3 col-md-6">
-                  <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
-                    <div>
-                      <p>{{ count($services) }} Serviços</p>
+                      <p>3 Paises (França, Angola, Portugal)</p>
                     </div>
                   </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-6 col-md-6">
                   <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="fa-solid fa-helmet-safety color-pink flex-shrink-0"></i>
+                    <i class="fa-solid fa-compass-drafting color-pink flex-shrink-0"></i>
                     <div>
-                      <p>{{ count($projects) }} Projectos</p>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="col-lg-3 col-md-6">
-                  <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="bi bi-people color-pink flex-shrink-0"></i>
-                    <div>
-                      <p>{{ $statistic[0]->clients }} Clientes</p>
+                      <p>3 Principais serviços (Industriels, Rénovation, Nettoyage)</p>
                     </div>
                   </div>
                 </div>
@@ -508,9 +596,9 @@
               <div class="row gy-4">
                 <div class="col-lg-3 col-md-6">
                   <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="bi bi-person-vcard color-orange flex-shrink-0"></i>
+                    <i class="fa-solid fa-location-dot color-orange flex-shrink-0"></i>
                     <div>
-                      <p>{{ $statistic[0]->employees }} Employés</p>
+                      <p>3 Pays (France, Angola, Portugal)</p>
                     </div>
                   </div>
                 </div>
@@ -519,12 +607,12 @@
                   <div class="stats-item d-flex align-items-center w-100 h-100">
                     <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
                     <div>
-                      <p>{{ count($services) }} Services</p>
+                      <p>3 Services principaux (Industriels, Rénovation, Nettoyage)</p>
                     </div>
                   </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-6">
+                {{-- <div class="col-lg-3 col-md-6">
                   <div class="stats-item d-flex align-items-center w-100 h-100">
                     <i class="fa-solid fa-helmet-safety color-pink flex-shrink-0"></i>
                     <div>
@@ -540,7 +628,7 @@
                       <p>{{ $statistic[0]->clients }} Clientèle</p>
                     </div>
                   </div>
-                </div>
+                </div> --}}
         
               </div>
             </div>

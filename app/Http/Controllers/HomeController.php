@@ -90,4 +90,11 @@ class HomeController extends Controller
             'success' => 'Service criado com sucesso.'
         ]);
     }
+
+    public function services(string $detail)
+    {
+        return View('site.services-details', [
+            'detail' => trim($detail) 
+        ]);
+    }
 }

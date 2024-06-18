@@ -1131,10 +1131,23 @@ section {
   color: #fff;
 }
 
-.alt-services .icon-box h4 {
+h3 {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 18px;
+  color: #000;
+}
+
+/* .alt-services .icon-box h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+} */
+
+.alt-services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .alt-services .icon-box h4 a {
@@ -1881,7 +1894,6 @@ section {
   content: "";
   position: absolute;
   display: block;
-  width: 80px;
   height: 4px;
   background: var(--color-primary);
   left: 0;
