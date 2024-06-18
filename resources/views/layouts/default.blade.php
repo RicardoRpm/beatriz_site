@@ -58,7 +58,7 @@
                             <li class="dropdown" style="background: transparent"><a href="#"><span>Línguaguas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul style="background-color: transparent">
                                     <li style="background-color: transparent"><a href="{{ route('change-language','fr') }}">FR</a></li>
-                                    <li style="background-color: transparent"><a href="{{ route('change-language','en') }}">EN</a></li>
+                                    {{-- <li style="background-color: transparent"><a href="{{ route('change-language','en') }}">EN</a></li> --}}
                                     <li style="background-color: transparent"><a href="{{ route('change-language','pt') }}">PT</a></li>
                                 </ul>
                             </li>                            
@@ -72,7 +72,7 @@
                             <li class="dropdown"><a href="#"><span>Languages</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
                                 <li><a href="{{ route('change-language','fr') }}">FR</a></li>
-                                <li><a href="{{ route('change-language','en') }}">EN</a></li>
+                                {{-- <li><a href="{{ route('change-language','en') }}">EN</a></li> --}}
                                 <li><a href="{{ route('change-language','pt') }}">PT</a></li>
                                 </ul>
                             </li>
@@ -86,7 +86,7 @@
                             <li class="dropdown"><a href="#"><span>Langages</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
                                 <li><a href="{{ route('change-language','fr') }}">FR</a></li>
-                                <li><a href="{{ route('change-language','en') }}">EN</a></li>
+                                {{-- <li><a href="{{ route('change-language','en') }}">EN</a></li> --}}
                                 <li><a href="{{ route('change-language','pt') }}">PT</a></li>
                                 </ul>
                             </li>
