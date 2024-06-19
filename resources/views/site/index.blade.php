@@ -45,7 +45,7 @@
   </section><!-- End Hero Section -->
 
   <!-- ======= Alt Services Section 2 ======= -->
-  <section id="alt-services-2" class="alt-services ">
+  <section id="about" class="alt-services ">
     <div class="container" data-aos="fade-up">
       <div class="row justify-content-around gy-4">
         <div class="col-lg-5 d-flex flex-column justify-content-center">
@@ -63,37 +63,31 @@
                   personalizado para melhorar seu
                   espaços de vida e de trabalho
                 </p>
-                <h4>Pourquoi Choisir Beatriz Rénovation?</h4>
+                <h3>Pourquoi Choisir Beatriz Rénovation?</h3>
                 <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bi bi-easel flex-shrink-0"></i>
                   <div>
-                    <h4><a href="#" class="stretched-link">Visão</a></h4>
-                    <p>Liderar o mercado de renovação e transformação de espaços industriais e imobiliários, elevando os padrões de qualidade e inovação.</p>
+                    <h4><a href="#" class="stretched-link">Qualidade e know-how</a></h4>
+                    <p>Nous offrons des services dehaute qualité en utilisant desmatériaux durables et destechniques éprouvées.</p>
                   </div>
                 </div><!-- End Icon Box -->
       
                 <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bi bi-patch-check flex-shrink-0"></i>
                   <div>
-                    <h4><a href="#" class="stretched-link">Missão</a></h4>
-                    <p>Superar as expectativas dos clientes através de soluções criativas, expertise técnica e compromisso com a excelência.</p>
+                    <h4><a href="#" class="stretched-link">Approche personnalisée</a></h4>
+                    <p>Chaque projet est unique. Nous
+                      proposons des solutions sur
+                      mesure adaptées à vos besoins.</p>
                   </div>
                 </div><!-- End Icon Box -->
       
                 <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-brightness-high flex-shrink-0"></i>
                   <div>
-                    <h4><a href="#" class="stretched-link">Valores</a></h4>
-                    <ul>
-                      <li>Excelência</li>  
-                      <li>Inovação</li>  
-                      <li>Qualidade</li>  
-                      <li>Integridade</li>  
-                      <li>Colaboração</li>  
-                      <li>Satisfação do cliente</li>  
-                    </ul>
+                    <h4><a href="#" class="stretched-link">Respect des délais</a></h4>
+                    <p>Nous respectons les délais
+                      convenus, tout en garantissant un
+                      travail soigné et de qualité.</p>
                   </div>
-                </div><!-- End Icon Box -->        
+                </div><!-- End Icon Box -->                                  
                 @break
               @case('en')
                   <p>
@@ -137,14 +131,14 @@
               @default
               <p>
                 Beatriz Rénovation est une entreprise
-dédiée à la transformation et à
-l'entretien des espaces résidentiels et
-commerciaux. Que vous ayez besoin de
-services de nettoyage, de rénovation ou
-d'aménagement, notre objectif est de
-vous fournir des solutions efficaces et
-personnalisées pour améliorer vos
-espaces de vie et de travail
+                dédiée à la transformation et à
+                l'entretien des espaces résidentiels et
+                commerciaux. Que vous ayez besoin de
+                services de nettoyage, de rénovation ou
+                d'aménagement, notre objectif est de
+                vous fournir des solutions efficaces et
+                personnalisées pour améliorer vos
+                espaces de vie et de travail
               </p>
               <h3>Pourquoi Choisir Beatriz Rénovation?</h3>
               <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
@@ -594,7 +588,7 @@ espaces de vie et de travail
             @default
             <div class="container">
               <div class="row gy-4">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-6 col-md-6">
                   <div class="stats-item d-flex align-items-center w-100 h-100">
                     <i class="fa-solid fa-location-dot color-orange flex-shrink-0"></i>
                     <div>
@@ -603,7 +597,7 @@ espaces de vie et de travail
                   </div>
                 </div>
         
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-6 col-md-6">
                   <div class="stats-item d-flex align-items-center w-100 h-100">
                     <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
                     <div>

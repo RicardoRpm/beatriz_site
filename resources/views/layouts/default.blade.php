@@ -17,7 +17,7 @@
 
   <!-- Favicons -->
   <link href="{{ URL::asset('assets/img/logo2.png') }}" rel="icon">
-  <link href="{{ URL::asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="{{ URL::asset('assets/img/logo2.png') }}" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="{{ URL::asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -50,12 +50,12 @@
                 <ul>
                     @switch(session('locale'))
                         @case('pt')
-                            <li><a href="{{ route('index') }}">Home</a></li>
+                            <li class="text-center"><a href="{{ route('index') }}">Home</a></li>
                             <li><a href="#about">Sobre Nós</a></li>
                             <li><a href="#services">Serviços</a></li>
-                            <li><a href="#projects">Projectos</a></li>
+                            <li><a href="#projects">Produtos</a></li>
                             <li><a href="#contact">Contacto</a></li>
-                            <li class="dropdown" style="background: transparent"><a href="#"><span>Línguaguas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                            <li class="dropdown"><a href="#"><span>Línguas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul style="background-color: transparent">
                                     <li style="background-color: transparent"><a href="{{ route('change-language','fr') }}">FR</a></li>
                                     {{-- <li style="background-color: transparent"><a href="{{ route('change-language','en') }}">EN</a></li> --}}
@@ -67,23 +67,23 @@
                             <li><a href="{{ route('index') }}">Home</a></li>
                             <li><a href="#about">About Us</a></li>
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#projects">Products</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <li class="dropdown"><a href="#"><span>Languages</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
-                                <li><a href="{{ route('change-language','fr') }}">FR</a></li>
-                                {{-- <li><a href="{{ route('change-language','en') }}">EN</a></li> --}}
-                                <li><a href="{{ route('change-language','pt') }}">PT</a></li>
+                                    <li><a href="{{ route('change-language','fr') }}">FR</a></li>
+                                    {{-- <li><a href="{{ route('change-language','en') }}">EN</a></li> --}}
+                                    <li><a href="{{ route('change-language','pt') }}">PT</a></li>
                                 </ul>
                             </li>
                             @break
                         @default
-                            <li><a href="{{ route('index') }}">Maison</a></li>
-                            <li><a href="#about">Propos de nous</a></li>
-                            <li><a href="#services">Service</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li class="dropdown"><a href="#"><span>Langages</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                            <li><a href="{{ route('index') }}">Accueil </a></li>
+                            <li><a href="#about">Qui sommes-nous</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Des Produits</a></li>
+                            <li><a href="#contact">Contacts </a></li>
+                            <li class="dropdown"><a href="#"><span>Langue</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
                                 <li><a href="{{ route('change-language','fr') }}">FR</a></li>
                                 {{-- <li><a href="{{ route('change-language','en') }}">EN</a></li> --}}
@@ -105,14 +105,13 @@
 
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
-
         <div class="footer-content position-relative">
             <div class="container">
                 <div class="row">
 
                     <div class="col-md-4">
                     <div class="footer-info">
-                        <image src="assets/img/logo_2.svg" style="width: 20rem;" /> 
+                        <image src="{{ URL::asset('assets/img/logo_2.svg') }}" style="width: 20rem;" /> 
                         <br>
                         <br>
                         <br>
@@ -190,9 +189,9 @@
                         @if (session('locale') === 'fr')
                             <h4>Nos Services</h4>
                             <ul>
-                                <li>Industriais</a></li>                            
-                                <li>Renovação</a></li>                            
-                                <li>Limpeza</a></li>
+                                <li>Industriels</a></li>                            
+                                <li>Rénovation</a></li>                            
+                                <li>Nettoyage</a></li>
                             </ul>
                         @elseif (session('locale') === 'en')
                             <h4>Our services</h4>
