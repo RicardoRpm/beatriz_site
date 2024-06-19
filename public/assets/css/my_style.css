@@ -145,3 +145,28 @@
     position: relative;
     line-height: 1.8;
 }
+
+.dropdown {
+    background-color: transparent;   
+}
+
+.dropdown ul li {
+    background-color: transparent;   
+}
+
+.navbar .dropdown ul li {
+    background-color: transparent;   
+}
+
+.dropdown ul li a {
+    color: #fff;
+}
+
+.navbar .dropdown ul {
+    background-color: transparent;  
+    color: #fff;
+}
+
+.navbar .dropdown ul li a {
+    color: #fff;
+}

@@ -345,67 +345,114 @@
     </div>
   </section><!-- End Services Section -->
 
-  @if (count($projects) >= 1)
-    <!-- ======= Our Projects Section ======= -->
-    <section id="constructions" class="constructions">
-      <div class="container" data-aos="fade-up">
-        @switch(session('locale'))
-            @case('pt')
-              <div class="section-header">
-                <h2>Projectos</h2>
-                <p>Nossa equipe especializada realiza projetos sob medida, priorizando qualidade, inovação e satisfação do cliente.</p>
-              </div>
+  
+  <!-- ======= Our Projects Section ======= -->
+  <section id="products" class="products">
+    <div class="container" data-aos="fade-up">
+      @switch(session('locale'))
+          @case('pt')
+            <div class="section-header">
+              <h2>Nossos Produtos</h2>
+              <p>
+                Comercializamos uma grande variedade de equipamentos industriais, materiais de mármore e 
+                construção, incluindo concreto, aço e outros produtos essenciais.
+              </p>
+            </div>
 
-              <div class="row gy-4">
-                @foreach ($projects as $project)
-                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-item">
-                      <div class="row">
-                        <div class="col-xl-5">
-                          <div class="card-bg" style="background-image: url({{ $project->img }});"></div>
-                        </div>
-                        <div class="col-xl-7 d-flex align-items-center">
-                          <div class="card-body">
-                            <h4 class="card-title"> {{ $project->title_pt }} </h4>
-                            <p>{{ $project->description_pt }}</p>
-                          </div>
-                        </div>
+            <div class="row gy-4">
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Materiais de Mármore </h4>
+                        <p>
+                          Disponibilizamos uma
+                          vasta gama de mármores
+                          de alta qualidade,
+                          perfeitos para diversos
+                          projetos de construção e
+                          arquitetura. Nossos mármores
+                          estão disponíveis
+                          em diferentes cores e
+                          acabamentos, adequados
+                          a todas as suas necessidades
+                          estéticas e
+                          funcionais
+                        </p>
                       </div>
                     </div>
+
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url({{ url('assets/img/granito.jpg') }});"></div>
+                    </div>
+
                   </div>
-                @endforeach
-              </div>d
-            @break
-            @case('en')
-              <div class="section-header">
-                <h2>Projects</h2>
-                <p>Our specialized team carries out tailor-made projects, prioritizing quality, innovation and customer satisfaction.</p>
+                </div>
               </div>
 
-              <div class="row gy-4">
-                @foreach ($projects as $project)
-                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-item">
-                      <div class="row">
-                        <div class="col-xl-5">
-                          <div class="card-bg" style="background-image: url({{ $project->img }});"></div>
-                        </div>
-                        <div class="col-xl-7 d-flex align-items-center">
-                          <div class="card-body">
-                            <h4 class="card-title"> {{ $project->title_en }} </h4>
-                            <p>{{ $project->description_en }}</p>
-                          </div>
-                        </div>
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url({{ url('assets/img/construction-tools.jpg') }});"></div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title">Materiais de Construção</h4>
+                        <p>
+                          Vendemos
+                          uma grande variedade
+                          de materiais de
+                          construção, incluindo
+                          concreto,
+                          aço, e outros produtos
+                          essenciais
+                          para a construção
+                          civil.
+                        </p>
                       </div>
                     </div>
+
                   </div>
-                @endforeach
+                </div>
               </div>
-              @break
-            @default
+
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Equipamentos Industriais </h4>
+                        <p>
+                          Nosso catálogo
+                          inclui máquinas
+                          sofisticadas de
+                          última geração,
+                          assim como peças
+                          de reposição para
+                          melhorar e manter
+                          suas instalações
+                          industriais.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url({{ url('assets/img/industrial-tools.jpeg') }});"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          @break
+          @case('en')
             <div class="section-header">
               <h2>Projects</h2>
-              <p>Notre équipe spécialisée réalise des projets sur mesure, en privilégiant la qualité, l’innovation et la satisfaction client.</p>
+              <p>Our specialized team carries out tailor-made projects, prioritizing quality, innovation and customer satisfaction.</p>
             </div>
 
             <div class="row gy-4">
@@ -418,8 +465,8 @@
                       </div>
                       <div class="col-xl-7 d-flex align-items-center">
                         <div class="card-body">
-                          <h4 class="card-title"> {{ $project->title_fr }} </h4>
-                          <p>{{ $project->description_fr }}</p>
+                          <h4 class="card-title"> {{ $project->title_en }} </h4>
+                          <p>{{ $project->description_en }}</p>
                         </div>
                       </div>
                     </div>
@@ -427,12 +474,109 @@
                 </div>
               @endforeach
             </div>
-        @endswitch
-      </div>
-    </section><!-- End Our Projects Section -->    
-  @endif
+            @break
+          @default
+          <div class="section-header">
+            <h2>Nos Produits</h2>
+            <p>
+              Nous vendons une grande variété d'équipements industriels, de matériaux en marbre et 
+              construction, y compris le béton, l’acier et d’autres produits essentiels.
+            </p>
+          </div>
 
-  
+          <div class="row gy-4">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title"> Matériaux en Marbre </h4>
+                      <p>
+                        Nous fournissons un
+                        large gamme de marbres
+                        haute qualité,
+                        parfait pour différents
+                        des projets de construction et
+                        architecture. Nos billes
+                        sont disponibles
+                        en différentes couleurs et
+                        finitions, adaptées
+                        à tous vos besoins
+                        esthétique et
+                        fonctionnel
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-5">
+                    <div class="card-bg" style="background-image: url({{ url('assets/img/granito.jpg') }});"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg" style="background-image: url({{ url('assets/img/construction-tools.jpg') }});"></div>
+                  </div>
+
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Matériaux de Construction</h4>
+                      <p>
+                        Nous vendons
+                        une grande variété
+                        de matériaux provenant de
+                        construction, y compris
+                        béton,
+                        acier et autres produits
+                        essentiel
+                        pour construction
+                        civil.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title"> Équipement Industriel </h4>
+                      <p>
+                        Notre catalogue
+                        comprend des machines
+                        sophistiqué
+                        la dernière génération,
+                        ainsi que des pièces
+                        remplacement pour
+                        améliorer et entretenir
+                        vos installations
+                        industriel.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-5">
+                    <div class="card-bg" style="background-image: url({{ url('assets/img/industrial-tools.jpeg') }});"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+      @endswitch
+    </div>
+  </section><!-- End Our Projects Section -->    
 
   <!-- ======= Our Team Section ======= -->
   {{-- <section id="team" class="team section-bg">
