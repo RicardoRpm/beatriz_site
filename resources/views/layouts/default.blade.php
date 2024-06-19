@@ -53,13 +53,13 @@
                             <li class="text-center"><a href="{{ route('index') }}">Home</a></li>
                             <li><a href="#about">Sobre Nós</a></li>
                             <li><a href="#services">Serviços</a></li>
-                            <li><a href="#projects">Produtos</a></li>
+                            <li><a href="#products">Produtos</a></li>
                             <li><a href="#contact">Contacto</a></li>
                             <li class="dropdown"><a href="#"><span>Línguas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                                <ul style="background-color: transparent">
-                                    <li style="background-color: transparent"><a href="{{ route('change-language','fr') }}">FR</a></li>
-                                    {{-- <li style="background-color: transparent"><a href="{{ route('change-language','en') }}">EN</a></li> --}}
-                                    <li style="background-color: transparent"><a href="{{ route('change-language','pt') }}">PT</a></li>
+                                <ul>
+                                    <li><a href="{{ route('change-language','fr') }}">FR</a></li>
+                                    {{-- <li ><a href="{{ route('change-language','en') }}">EN</a></li> --}}
+                                    <li><a href="{{ route('change-language','pt') }}">PT</a></li>
                                 </ul>
                             </li>                            
                             @break
@@ -67,7 +67,7 @@
                             <li><a href="{{ route('index') }}">Home</a></li>
                             <li><a href="#about">About Us</a></li>
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#projects">Products</a></li>
+                            <li><a href="#products">Products</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <li class="dropdown"><a href="#"><span>Languages</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
@@ -81,13 +81,13 @@
                             <li><a href="{{ route('index') }}">Accueil </a></li>
                             <li><a href="#about">Qui sommes-nous</a></li>
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#projects">Des Produits</a></li>
+                            <li><a href="#products">Des Produits</a></li>
                             <li><a href="#contact">Contacts </a></li>
                             <li class="dropdown"><a href="#"><span>Langue</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
-                                <li><a href="{{ route('change-language','fr') }}">FR</a></li>
-                                {{-- <li><a href="{{ route('change-language','en') }}">EN</a></li> --}}
-                                <li><a href="{{ route('change-language','pt') }}">PT</a></li>
+                                    <li><a href="{{ route('change-language','fr') }}">FR</a></li>
+                                    {{-- <li><a href="{{ route('change-language','en') }}">EN</a></li> --}}
+                                    <li><a href="{{ route('change-language','pt') }}">PT</a></li>
                                 </ul>
                             </li>
                     @endswitch   
@@ -153,33 +153,30 @@
                             @case('pt')
                                 <h4>Seções do Site</h4>
                                 <ul>
-                                    <li><a href="#hero">Home</a></li>
-                                    <li><a href="#alt-services-2">Sobre Nós</a></li>
+                                    <li><a href="{{ route('index') }}">Home</a></li>
+                                    <li><a href="#about">Sobre Nós</a></li>
                                     <li><a href="#services">Serviços</a></li>
-                                    <li><a href="#constructions">Projectos</a></li>
-                                    <li><a href="#team">Nosso Time</a></li>
+                                    <li><a href="#products">Produtos</a></li>
                                     <li><a href="#contact">Contacto</a></li>
                                 </ul>
                                 @break
                             @case('en')
                                 <h4>Sections of Site</h4>
                                 <ul>
-                                    <li><a href="#hero">Home</a></li>
+                                    <li><a href="{{ route('index') }}>Home</a></li>
                                     <li><a href="#alt-services-2">About Us</a></li>
                                     <li><a href="#services">Services</a></li>
-                                    <li><a href="#constructions">Projects</a></li>
-                                    <li><a href="#team">Our Team</a></li>
+                                    <li><a href="#constructions">Products</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
                                 @break
                             @default
                                 <h4>Sections du Site</h4>
                                 <ul>
-                                    <li><a href="#hero">Maison</a></li>
-                                    <li><a href="#alt-services-2">Propos de Nous</a></li>
+                                    <li><a href="{{ route('index') }}">Maison</a></li>
+                                    <li><a href="#about">Qui sommes-nous</a></li>
                                     <li><a href="#services">Service</a></li>
-                                    <li><a href="#constructions">Projects</a></li>
-                                    <li><a href="#team">Notre Équipe</a></li>
+                                    <li><a href="#products">Products</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
                         @endswitch
