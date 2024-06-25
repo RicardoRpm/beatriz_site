@@ -567,7 +567,7 @@
                   </div>
 
                   <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('/assets/img/industrial-tools.jpeg');"></div>
+                    <div class="card-bg" style="background-image: url('{{ asset("/assets/img/industrial-tools.jpeg") }}');"></div>
                   </div>
 
                 </div>
