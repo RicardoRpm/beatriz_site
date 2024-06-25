@@ -16,8 +16,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Favicons -->
-  <link href="{{ URL::asset('assets/img/logo2.png') }}" rel="icon">
-  <link href="{{ URL::asset('assets/img/logo2.png') }}" rel="icon">
+  <link href="{{ URL::asset('assets/img/logo_2.svg') }}" rel="icon">
+  <link href="{{ URL::asset('assets/img/logo_2.svg') }}" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="{{ URL::asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
