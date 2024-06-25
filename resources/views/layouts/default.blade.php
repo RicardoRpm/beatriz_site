@@ -119,8 +119,8 @@
                             @case('pt')
                                 <span> 
                                     <strong>Endereço: </strong>16 rue de la broque 67000 Strasbourg <br>
-                                    <strong>Telefone: </strong> +33 7 53 28 21 48<br>
-                                    <strong>Email: </strong> beatriz-renovation67@outlook.fr<br>
+                                    <strong>Telefone: </strong> +33 7 53 28 21 48 / +33 6 01 86 65 86<br>
+                                    <strong>Email: </strong> beatriz-renovation67@outlook.fr / info@beatrizr-renovation.com<br><br>
                                 </span>
                                 @break
                             @case('en')
@@ -133,8 +133,9 @@
                             @default
                                 <span> 
                                     <strong>Adresse: </strong>16 rue de la broque 67000 Strasbourg <br>
-                                    <strong>Téléphone: </strong> +33 7 53 28 21 48<br>
-                                    <strong>E-mail: </strong> beatriz-renovation67@outlook.fr<br>
+                                    <strong>Téléphone: </strong> +33 7 53 28 21 48 / +33 6 01 86 65 86<br>
+                                    <strong>E-mail: </strong>
+                                    beatriz-renovation67@outlook.fr / info@beatrizr-renovation.com<br>
                                 </span>
                         @endswitch
                         <br>
