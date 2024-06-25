@@ -186,23 +186,23 @@
                         @if (session('locale') === 'fr')
                             <h4>Nos Services</h4>
                             <ul>
-                                <li>Industriels</a></li>                            
-                                <li>Rénovation</a></li>                            
-                                <li>Nettoyage</a></li>
+                                <li><a href="{{ route('services-details', 'in') }}">Industriels</a></li>                            
+                                <li><a href="{{ route('services-details', 're') }}">Rénovation</a></li>                            
+                                <li><a href="{{ route('services-details', 'ne') }}">Nettoyage</a></li>
                             </ul>
                         @elseif (session('locale') === 'en')
                             <h4>Our services</h4>
                             <ul>
-                                <li>Industriais</a></li>                            
-                                <li>Renovação</a></li>                            
-                                <li>Limpeza</a></li>
+                                <li><a href="{{ route('services-details', 'in') }}">Industriais</a></li>                            
+                                <li><a href="{{ route('services-details', 're') }}">Renovação</a></li>                            
+                                <li><a href="{{ route('services-details', 'ne') }}">Limpeza</a></li>
                             </ul>
                         @elseif (session('locale') === 'pt')
                             <h4>Nossos Serviços</h4>
                             <ul>
-                                <li>Industriais</a></li>                            
-                                <li>Renovação</a></li>                            
-                                <li>Limpeza</a></li>                            
+                                <li><a href="{{ route('services-details', 'in') }}">Industriais</a></li>                            
+                                <li><a href="{{ route('services-details', 're') }}">Renovação</a></li>                            
+                                <li><a href="{{ route('services-details', 'ne') }}">Limpeza</a></li>                            
                             </ul>
                         @endif    
                         
