@@ -510,7 +510,7 @@
                   </div>
 
                   <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('/assets/img/granito.jpg') "></div>
+                    <div class="card-bg" style="background-image: url(assets/img/7.jpg);"></div>
                   </div>
 
                 </div>
