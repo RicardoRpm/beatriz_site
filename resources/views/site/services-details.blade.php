@@ -113,7 +113,7 @@
                                   </div>
                                 </div>
                                 <div class="col-xl-6">
-                                  <div class="card-bg" style="background-image: url('{{ asset("assets/img/plataform.jpeg") }}');"></div>
+                                  <div class="card-bg" style="background-image: url('{{ asset('./assets/img/plataform.jpeg') }}');"></div>
                                 </div>
                                 
                               </div>

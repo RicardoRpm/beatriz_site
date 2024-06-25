@@ -510,7 +510,7 @@
                   </div>
 
                   <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url(assets/img/7.jpg);"></div>
+                    <div class="card-bg" style="background-image: url('{{ asset('assets/img/granito.jpg') }}?v={{ time() }}')"></div>
                   </div>
 
                 </div>
@@ -521,7 +521,7 @@
               <div class="card-item">
                 <div class="row">
                   <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}') "></div>
+                    <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
                   </div>
 
                   <div class="col-xl-7 d-flex align-items-center">
