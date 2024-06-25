@@ -257,7 +257,7 @@
                                   </div>
                                 </div>
                                 <div class="col-xl-6">
-                                  <div class="card-bg" style="background-image: url('{{ asset("/assets/img/renovation-interior.jpg") }}');"></div>
+                                  <div class="card-bg" style="background-image: url('{{ asset("assets/img/renovation-interior.jpg") }}');"></div>
                                 </div>
                                 
                               </div>
@@ -269,7 +269,7 @@
                               <div class="row">
                                 
                                 <div class="col-xl-6">
-                                  <div class="card-bg" style="background-image: url('{{ asset("/assets/img/coki-restaurant.jpg") }}');"></div>
+                                  <div class="card-bg" style="background-image: url('{{ asset("assets/img/coki-restaurant.jpg") }}');"></div>
                                 </div>
                                 
                                 <div class="col-xl-6 d-flex align-items-center">
@@ -304,7 +304,7 @@
                                   </div>
                                 </div>
                                 <div class="col-xl-6">
-                                  <div class="card-bg" style="background-image: url('{{ asset("/assets/img/revestiment.jpg") }}');"></div>
+                                  <div class="card-bg" style="background-image: url('{{ asset("assets/img/revestiment.jpg") }}');"></div>
                                 </div>
                                 
                               </div>
@@ -316,7 +316,7 @@
                               <div class="row">
                                 
                                 <div class="col-xl-6">
-                                  <div class="card-bg" style="background-image: url('{{ asset("/assets/img/piting.jpg") }}');"></div>
+                                  <div class="card-bg" style="background-image: url('{{ asset("assets/img/piting.jpg") }}');"></div>
                                 </div>
                                 
                                 <div class="col-xl-6 d-flex align-items-center">
@@ -351,7 +351,7 @@
                                   </div>
                                 </div>
                                 <div class="col-xl-6">
-                                  <div class="card-bg" style="background-image: url('{{ asset("/assets/img/capinter.jpeg") }}');"></div>
+                                  <div class="card-bg" style="background-image: url('{{ asset("assets/img/capinter.jpeg") }}');"></div>
                                 </div>
                                 
                               </div>
@@ -363,7 +363,7 @@
                               <div class="row">
                                 
                                 <div class="col-xl-6">
-                                  <div class="card-bg" style="background-image: url('{{ asset("/assets/img/mamore-instalation.jpg") }}');"></div>
+                                  <div class="card-bg" style="background-image: url('{{ asset("assets/img/mamore-instalation.jpg") }}');"></div>
                                 </div>
                                 
                                 <div class="col-xl-6 d-flex align-items-center">

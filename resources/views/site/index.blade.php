@@ -3,6 +3,7 @@
 @section('title', 'Beatriz')
 
 @section('content')
+
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
 
