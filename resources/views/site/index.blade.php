@@ -385,7 +385,7 @@
                     </div>
 
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('/assets/img/granito.jpg')"></div>
+                      <div class="card-bg" style="background-image: url('assets/img/granito.jpg')"></div>
                     </div>
 
                   </div>
@@ -396,7 +396,7 @@
                 <div class="card-item">
                   <div class="row">
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('/assets/img/construction-tools.jpg')"></div>
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}')"></div>
                     </div>
 
                     <div class="col-xl-7 d-flex align-items-center">
@@ -442,7 +442,7 @@
                     </div>
 
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('/assets/img/industrial-tools.jpeg')"></div>
+                      <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpeg')"></div>
                     </div>
 
                   </div>
@@ -510,7 +510,7 @@
                   </div>
 
                   <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('/assets/img/granito.jpg')"></div>
+                    <div class="card-bg" style="background-image: url('{{ asset("assets/img/granito.jpg") }}') "></div>
                   </div>
 
                 </div>
@@ -521,7 +521,7 @@
               <div class="card-item">
                 <div class="row">
                   <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('/assets/img/construction-tools.jpg') "></div>
+                    <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}') "></div>
                   </div>
 
                   <div class="col-xl-7 d-flex align-items-center">
@@ -568,7 +568,7 @@
                   </div>
 
                   <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('{{ asset("/assets/img/industrial-tools.jpeg") }}');"></div>
+                    <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
                   </div>
 
                 </div>
