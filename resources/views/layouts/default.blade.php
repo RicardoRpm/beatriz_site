@@ -114,13 +114,20 @@
                         <image src="{{ URL::asset('assets/img/logo_2.svg') }}" style="width: 20rem;" /> 
                         <br>
                         <br>
-                        <br>
                         @switch(session('locale'))
                             @case('pt')
                                 <span> 
                                     <strong>Endereço: </strong>16 rue de la broque 67000 Strasbourg <br>
-                                    <strong>Telefone: </strong> +33 7 53 28 21 48 / +33 6 01 86 65 86<br>
-                                    <strong>Email: </strong> beatriz-renovation67@outlook.fr / info@beatrizr-renovation.com<br><br>
+                                    <strong>Telefones: </strong> 
+                                    <ul>
+                                        <li>+33 7 53 28 21 48</li>
+                                        <li>+33 6 01 86 65 86</li>
+                                    </ul>
+                                    <strong>E-mails: </strong> 
+                                    <ul>
+                                        <li>beatriz-renovation67@outlook.fr</li>
+                                        <li>info@beatrizr-renovation.com</li>
+                                    </ul>
                                 </span>
                                 @break
                             @case('en')
@@ -133,18 +140,24 @@
                             @default
                                 <span> 
                                     <strong>Adresse: </strong>16 rue de la broque 67000 Strasbourg <br>
-                                    <strong>Téléphone: </strong> +33 7 53 28 21 48 / +33 6 01 86 65 86<br>
-                                    <strong>E-mail: </strong>
-                                    beatriz-renovation67@outlook.fr / info@beatrizr-renovation.com<br>
+                                    <strong>Téléphones: </strong> 
+                                    <ul>
+                                        <li>+33 7 53 28 21 48</li>
+                                        <li>+33 6 01 86 65 86</li>
+                                    </ul>
+                                    <strong>E-mails: </strong> 
+                                    <ul>
+                                        <li>beatriz-renovation67@outlook.fr</li>
+                                        <li>info@beatrizr-renovation.com</li>
+                                    </ul>
                                 </span>
                         @endswitch
                         <br>
-                        <br>
                         <div class="social-links d-flex mt-6">
-                        <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-                        <a href="beatriz_renovation67" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                            <a href="beatriz_renovation67" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                     </div><!-- End footer info column-->
@@ -217,7 +230,7 @@
         <div class="footer-legal text-center position-relative">
             <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>Beatriz</span></strong>. All rights reserved
+                &copy; Copyright <strong><span>Beatriz-Rénovation</span></strong>. All rights reserved
             </div>
             </div>
         </div>
