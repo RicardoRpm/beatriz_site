@@ -50,10 +50,9 @@
     <div class="container" data-aos="fade-up">
       <div class="row justify-content-around gy-4">
         <div class="col-lg-5 d-flex flex-column justify-content-center">
-          <h3></h3>
           @switch(session('locale'))
               @case('pt')
-                <p>
+                <p class="text-justify">
                   Beatriz Rénovation é uma empresa
                   dedicado à transformação e
                   manutenção de espaços residenciais e
@@ -64,31 +63,42 @@
                   personalizado para melhorar seu
                   espaços de vida e de trabalho
                 </p>
-                <h3>Pourquoi Choisir Beatriz Rénovation?</h3>
-                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+
+                <strong class="mb-4">Por que escolher a Beatriz Rénovation?</strong>
+                
+                <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-1-circle flex-shrink-0"></i>
                   <div>
-                    <h4><a href="#" class="stretched-link">Qualidade e know-how</a></h4>
-                    <p>Nous offrons des services dehaute qualité en utilisant desmatériaux durables et destechniques éprouvées.</p>
+                    <h4>Qualidade e know-how</h4>
+                    <p>
+                      Oferecemos serviços de alta qualidade utilizando materiais duráveis ​​e técnicas comprovadas.  
+                    </p>
                   </div>
-                </div><!-- End Icon Box -->
-      
-                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+                </div>
+
+                <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-2-circle flex-shrink-0"></i>
                   <div>
-                    <h4><a href="#" class="stretched-link">Approche personnalisée</a></h4>
-                    <p>Chaque projet est unique. Nous
-                      proposons des solutions sur
-                      mesure adaptées à vos besoins.</p>
+                    <h4>Abordagem personalizada</h4>
+                    <p>                      
+                      Cada projeto é único. Nós
+                      oferecer soluções em
+                      medida adaptada às suas necessidades.  
+                    </p>
                   </div>
-                </div><!-- End Icon Box -->
-      
-                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                </div>
+
+                <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-3-circle flex-shrink-0"></i>
                   <div>
-                    <h4><a href="#" class="stretched-link">Respect des délais</a></h4>
-                    <p>Nous respectons les délais
-                      convenus, tout en garantissant un
-                      travail soigné et de qualité.</p>
+                    <h4>Respeito aos prazos</h4>
+                    <p>                      
+                      Respeitamos prazos
+                      acordado, garantindo ao mesmo tempo um
+                      trabalho cuidadoso e de qualidade.  
+                    </p>
                   </div>
-                </div><!-- End Icon Box -->                                  
+                </div>                             
                 @break
               @case('en')
                   <p>
@@ -130,42 +140,54 @@
                   </div><!-- End Icon Box -->        
                   @break
               @default
-              <p>
-                Beatriz Rénovation est une entreprise
-                dédiée à la transformation et à
-                l'entretien des espaces résidentiels et
-                commerciaux. Que vous ayez besoin de
-                services de nettoyage, de rénovation ou
-                d'aménagement, notre objectif est de
-                vous fournir des solutions efficaces et
-                personnalisées pour améliorer vos
-                espaces de vie et de travail
-              </p>
-              <h3>Pourquoi Choisir Beatriz Rénovation?</h3>
-              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-                <div>
-                  <h4><a href="#" class="stretched-link">Qualidade e know-how</a></h4>
-                  <p>Nous offrons des services dehaute qualité en utilisant desmatériaux durables et destechniques éprouvées.</p>
+                <p class="text-justify">
+                  Beatriz Rénovation est une entreprise
+                  dédiée à la transformation et à
+                  l'entretien des espaces résidentiels et
+                  commerciaux. Que vous ayez besoin de
+                  services de nettoyage, de rénovation ou
+                  d'aménagement, notre objectif est de
+                  vous fournir des solutions efficaces et
+                  personnalisées pour améliorer vos
+                  espaces de vie et de travail
+                </p>
+
+                <strong class="mb-4">Pourquoi Choisir Beatriz Rénovation?</strong>
+
+                <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-1-circle flex-shrink-0"></i>
+                  <div>
+                    <h4>Qualité et savoir-faire</h4>
+                    <p>
+                      Nous offrons des services dehaute qualité en 
+                      utilisant desmatériaux durables et destechniques éprouvées.
+                    </p>
+                  </div>
                 </div>
-              </div><!-- End Icon Box -->
-    
-              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-                <div>
-                  <h4><a href="#" class="stretched-link">Approche personnalisée</a></h4>
-                  <p>Chaque projet est unique. Nous
-                    proposons des solutions sur
-                    mesure adaptées à vos besoins.</p>
+
+                <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-2-circle flex-shrink-0"></i>
+                  <div>
+                    <h4>Approche personnalisée</h4>
+                    <p>
+                      Chaque projet est unique. Nous
+                      proposons des solutions sur
+                      mesure adaptées à vos besoins.
+                    </p>
+                  </div>
                 </div>
-              </div><!-- End Icon Box -->
-    
-              <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-                <div>
-                  <h4><a href="#" class="stretched-link">Respect des délais</a></h4>
-                  <p>Nous respectons les délais
-                    convenus, tout en garantissant un
-                    travail soigné et de qualité.</p>
-                </div>
-              </div><!-- End Icon Box -->                          
+
+                <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-2-circle flex-shrink-0"></i>
+                  <div>
+                    <h4>Respect des délais</h4>
+                    <p>
+                      Nous respectons les délais
+                      convenus, tout en garantissant un
+                      travail soigné et de qualité.
+                    </p>
+                  </div>
+                </div>                       
           @endswitch
           
         </div>
@@ -857,8 +879,13 @@
         <div class="row gy-4 mt-1">
 
           <div class="col-lg-6 ">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
-          </div><!-- End Google Maps -->
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.727559506893159%2C48.57699221817149%2C7.730070054531098%2C48.578211342973006&amp;layer=mapnik"  
+            frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            {{-- <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" 
+              frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen>
+            </iframe> --}}
+          </div>
 
           <div class="col-lg-6">
             <form action="javascript:void(0)" method="POST" class="php-email-form" id="form-contact">
