@@ -126,7 +126,7 @@
                                     <strong>E-mails: </strong> 
                                     <ul>
                                         <li>beatriz-renovation67@outlook.fr</li>
-                                        <li>info@beatrizr-renovation.com</li>
+                                        <li>info@beatriz-renovation.com</li>
                                     </ul>
                                 </span>
                                 @break
@@ -148,7 +148,7 @@
                                     <strong>E-mails: </strong> 
                                     <ul>
                                         <li>beatriz-renovation67@outlook.fr</li>
-                                        <li>info@beatrizr-renovation.com</li>
+                                        <li>info@beatriz-renovation.com</li>
                                     </ul>
                                 </span>
                         @endswitch
