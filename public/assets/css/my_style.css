@@ -170,3 +170,9 @@
 .navbar .dropdown ul li a {
     color: #fff;
 }
+
+.navbar ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
