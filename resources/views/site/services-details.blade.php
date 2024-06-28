@@ -38,8 +38,8 @@
                         pétrole, construction civile,
                         l'architecture et l'agriculture.
                       </p>
+                      <a href="{{ route('download-catalog', 'in') }}" >Télécharger le catalogue <i class="bi bi-arrow-right"></i></a>
                     </div>
-                    
                   </div>
                   <div class="col-lg-8">
                     <div id="products" class="products">
@@ -182,7 +182,9 @@
                         Nous prenons en charge des projets de toutes tailles, de la rénovation de 
                         petites pièces à la refonte complète de grands espaces. Notre approche sur 
                         mesure garantit que chaque projet reflète vos besoins et préférences, créant 
-                        des environnements qui sont à la fois beaux et pratiques.</p>
+                        des environnements qui sont à la fois beaux et pratiques.
+                      </p>
+                      <a href="{{ route('download-catalog', 're') }}" >Télécharger le catalogue <i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
 
@@ -359,6 +361,7 @@
                         Notre équipe dévouée utilise des techniques et des équipements 
                         de pointe pour garantir des résultats impeccables.
                       </p>
+                      <a href="{{ route('download-catalog', 'ne') }}" >Télécharger le catalogue <i class="bi bi-arrow-right"></i></a>
                     </div>
                     
                   </div>
@@ -489,6 +492,7 @@
                         petróleo, construção civil,
                         arquitetura e agricultura.
                       </p>
+                      <a href="{{ route('download-catalog', 'in') }}" >Descarregar catálogo <i class="bi bi-arrow-right"></i></a>
                     </div>
                     
                   </div>
@@ -628,17 +632,16 @@
                     </div>
                     
                     <div class="p-3">
-                      <h4>Rénovation</h4>
+                      <h4>Renovação</h4>
                       <p class="text-justify">
-                        
                         Os nossos serviços de renovação visam transformar e melhorar o seu 
                         espaços de estar e de trabalho, aliando estética e funcionalidade. 
                         Cuidamos de projetos de todos os portes, desde reformas de 
                         salas pequenas para completar a reforma de grandes espaços. Nossa abordagem para 
                         medição garante que cada projeto reflita suas necessidades e preferências, criando 
                         ambientes bonitos e práticos.
-                      
                       </p>
+                      <a href="{{ route('download-catalog', 're') }}" >Descarregar catálogo <i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
   
@@ -797,117 +800,119 @@
                 </div>
                 @break
               @case('ne')
-              <div class="row gy-4">
-                <div class="col-lg-4">
-                  <div class="services-list">
-                    <a href="{{ route('services-details', 'in') }}">Industrial</a>
-                      <a href="{{ route('services-details', 're') }}">Renovação</a>
-                      <a href="{{ route('services-details', 'ne') }}" class="active">Limpeza</a>
+                <div class="row gy-4">
+                  <div class="col-lg-4">
+                    <div class="services-list">
+                      <a href="{{ route('services-details', 'in') }}">Industrial</a>
+                        <a href="{{ route('services-details', 're') }}">Renovação</a>
+                        <a href="{{ route('services-details', 'ne') }}" class="active">Limpeza</a>
+                    </div>
+                    
+                    <div class="p-3">
+                      <h4>Limpeza</h4>
+                      <p class="text-justify">
+                        Na Beatriz Renovação, oferecemos uma ampla gama de serviços de 
+                        limpeza para atender a todas as suas necessidades, sejam elas 
+                        residenciais, comerciais ou industriais. 
+                        Nossa equipe dedicada utiliza técnicas e equipamentos de ponta
+                        para garantir resultados impecáveis.
+                      </p>
+                      <div>
+                        <a href="{{ route('download-catalog', 'ne') }}">Descarregar catálogo <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                    
                   </div>
-                  
-                  <div class="p-3">
-                    <h4>Limpeza</h4>
-                    <p class="text-justify">
-                      Na Beatriz Renovação, oferecemos uma ampla gama de serviços de 
-                      limpeza para atender a todas as suas necessidades, sejam elas 
-                      residenciais, comerciais ou industriais. 
-                      Nossa equipe dedicada utiliza técnicas e equipamentos de ponta
-                       para garantir resultados impecáveis.
-                    </p>
-                    <a href="{{ route('download-catalog', 'ne') }}" class="readmore stretched-link">Descarregar catálogo <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                  
-                </div>
-                <div class="col-lg-8">
-                  <div id="products" class="products">
-                    <div class="container aos-init aos-animate" data-aos="fade-up">
-              
-                      <div class="row gy-4">
-                        
-                        <div class="col-lg-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                          <div class="card-item">
-                            <div class="row">
-                              <div class="col-xl-6 d-flex align-items-center">
-                                <div class="card-body">
-                                  <h4 class="card-title">Limpeza de Escritórios</h4>
-                                  <p>
-                                    Mantenha um ambiente de trabalho limpo e profissional.
-                                  </p>
+                  <div class="col-lg-8">
+                    <div id="products" class="products">
+                      <div class="container aos-init aos-animate" data-aos="fade-up">
+                
+                        <div class="row gy-4">
+                          
+                          <div class="col-lg-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-item">
+                              <div class="row">
+                                <div class="col-xl-6 d-flex align-items-center">
+                                  <div class="card-body">
+                                    <h4 class="card-title">Limpeza de Escritórios</h4>
+                                    <p>
+                                      Mantenha um ambiente de trabalho limpo e profissional.
+                                    </p>
+                                  </div>
                                 </div>
+                                <div class="col-xl-6">
+                                  <div class="card-bg" style="background-image: url('{{ asset("assets/img/office-clean.jpg") }}');"></div>
+                                </div>
+                                
                               </div>
-                              <div class="col-xl-6">
-                                <div class="card-bg" style="background-image: url('{{ asset("assets/img/office-clean.jpg") }}');"></div>
-                              </div>
-                              
                             </div>
                           </div>
-                        </div>
 
-                        <div class="col-lg-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                          <div class="card-item">
-                            <div class="row">
-                              
-                              <div class="col-xl-6">
-                                <div class="card-bg" style="background-image: url('{{ asset("assets/img/build-clear.jpg") }}');"></div>
-                              </div>
-                              
-                              <div class="col-xl-6 d-flex align-items-center">
-                                <div class="card-body">
-                                  <h4 class="card-title">Limpeza Pós-obra</h4>
-                                  <p>
-                                    Deixe-nos cuidar dos detritos e da sujeira 
-                                    após suas obras de construção ou reforma.
-                                  </p>
+                          <div class="col-lg-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-item">
+                              <div class="row">
+                                
+                                <div class="col-xl-6">
+                                  <div class="card-bg" style="background-image: url('{{ asset("assets/img/build-clear.jpg") }}');"></div>
+                                </div>
+                                
+                                <div class="col-xl-6 d-flex align-items-center">
+                                  <div class="card-body">
+                                    <h4 class="card-title">Limpeza Pós-obra</h4>
+                                    <p>
+                                      Deixe-nos cuidar dos detritos e da sujeira 
+                                      após suas obras de construção ou reforma.
+                                    </p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="col-lg-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                          <div class="card-item">
-                            <div class="row">
-                              <div class="col-xl-6 d-flex align-items-center">
-                                <div class="card-body">
-                                  <h4 class="card-title">Limpeza de Quartos de Hotel</h4>
-                                  <p>
-                                    Garanta uma estadia confortável e higiênica para seus clientes.
-                                  </p>
+                          <div class="col-lg-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-item">
+                              <div class="row">
+                                <div class="col-xl-6 d-flex align-items-center">
+                                  <div class="card-body">
+                                    <h4 class="card-title">Limpeza de Quartos de Hotel</h4>
+                                    <p>
+                                      Garanta uma estadia confortável e higiênica para seus clientes.
+                                    </p>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="col-xl-6">
-                                <div class="card-bg" style="background-image: url('{{ asset("assets/img/hotel-room.jpg") }}');"></div>
-                              </div>
-                              
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-lg-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                          <div class="card-item">
-                            <div class="row">
-                              
-                              <div class="col-xl-6">
-                                <div class="card-bg" style="background-image: url('{{ asset("assets/img/coky-clean.jpeg") }}');"></div>
-                              </div>
-                              
-                              <div class="col-xl-6 d-flex align-items-center">
-                                <div class="card-body">
-                                  <h4 class="card-title">Limpeza de Cozinhas Profissionais</h4>
-                                  <p>
-                                    Garanta a limpeza e higiene de suas instalações culinárias.
-                                  </p>
+                                <div class="col-xl-6">
+                                  <div class="card-bg" style="background-image: url('{{ asset("assets/img/hotel-room.jpg") }}');"></div>
                                 </div>
+                                
                               </div>
                             </div>
                           </div>
-                        </div>
 
+                          <div class="col-lg-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-item">
+                              <div class="row">
+                                
+                                <div class="col-xl-6">
+                                  <div class="card-bg" style="background-image: url('{{ asset("assets/img/coky-clean.jpeg") }}');"></div>
+                                </div>
+                                
+                                <div class="col-xl-6 d-flex align-items-center">
+                                  <div class="card-body">
+                                    <h4 class="card-title">Limpeza de Cozinhas Profissionais</h4>
+                                    <p>
+                                      Garanta a limpeza e higiene de suas instalações culinárias.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
               @break
 
         @endswitch
