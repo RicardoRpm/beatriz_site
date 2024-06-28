@@ -814,7 +814,7 @@
                       Nossa equipe dedicada utiliza técnicas e equipamentos de ponta
                        para garantir resultados impecáveis.
                     </p>
-                    <a href="{{ route('services-details', 'in') }}" class="readmore stretched-link">Descarregar catálogo <i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ route('download-catalog', 'ne') }}" class="readmore stretched-link">Descarregar catálogo <i class="bi bi-arrow-right"></i></a>
                   </div>
                   
                 </div>

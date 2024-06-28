@@ -97,4 +97,50 @@ class HomeController extends Controller
             'detail' => trim($detail) 
         ]);
     }
+
+    public function catalog(string $serv)
+    {
+        $headers = [
+            'Content-Type' => 'application/pdf',
+        ];
+        
+        switch ($serv) {
+            case 'in':
+                switch (session('locale')) {
+                    case 'pt':
+                        return response()->download(public_path('assets/catalogs/INDUSTRIAL-PT.pdf') , 'CATALOGO-INDDUSTRIAL-PT.pdf', $headers);
+                        break;
+                    case 'fr':
+                        return response()->download(public_path('assets/catalogs/INDUSTRIAL-PT.pdf') , 'CATALOGO-INDDUSTRIAL-PT.pdf', $headers);
+                        break;                    
+                }
+                break;
+                case 're':
+                    switch (session('locale')) {
+                        case 'pt':
+
+                            return response()->download(public_path('assets/catalogs/INDUSTRIAL-PT.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
+
+                            break;
+                        case 'fr':
+                            return response()->download(public_path('assets/catalogs/RENOVATION-FR.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
+
+                            break;                    
+                    }
+                    break;
+                case 'ne':
+                    switch (session('locale')) {
+                        case 'pt':
+                                return response()->download(public_path('assets/catalogs/INDUSTRIAL-PT.pdf') , 'CATALOGO-LIMPEZA-PT.pdf', $headers);
+                            break;
+                        case 'fr':
+    
+                                return response()->download(public_path('assets/catalogs/INDUSTRIAL-PT.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
+
+                            break;                    
+                    }
+                    break;
+            
+        }
+    }
 }
