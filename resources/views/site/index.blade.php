@@ -13,13 +13,23 @@
           <div class="col-lg-6 text-center">
             @if (session('locale') === 'fr')  
               <h2 data-aos="fade-down">Bienvenue chez Beatriz Rénovation</h2>
-              <p data-aos="fade-up">Donnez vie à vos rêves de rénovation et profitez d'un nettoyage professionnel et complet. Explorez notre site pour découvrir nos services de rénovation et de nettoyage.</p>
+              <p data-aos="fade-up">
+                Donnez vie à vos rêves de rénovation, profitez d'un nettoyage professionnel 
+                et découvrez nos produits industriels de haute qualité. Explorez notre site pour 
+                découvrir nos services de rénovation, de nettoyage, et nos matériaux et produits 
+                pour divers secteurs (Hospitalier, Industriels, Administration et Grande Distribution)
+              </p>
             @elseif (session('locale') === 'en')
               <h2 data-aos="fade-down">Welcome to Beatriz Rénovation</h2>
               <p data-aos="fade-up">Bring your renovation dreams to life and enjoy a professional and complete cleaning. Explore our site to discover our renovation and cleaning services.</p>          
             @elseif (session('locale') === 'pt')
               <h2 data-aos="fade-down">Bem-vindo à Beatriz Rénovation</h2>
-              <p data-aos="fade-up">Dê vida aos seus sonhos de renovação e desfrute de uma limpeza profissional e completa. Explore nosso site para descobrir nossos serviços de renovação e limpeza.</p>
+              <p data-aos="fade-up">
+                Dê vida aos seus sonhos de renovação, desfrute de uma limpeza profissional e descubra 
+                os nossos produtos industriais de elevada qualidade. Explore o nosso site para 
+                conhecer os nossos serviços de renovação e limpeza, e os nossos materiais e produtos ~
+                para diversos setores (Hospitalar, Industrial, Administração e Grande Distribuição)  
+              </p>
             @endif
           </div>
         </div>
@@ -32,6 +42,9 @@
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/3.jpg); height: 100%; width: 100%;"></div>
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/4.jpg); height: 100%; width: 100%;"></div>
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/5.jpg); height: 100%; width: 100%;"></div>
+
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/6.jpg); height: 100%; width: 100%;"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/7.jpg); height: 100%; width: 100%;"></div>
       
       <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
