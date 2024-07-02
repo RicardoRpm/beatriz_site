@@ -108,7 +108,7 @@ class HomeController extends Controller
             case 'in':
                 switch (session('locale')) {
                     case 'pt':
-                        return response()->download(public_path('assets/catalogs/INDUSTRIAL-PT.pdf') , 'CATALOGO-INDDUSTRIAL-PT.pdf', $headers);
+                        return response()->download(public_path('assets/catalogs/INDUSTRIAL - PT.pdf') , 'CATALOGO-INDDUSTRIAL-PT.pdf', $headers);
                         break;
                     case 'fr':
                         return response()->download(public_path('assets/catalogs/INDUSTRIAL-PT.pdf') , 'CATALOGO-INDDUSTRIAL-PT.pdf', $headers);
@@ -119,11 +119,11 @@ class HomeController extends Controller
                     switch (session('locale')) {
                         case 'pt':
 
-                            return response()->download(public_path('assets/catalogs/INDUSTRIAL-PT.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
+                            return response()->download(public_path('assets/catalogs/RENOVATION - PT.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
 
                             break;
                         case 'fr':
-                            return response()->download(public_path('assets/catalogs/RENOVATION-FR.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
+                            return response()->download(public_path('assets/catalogs/RENOVATION - FR.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
 
                             break;                    
                     }
