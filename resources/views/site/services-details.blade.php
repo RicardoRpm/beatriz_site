@@ -971,15 +971,13 @@
                                     <p>
                                       Nous fournissons du matériel
                                       spécialisé pour les plateformes
-                                      les compagnies pétrolières et nous avons des pièces
+                                      les compagnies pétrolières et nous avons des
                                       pièces de rechange pour entretenir votre
                                       installations en parfait état
                                       De fonctionnement.
-                                      Nos ingénieurs
-                                      des personnes compétentes peuvent vous aider
-                                      sur place pour l'installation,
-                                      entretien et réparation de
-                                      votre équipement.  
+                                      Nos ingénieurs sont en mesure  de réaliser 
+                                      des changements sur place, pour l'installation, 
+                                      entretien et réparation des vous équipements.
                                     </p>
                                   </div>
                                 </div>

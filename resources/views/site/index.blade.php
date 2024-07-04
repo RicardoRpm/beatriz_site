@@ -187,7 +187,7 @@
                 </div>
 
                 <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bi bi-2-circle flex-shrink-0"></i>
+                  <i class="bi bi-3-circle flex-shrink-0"></i>
                   <div>
                     <h4>Respect des délais</h4>
                     <p>
@@ -520,7 +520,7 @@
                   <div class="row">
                     <div class="col-xl-7 d-flex align-items-center">
                       <div class="card-body">
-                        <h4 class="card-title"> Matériaux en Marbre </h4>
+                        <h4 class="card-title"> Hospitalier </h4>
                         <p>
                           Nous fournissons un
                           large gamme de marbres
