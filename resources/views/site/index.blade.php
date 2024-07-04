@@ -14,9 +14,10 @@
             @if (session('locale') === 'fr')  
               <h2 data-aos="fade-down">Bienvenue chez Beatriz Rénovation</h2>
               <p data-aos="fade-up">
-                Explorez notre site pour découvrir nos services de rénovation, 
-                de nettoyage, et nos matériaux et produits pour divers secteurs 
-                (Hospitalier, Industriels, Administration et Grande Distribution)
+                Via nos partenaires, nous proposons la vente des matériaux 
+                industriels sur les réseaux construction civil, plate-forme pétrolière, 
+                hospitalière, secteur agricole, les grandes distribution pharmaceutiques, 
+                chimiques, et plus…
               </p>
             @elseif (session('locale') === 'en')
               <h2 data-aos="fade-down">Welcome to Beatriz Rénovation</h2>
@@ -24,9 +25,10 @@
             @elseif (session('locale') === 'pt')
               <h2 data-aos="fade-down">Bem-vindo à Beatriz Rénovation</h2>
               <p data-aos="fade-up">                
-                Explore nosso site para descobrir nossos serviços de renovação, 
-                limpeza, e nossos materiais e produtos para diversos setores 
-                (Hospitalar, Industrial, Administração e Distribuição Massiva)
+                Através dos nossos parceiros, oferecemos a venda de materiais 
+                redes industriais na construção civil, plataformas petrolíferas, 
+                hospitalar, setor agrícola, grande distribuição farmacêutica, 
+                produtos químicos e mais…
               </p>
             @endif
           </div>
@@ -216,9 +218,9 @@
             @case('pt')
               <h2>Serviços</h2>
               <p>
-                Nossa empresa está comprometida em fornecer 
-                soluções sob medida para atender às necessidades de nossos clientes,
-                garantindo segurança, eficiência e qualidade em cada projeto.
+                Somos especializados em equipamentos para indústrias internacionais. 
+                Gerenciamento de serviços como desmontagem e remontagem de equipamentos e também 
+                renovação e limpeza interior/exterior.
               </p>  
               @break
             @case('en')
@@ -232,9 +234,9 @@
             @default
               <h2>Services</h2>
               <p>                
-                Notre entreprise s'engage à fournir 
-                des solutions sur mesure pour répondre aux besoins de nos clients,
-                assurer la sécurité, l’efficacité et la qualité de chaque projet.
+                Nous sommes spécialisés dans le matériel à destinations des industries internationales. 
+                La gestion de services tels que les démontage des équipements et remontage et aussi la 
+                rénovation de intérieur / extérieur et nettoyage.
               </p>
         @endswitch       
       </div>
