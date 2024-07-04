@@ -331,7 +331,7 @@
                       maintenance de routine, nous avons l'expertise nécessaire pour soutenir 
                       vos opérations industrielles.
                     </p>  
-                    <a href="{{ route('services-details', 'in') }}" class="readmore stretched-link">Apprendre encore plus <i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ route('services-details', 'in') }}" class="readmore stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
 
@@ -350,7 +350,7 @@
                       des environnements qui sont à la fois beaux et pratiques.
                     </p>
                     <br>
-                    <a href="{{ route('services-details', 're') }}" class="readmore stretched-link">Apprendre encore plus <i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ route('services-details', 're') }}" class="readmore stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
 
@@ -369,7 +369,7 @@
                     </p>  
                     <br>
                     <br>
-                    <a href="{{ route('services-details', 'ne') }}" class="readmore stretched-link">Apprendre encore plus <i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ route('services-details', 'ne') }}" class="readmore stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
         @endswitch
@@ -386,8 +386,7 @@
             <div class="section-header">
               <h2>Nossos Produtos</h2>
               <p>
-                Comercializamos uma grande variedade de equipamentos industriais, materiais de mármore e 
-                construção, incluindo concreto, aço e outros produtos essenciais.
+                Oferecemos uma gama diversificada de produtos e equipamentos para diversos setores.
               </p>
             </div>
 
@@ -508,105 +507,109 @@
             </div>
             @break
           @default
-          <div class="section-header">
-            <h2>Nos Produits</h2>
-            <p>
-              Nous vendons une grande variété d'équipements industriels, de matériaux en marbre et 
-              construction, y compris le béton, l’acier et d’autres produits essentiels.
-            </p>
-          </div>
+            <div class="section-header">
+              <h2>Nos Produits</h2>
+              <p>
+                Nous offrons une gamme variée de produits et équipements pour divers secteurs.
+              </p>
+            </div>
 
-          <div class="row gy-4">
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title"> Matériaux en Marbre </h4>
-                      <p>
-                        Nous fournissons un
-                        large gamme de marbres
-                        haute qualité,
-                        parfait pour différents
-                        des projets de construction et
-                        architecture. Nos billes
-                        sont disponibles
-                        en différentes couleurs et
-                        finitions, adaptées
-                        à tous vos besoins
-                        esthétique et
-                        fonctionnel
-                      </p>
+            <div class="row gy-4">
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Matériaux en Marbre </h4>
+                        <p>
+                          Nous fournissons un
+                          large gamme de marbres
+                          haute qualité,
+                          parfait pour différents
+                          des projets de construction et
+                          architecture. Nos billes
+                          sont disponibles
+                          en différentes couleurs et
+                          finitions, adaptées
+                          à tous vos besoins
+                          esthétique et
+                          fonctionnel
+                        </p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('{{ asset('assets/img/granito.jpg') }}?v={{ time() }}')"></div>
-                  </div>
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/granito.jpg') }}?v={{ time() }}')"></div>
+                    </div>
 
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Matériaux de Construction</h4>
+                        <p>
+                          Nous vendons
+                          une grande variété
+                          de matériaux provenant de
+                          construction, y compris
+                          béton,
+                          acier et autres produits
+                          essentiel
+                          pour construction
+                          civil.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Équipement Industriel </h4>
+                        <p>
+                          Notre catalogue
+                          comprend des machines
+                          sophistiqué
+                          la dernière génération,
+                          ainsi que des pièces
+                          remplacement pour
+                          améliorer et entretenir
+                          vos installations
+                          industriel.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
-                  </div>
-
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        Matériaux de Construction</h4>
-                      <p>
-                        Nous vendons
-                        une grande variété
-                        de matériaux provenant de
-                        construction, y compris
-                        béton,
-                        acier et autres produits
-                        essentiel
-                        pour construction
-                        civil.
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title"> Équipement Industriel </h4>
-                      <p>
-                        Notre catalogue
-                        comprend des machines
-                        sophistiqué
-                        la dernière génération,
-                        ainsi que des pièces
-                        remplacement pour
-                        améliorer et entretenir
-                        vos installations
-                        industriel.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
+            <div class="row gy-4">
+              
+            </div>  
       @endswitch
+
     </div>
   </section><!-- End Our Projects Section -->    
 
