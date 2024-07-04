@@ -187,7 +187,7 @@
                 </div>
 
                 <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bi bi-2-circle flex-shrink-0"></i>
+                  <i class="bi bi-3-circle flex-shrink-0"></i>
                   <div>
                     <h4>Respect des délais</h4>
                     <p>
