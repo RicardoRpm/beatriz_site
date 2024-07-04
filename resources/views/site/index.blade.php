@@ -520,7 +520,7 @@
                   <div class="row">
                     <div class="col-xl-7 d-flex align-items-center">
                       <div class="card-body">
-                        <h4 class="card-title"> Hospitalier </h4>
+                        <h4 class="card-title"> Matériaux en Marbre </h4>
                         <p>
                           Nous fournissons un
                           large gamme de marbres
