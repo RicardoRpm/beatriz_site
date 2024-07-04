@@ -14,21 +14,19 @@
             @if (session('locale') === 'fr')  
               <h2 data-aos="fade-down">Bienvenue chez Beatriz Rénovation</h2>
               <p data-aos="fade-up">
-                Donnez vie à vos rêves de rénovation, profitez d'un nettoyage professionnel 
-                et découvrez nos produits industriels de haute qualité. Explorez notre site pour 
-                découvrir nos services de rénovation, de nettoyage, et nos matériaux et produits 
-                pour divers secteurs (Hospitalier, Industriels, Administration et Grande Distribution)
+                Explorez notre site pour découvrir nos services de rénovation, 
+                de nettoyage, et nos matériaux et produits pour divers secteurs 
+                (Hospitalier, Industriels, Administration et Grande Distribution)
               </p>
             @elseif (session('locale') === 'en')
               <h2 data-aos="fade-down">Welcome to Beatriz Rénovation</h2>
               <p data-aos="fade-up">Bring your renovation dreams to life and enjoy a professional and complete cleaning. Explore our site to discover our renovation and cleaning services.</p>          
             @elseif (session('locale') === 'pt')
               <h2 data-aos="fade-down">Bem-vindo à Beatriz Rénovation</h2>
-              <p data-aos="fade-up">
-                Dê vida aos seus sonhos de renovação, desfrute de uma limpeza profissional e descubra 
-                os nossos produtos industriais de elevada qualidade. Explore o nosso site para 
-                conhecer os nossos serviços de renovação e limpeza, e os nossos materiais e produtos ~
-                para diversos setores (Hospitalar, Industrial, Administração e Grande Distribuição)  
+              <p data-aos="fade-up">                
+                Explore nosso site para descobrir nossos serviços de renovação, 
+                limpeza, e nossos materiais e produtos para diversos setores 
+                (Hospitalar, Industrial, Administração e Distribuição Massiva)
               </p>
             @endif
           </div>
@@ -66,15 +64,12 @@
           @switch(session('locale'))
               @case('pt')
                 <p class="text-justify">
-                  Beatriz Rénovation é uma empresa
-                  dedicado à transformação e
-                  manutenção de espaços residenciais e
-                  comercial. Se você precisa
-                  limpeza, reforma ou
-                  desenvolvimento, nosso objetivo é
-                  fornecer soluções eficazes e
-                  personalizado para melhorar seu
-                  espaços de vida e de trabalho
+                  Beatriz Rénovation é uma empresa que se dedica à transformação e manutenção 
+                  de espaços residenciais e comerciais. Oferecemos serviços de limpeza, 
+                  reforma e incorporação, e comercializamos uma variada gama de produtos e equipamentos para diversos setores 
+                  (Hospitalar, Industrial, Administração e Grande Varejo). Nossos engenheiros podem auxiliar suas empresas na 
+                  instalação das máquinas vendidas. Nosso objetivo é fornecer soluções eficazes e personalizadas para
+                   melhorar seus espaços de vida e de trabalho.
                 </p>
 
                 <strong class="mb-4">Por que escolher a Beatriz Rénovation?</strong>
@@ -84,7 +79,8 @@
                   <div>
                     <h4>Qualidade e know-how</h4>
                     <p>
-                      Oferecemos serviços de alta qualidade utilizando materiais duráveis ​​e técnicas comprovadas.  
+                      Oferecemos serviços de alta qualidade utilizando materiais duráveis 
+                      ​​e técnicas comprovadas. Também vendemos produtos e materiais de construção de qualidade premium. 
                     </p>
                   </div>
                 </div>
@@ -93,10 +89,10 @@
                   <i class="bi bi-2-circle flex-shrink-0"></i>
                   <div>
                     <h4>Abordagem personalizada</h4>
-                    <p>                      
-                      Cada projeto é único. Nós
-                      oferecer soluções em
-                      medida adaptada às suas necessidades.  
+                    <p>              
+                      Cada projeto é único. Oferecemos soluções à medida e adaptadas às suas necessidades, 
+                      seja para renovação, limpeza ou remodelação. Nossos engenheiros estão à disposição 
+                      para garantir a correta instalação de nossas máquinas no local.  
                     </p>
                   </div>
                 </div>
@@ -106,9 +102,9 @@
                   <div>
                     <h4>Respeito aos prazos</h4>
                     <p>                      
-                      Respeitamos prazos
-                      acordado, garantindo ao mesmo tempo um
-                      trabalho cuidadoso e de qualidade.  
+                      Respeitamos os prazos acordados, garantindo ao mesmo tempo um trabalho cuidado e de qualidade. 
+                      Nossa equipe se dedica a fornecer soluções completas, incluindo desmontagem, manuseio e transporte 
+                      de equipamentos.
                     </p>
                   </div>
                 </div>                             
@@ -154,15 +150,14 @@
                   @break
               @default
                 <p class="text-justify">
-                  Beatriz Rénovation est une entreprise
-                  dédiée à la transformation et à
-                  l'entretien des espaces résidentiels et
-                  commerciaux. Que vous ayez besoin de
-                  services de nettoyage, de rénovation ou
-                  d'aménagement, notre objectif est de
-                  vous fournir des solutions efficaces et
-                  personnalisées pour améliorer vos
-                  espaces de vie et de travail
+                  Beatriz Rénovation est une entreprise dédiée à la transformation et à 
+                  l'entretien des espaces résidentiels et commerciaux. Nous offrons des 
+                  services de nettoyage, de rénovation, d'aménagement, et vendons une 
+                  gamme variée de produits et équipements pour divers secteurs 
+                  (Hospitalier, Industriels, Administration et Grande Distribution). 
+                  Nos ingénieurs peuvent assister vos entreprises lors de l'installation des 
+                  machines vendues. Notre objectif est de vous fournir des solutions efficaces 
+                  et personnalisées pour améliorer vos espaces de vie et de travail.
                 </p>
 
                 <strong class="mb-4">Pourquoi Choisir Beatriz Rénovation?</strong>
@@ -172,8 +167,9 @@
                   <div>
                     <h4>Qualité et savoir-faire</h4>
                     <p>
-                      Nous offrons des services dehaute qualité en 
-                      utilisant desmatériaux durables et destechniques éprouvées.
+                      Nous offrons des services de haute qualité en utilisant 
+                      des matériaux durables et des techniques éprouvées. 
+                      Nous vendons également des produits et matériaux de construction de première qualité.
                     </p>
                   </div>
                 </div>
@@ -183,9 +179,9 @@
                   <div>
                     <h4>Approche personnalisée</h4>
                     <p>
-                      Chaque projet est unique. Nous
-                      proposons des solutions sur
-                      mesure adaptées à vos besoins.
+                      Chaque projet est unique. Nous proposons des solutions sur mesure adaptées à vos besoins,
+                       que ce soit pour la rénovation, le nettoyage ou l'aménagement. 
+                       Nos ingénieurs sont disponibles pour assurer l'installation correcte de nos machines sur site.
                     </p>
                   </div>
                 </div>
@@ -195,9 +191,9 @@
                   <div>
                     <h4>Respect des délais</h4>
                     <p>
-                      Nous respectons les délais
-                      convenus, tout en garantissant un
-                      travail soigné et de qualité.
+                      Nous respectons les délais convenus, tout en garantissant un travail soigné et de qualité. 
+                      Notre équipe est dédiée à fournir des solutions complètes, y compris le démontage, 
+                      la manutention et le transport des équipements.
                     </p>
                   </div>
                 </div>                       
@@ -335,7 +331,7 @@
                       maintenance de routine, nous avons l'expertise nécessaire pour soutenir 
                       vos opérations industrielles.
                     </p>  
-                    <a href="{{ route('services-details', 'in') }}" class="readmore stretched-link">Apprendre encore plus <i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ route('services-details', 'in') }}" class="readmore stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
 
@@ -354,7 +350,7 @@
                       des environnements qui sont à la fois beaux et pratiques.
                     </p>
                     <br>
-                    <a href="{{ route('services-details', 're') }}" class="readmore stretched-link">Apprendre encore plus <i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ route('services-details', 're') }}" class="readmore stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
 
@@ -373,7 +369,7 @@
                     </p>  
                     <br>
                     <br>
-                    <a href="{{ route('services-details', 'ne') }}" class="readmore stretched-link">Apprendre encore plus <i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ route('services-details', 'ne') }}" class="readmore stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
         @endswitch
@@ -390,8 +386,7 @@
             <div class="section-header">
               <h2>Nossos Produtos</h2>
               <p>
-                Comercializamos uma grande variedade de equipamentos industriais, materiais de mármore e 
-                construção, incluindo concreto, aço e outros produtos essenciais.
+                Oferecemos uma gama diversificada de produtos e equipamentos para diversos setores.
               </p>
             </div>
 
@@ -512,105 +507,109 @@
             </div>
             @break
           @default
-          <div class="section-header">
-            <h2>Nos Produits</h2>
-            <p>
-              Nous vendons une grande variété d'équipements industriels, de matériaux en marbre et 
-              construction, y compris le béton, l’acier et d’autres produits essentiels.
-            </p>
-          </div>
+            <div class="section-header">
+              <h2>Nos Produits</h2>
+              <p>
+                Nous offrons une gamme variée de produits et équipements pour divers secteurs.
+              </p>
+            </div>
 
-          <div class="row gy-4">
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title"> Matériaux en Marbre </h4>
-                      <p>
-                        Nous fournissons un
-                        large gamme de marbres
-                        haute qualité,
-                        parfait pour différents
-                        des projets de construction et
-                        architecture. Nos billes
-                        sont disponibles
-                        en différentes couleurs et
-                        finitions, adaptées
-                        à tous vos besoins
-                        esthétique et
-                        fonctionnel
-                      </p>
+            <div class="row gy-4">
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Matériaux en Marbre </h4>
+                        <p>
+                          Nous fournissons un
+                          large gamme de marbres
+                          haute qualité,
+                          parfait pour différents
+                          des projets de construction et
+                          architecture. Nos billes
+                          sont disponibles
+                          en différentes couleurs et
+                          finitions, adaptées
+                          à tous vos besoins
+                          esthétique et
+                          fonctionnel
+                        </p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('{{ asset('assets/img/granito.jpg') }}?v={{ time() }}')"></div>
-                  </div>
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/granito.jpg') }}?v={{ time() }}')"></div>
+                    </div>
 
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Matériaux de Construction</h4>
+                        <p>
+                          Nous vendons
+                          une grande variété
+                          de matériaux provenant de
+                          construction, y compris
+                          béton,
+                          acier et autres produits
+                          essentiel
+                          pour construction
+                          civil.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Équipement Industriel </h4>
+                        <p>
+                          Notre catalogue
+                          comprend des machines
+                          sophistiqué
+                          la dernière génération,
+                          ainsi que des pièces
+                          remplacement pour
+                          améliorer et entretenir
+                          vos installations
+                          industriel.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
-                  </div>
-
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        Matériaux de Construction</h4>
-                      <p>
-                        Nous vendons
-                        une grande variété
-                        de matériaux provenant de
-                        construction, y compris
-                        béton,
-                        acier et autres produits
-                        essentiel
-                        pour construction
-                        civil.
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title"> Équipement Industriel </h4>
-                      <p>
-                        Notre catalogue
-                        comprend des machines
-                        sophistiqué
-                        la dernière génération,
-                        ainsi que des pièces
-                        remplacement pour
-                        améliorer et entretenir
-                        vos installations
-                        industriel.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
+            <div class="row gy-4">
+              
+            </div>  
       @endswitch
+
     </div>
   </section><!-- End Our Projects Section -->    
 
