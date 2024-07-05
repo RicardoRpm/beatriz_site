@@ -472,13 +472,10 @@
                       <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                         <div class="carousel-inner">
                           <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/textil.jpeg')"></div>
+                            <div class="card-bg" style="background-image: url('assets/img/textil.jpg')"></div>
                           </div>
                           <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/farmacia.jpeg')"></div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/agroalimentar.jpeg')"></div>
+                            <div class="card-bg" style="background-image: url('assets/img/farmacia.jpg')"></div>
                           </div>
                           <div class="carousel-item active">
                             <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpg')"></div>
@@ -695,13 +692,10 @@
                       <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                         <div class="carousel-inner">
                           <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/textil.jpeg')"></div>
+                            <div class="card-bg" style="background-image: url('assets/img/textil.jpg')"></div>
                           </div>
                           <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/farmacia.jpeg')"></div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/agroalimentar.jpeg')"></div>
+                            <div class="card-bg" style="background-image: url('assets/img/farmacia.jpg')"></div>
                           </div>
                           <div class="carousel-item active">
                             <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpg')"></div>

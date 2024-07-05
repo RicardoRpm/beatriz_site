@@ -29,8 +29,7 @@
                       <h4>Industriels</h4>
                       <p class="text-justify">
                         Chez Béatriz Rénovation, nous sommes
-                        spécialisé dans une gamme
-                        gamme complète de services industriels,
+                        spécialisé dans une gamme complète de services industriels,
                         des matériaux à
                         installation et pièces
                         équipement industriel. Nous couvrons
@@ -56,7 +55,7 @@
                                     <p>
                                       Nous fournissons du matériel
                                       spécialisé pour les plateformes
-                                      les compagnies pétrolières et nous avons des pièces
+                                      les compagnies pétrolières et nous avons des
                                       pièces de rechange pour entretenir votre
                                       installations en parfait état
                                       De fonctionnement.
@@ -112,15 +111,13 @@
                                   <div class="card-body">
                                     <h4 class="card-title">Architecture</h4>
                                     <p>
-                                      Nos services incluent
-                                      aussi des solutions
-                                      des conceptions architecturales innovantes.
-                                      Nous vendons du matériel
-                                      architecturale haut de gamme,
-                                      y compris des marbres de haute qualité
-                                      qualité, et nous offrons
-                                      services d'installation pour
-                                      leurs projets architecturaux. 
+                                      Nos architectes ont été sélectionnés pour leur 
+                                      capacité à comprendre vos besoins et à adapter 
+                                      les projets à votre budget. Nous disposons d'un 
+                                      réseau local d'artisans qualifiés au travers d'un 
+                                      partenariat avec La B.R.I à Strasbourg, garantissant 
+                                      sérieux et qualité dans chaque prestation. 
+                                      Réalisez votre projet en toute sérénité avec B.R.I Architectes !
                                     </p>
                                   </div>
                                 </div>
@@ -144,16 +141,12 @@
                                   <div class="card-body">
                                     <h4 class="card-title">Agriculture</h4>
                                     <p>
-                                      Nous proposons une large gamme
-                                      de matériaux de construction
-                                      de haute qualité, en béton
-                                      même les structures métalliques.
-                                      Nos équipes d'ingénierie
-                                      et les techniciens peuvent garantir le
-                                      l'installation et l'entretien de
-                                      équipement, assurant la
-                                      la sécurité et l'efficacité de
-                                      vos projets de construction.
+                                      Répondez à vos besoins grâce à notre expertise en vente agricole. 
+                                      Chez B.R.I, nous priorisons la gestion d’équipe et proposons des 
+                                      machines personnalisées et des services de qualité qui ajoutent de la valeur.
+                                      Nous mettons notre savoir-faire au service du développement de vos projets, 
+                                      vous aidant à vous épanouir dans la profession et à affronter les défis 
+                                      futurs en toute sérénité.
                                     </p>
                                   </div>
                                 </div>
@@ -567,15 +560,11 @@
                                   <div class="card-body">
                                     <h4 class="card-title">Arquitetura</h4>
                                     <p>
-                                      Nossos serviços incluem
-                                      também soluções
-                                      projetos arquitetônicos inovadores.
-                                      Vendemos equipamentos
-                                      arquitetura de alta qualidade,
-                                      incluindo mármores de alta qualidade
-                                      qualidade e oferecemos
-                                      serviços de instalação para
-                                      seus projetos arquitetônicos. 
+                                      Nossos arquitetos foram selecionados pela habilidade de entender suas 
+                                      necessidades e adaptar projetos ao seu orçamento. Contamos com uma rede local 
+                                      de artesãos qualificados através da parceria com La B.R.I de Estrasburgo, 
+                                      garantindo seriedade e qualidade em cada serviço. 
+                                      Realize seu projeto com tranquilidade junto à B.R.I Architectes!
                                     </p>
                                   </div>
                                 </div>
@@ -599,16 +588,11 @@
                                   <div class="card-body">
                                     <h4 class="card-title">Agricultura</h4>
                                     <p>
-                                      Oferecemos uma ampla gama
-                                      de materiais de construção
-                                      alta qualidade, feito de concreto
-                                      até mesmo estruturas metálicas.
-                                      Nossas equipes de engenharia
-                                      e técnicos podem garantir o
-                                      instalação e manutenção de
-                                      equipamentos, garantindo a
-                                      a segurança e a eficácia
-                                      seus projetos de construção.
+                                      Atenda suas necessidades com nossa expertise em vendas agrícolas. 
+                                      Na B.R.I, priorizamos a gestão de equipe e oferecemos máquinas 
+                                      personalizadas e serviços de qualidade que agregam valor. 
+                                      Utilizamos nosso know-how para desenvolver seus projetos, ajudando-o a 
+                                      prosperar na profissão e enfrentar os desafios futuros com confiança.
                                     </p>
                                   </div>
                                 </div>
@@ -944,7 +928,7 @@
                       <h4>Industriels</h4>
                       <p class="text-justify">
                         NChez Béatriz Rénovation, nous sommes
-                        spécialisé dans une gamme
+                        spécialisé dans une
                         gamme complète de services industriels,
                         des matériaux à
                         installation et pièces
@@ -956,6 +940,7 @@
                     </div>
                     
                   </div>
+
                   <div class="col-lg-8">
                     <div id="constructions" class="constructions">
                       <div class="container aos-init aos-animate" data-aos="fade-up">
@@ -1025,15 +1010,14 @@
                                   <div class="card-body">
                                     <h4 class="card-title">Architecture</h4>
                                     <p>
-                                      Nos services incluent
-                                      aussi des solutions
-                                      des conceptions architecturales innovantes.
-                                      Nous vendons du matériel
-                                      architecturale haut de gamme,
-                                      y compris des marbres de haute qualité
-                                      qualité, et nous offrons
-                                      services d'installation pour
-                                      leurs projets architecturaux. 
+                                      Parce que la décision de faire des travaux de rénovation 
+                                      implique de mettre en œuvre des moyens parfois importants y 
+                                      compris sur le plan financier, nos architectes ont été sélectionnés 
+                                      pour leur capacité à comprendre vos besoins et à s’adapter à 
+                                      votre projet et à votre budget.De plus, grâce à notre partenaire 
+                                      La B.R.I de Strasbourg, nos architectes ont à disposition un réseau 
+                                      local d’artisans qualifiés qui s’engagent sur le sérieux et la qualité 
+                                      de leurs prestations.Avec B.R.I Architectes, réalisez votre projet en toute sérénité!
                                     </p>
                                   </div>
                                 </div>
