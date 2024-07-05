@@ -499,9 +499,11 @@
                           <div class="carousel-item">
                             <div class="card-bg" style="background-image: url('assets/img/textil.jpg')"></div>
                           </div>
+
                           <div class="carousel-item">
                             <div class="card-bg" style="background-image: url('assets/img/farmacia.jpg')"></div>
                           </div>
+
                           <div class="carousel-item active">
                             <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpg')"></div>
                           </div>
@@ -537,6 +539,12 @@
                           <div class="carousel-item active">
                             <div class="card-bg" style="background-image: url('assets/img/hospital.jpg')"></div>
                           </div>
+
+                          
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/medicamentos.jpg')"></div>
+                          </div>
+
                           <div class="carousel-item">
                             <div class="card-bg" style="background-image: url('assets/img/farmacia_medica.jpg')"></div>
                           </div>
@@ -798,6 +806,11 @@
                           <div class="carousel-item active">
                             <div class="card-bg" style="background-image: url('assets/img/hospital.jpg')"></div>
                           </div>
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/medicamentos.jpg')"></div>
+                          </div>
+
                           <div class="carousel-item">
                             <div class="card-bg" style="background-image: url('assets/img/farmacia_medica.jpg')"></div>
                           </div>
