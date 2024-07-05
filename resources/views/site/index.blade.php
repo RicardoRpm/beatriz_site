@@ -480,6 +480,83 @@
                   </div>
                 </div>
               </div>
+
+              {{-- end the game --}}
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/hospital.jpg') }}?v={{ time() }}')"></div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Equipamento Hospitalar </h4>
+                        <p>
+                          Descubra uma ampla seleção de produtos essenciais 
+                          para hospitais, clínicas cirúrgicas, clínicas 
+                          hospitais psiquiátricos e lares de idosos. Equipamento 
+                          suprimentos médicos de alta qualidade para suprimentos essenciais 
+                          para o cuidado diário, oferecemos soluções que 
+                          promover conforto, segurança e eficiência em ambientes de saúde.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Soluções de infraestrutura e segurança</h4>
+                        <p>
+                          Descubra a nossa gama completa de materiais essenciais concebidos para 
+                          aeroportos, instalações militares, serviços de processamento 
+                          água, grandes instalações administrativas e estacionamentos. 
+                          Oferecemos produtos de alta qualidade que garantem 
+                          eficiência operacional, segurança robusta e sustentabilidade.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Soluções profissionais para o setor de varejo</h4>
+                        <p>
+                          Descubra a nossa vasta gama de produtos concebidos para 
+                          atender às necessidades específicas dos shopping centers, 
+                          lojas de departamentos, supermercados e hipermercados. 
+                          Fornecemos soluções eficientes e de alta qualidade para
+                          otimizar operações, segurança e experiência do cliente.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
             </div>
           @break
           @case('en')
@@ -577,7 +654,6 @@
                 </div>
               </div>
 
-
               <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
                 <div class="card-item">
                   <div class="row">
@@ -605,11 +681,85 @@
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="row gy-4">
-              
-            </div>  
+              {{-- ISTO É TESTE --}}
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/hospital.jpg') }}?v={{ time() }}')"></div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Équipement Hospitalier </h4>
+                        <p>
+                          Découvrez une large sélection de produits essentiels 
+                          pour les hôpitaux, cliniques chirurgicales, cliniques 
+                          psychiatriques et maisons de retraite. Des équipements 
+                          médicaux de haute qualité aux fournitures essentielles 
+                          aux soins quotidiens, nous proposons des solutions qui 
+                          favorisent le confort, la sécurité et l’efficacité dans les environnements de soins de santé.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Solutions d'infrastructure et de sécurité</h4>
+                        <p>
+                          Découvrez notre gamme complète de matériaux essentiels conçus pour les 
+                          aéroports, les installations militaires, les services de traitement des 
+                          eaux, les grandes installations administratives et les parkings. 
+                          Nous proposons des produits de haute qualité qui garantissent une 
+                          efficacité opérationnelle, une sécurité robuste et une durabilité.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Solutions professionnelles pour le secteur de la vente au détail</h4>
+                        <p>
+                          Découvrez notre large gamme de produits conçus pour 
+                          répondre aux besoins spécifiques des centres commerciaux, 
+                          grands magasins, supermarchés et hypermarchés. 
+                          Nous fournissons des solutions efficaces et de haute qualité pour
+                          optimiser les opérations, la sécurité et l’expérience client.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
       @endswitch
 
     </div>
