@@ -428,7 +428,29 @@
                 <div class="card-item">
                   <div class="row">
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}')"></div>
+                      <div id="IdConstruction" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/construction_1.jpg'); "></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/construction_2.jpg')"></div>
+                          </div>
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/construction_3.jpg')"></div>
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#IdConstruction" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#IdConstruction" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+
+                      </div>
                     </div>
 
                     <div class="col-xl-7 d-flex align-items-center">
@@ -647,7 +669,29 @@
                 <div class="card-item">
                   <div class="row">
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
+                      <div id="IdConstruction" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/construction_1.jpg'); background-size: cover;"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/construction_2.jpg'); background-size: cover;"></div>
+                          </div>
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/construction_3.jpg'); background-size: cover;"></div>
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#IdConstruction" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#IdConstruction" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+
+                      </div>
                     </div>
 
                     <div class="col-xl-7 d-flex align-items-center">
