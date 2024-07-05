@@ -37,14 +37,17 @@
     </div>
 
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/1.jpg); height: 100%; width: 100%;"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/2.jpg); height: 100%; width: 100%;"></div>
+      <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/2.jpg); height: 100%; width: 100%;"></div>
+
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/1.jpg); height: 100%; width: 100%;"></div>
+
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/3.jpg); height: 100%; width: 100%;"></div>
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/4.jpg); height: 100%; width: 100%;"></div>
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/5.jpg); height: 100%; width: 100%;"></div>
 
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/6.jpg); height: 100%; width: 100%;"></div>
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/7.jpg); height: 100%; width: 100%;"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/8.jpg); height: 100%; width: 100%;"></div>
       
       <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -526,8 +529,29 @@
               <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
                 <div class="card-item">
                   <div class="row">
+
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/hospital.jpg') }}?v={{ time() }}')"></div>
+
+                      <div id="idHospital" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/hospital.jpg')"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/farmacia_medica.jpg')"></div>
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#idHospital" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#idHospital" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
                     </div>
 
                     <div class="col-xl-7 d-flex align-items-center">
@@ -672,13 +696,13 @@
                       <div id="IdConstruction" class="carousel slide" data-bs-touch="false">
                         <div class="carousel-inner">
                           <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/construction_1.jpg'); background-size: cover;"></div>
+                            <div class="card-bg" style="background-image: url('assets/img/construction_1.jpg'); background-size: cover; background-position: center;"></div>
                           </div>
                           <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/construction_2.jpg'); background-size: cover;"></div>
+                            <div class="card-bg" style="background-image: url('assets/img/construction_2.jpg'); background-size: cover; background-position: center;"></div>
                           </div>
                           <div class="carousel-item active">
-                            <div class="card-bg" style="background-image: url('assets/img/construction_3.jpg'); background-size: cover;"></div>
+                            <div class="card-bg" style="background-image: url('assets/img/construction_3.jpg'); background-size: cover; background-position: center;"></div>
                           </div>
                         </div>
 
@@ -756,7 +780,6 @@
                         </button>
 
                       </div>
-
                     </div>
 
                   </div>
@@ -769,7 +792,27 @@
                 <div class="card-item">
                   <div class="row">
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/hospital.jpg') }}?v={{ time() }}')"></div>
+
+                      <div id="idHospital" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/hospital.jpg')"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/farmacia_medica.jpg')"></div>
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#idHospital" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#idHospital" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
                     </div>
 
                     <div class="col-xl-7 d-flex align-items-center">
