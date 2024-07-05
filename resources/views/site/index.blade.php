@@ -459,21 +459,43 @@
                       <div class="card-body">
                         <h4 class="card-title"> Equipamentos Industriais </h4>
                         <p>
-                          Nosso catálogo
-                          inclui máquinas
-                          sofisticadas de
-                          última geração,
-                          assim como peças
-                          de reposição para
-                          melhorar e manter
-                          suas instalações
-                          industriais.
+                          Descubra nossa extensa gama de materiais projetados para 
+                          atender às demandas dos setores agroalimentar, têxtil, farmacêutico, 
+                          químico, siderurgia, automóvel e tratamento e distribuição de água. 
+                          Oferecemos produtos robustos e eficientes que impulsionam a produtividade, 
+                          a segurança e a sustentabilidade em diversas indústrias.
                         </p>
                       </div>
                     </div>
 
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpg')"></div>
+                      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/textil.jpeg')"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/farmacia.jpeg')"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/agroalimentar.jpeg')"></div>
+                          </div>
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpg')"></div>
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+
+                      </div>
+
                     </div>
 
                   </div>
@@ -660,21 +682,43 @@
                       <div class="card-body">
                         <h4 class="card-title"> Équipement Industriel </h4>
                         <p>
-                          Notre catalogue
-                          comprend des machines
-                          sophistiqué
-                          la dernière génération,
-                          ainsi que des pièces
-                          remplacement pour
-                          améliorer et entretenir
-                          vos installations
-                          industriel.
+                          Découvrez notre vaste gamme de matériaux conçus pour 
+                          répondre aux demandes des secteurs agroalimentaire, textile, pharmaceutique, 
+                          traitement et distribution de produits chimiques, d'acier, d'automobile et d'eau. 
+                          Nous proposons des produits robustes et efficaces qui boostent la productivité, 
+                          sécurité et durabilité dans diverses industries.
                         </p>
                       </div>
                     </div>
 
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpg") }}');"></div>
+                      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/textil.jpeg')"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/farmacia.jpeg')"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/agroalimentar.jpeg')"></div>
+                          </div>
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpg')"></div>
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+
+                      </div>
+
                     </div>
 
                   </div>
