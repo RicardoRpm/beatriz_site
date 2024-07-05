@@ -14,9 +14,10 @@
             @if (session('locale') === 'fr')  
               <h2 data-aos="fade-down">Bienvenue chez Beatriz Rénovation</h2>
               <p data-aos="fade-up">
-                Explorez notre site pour découvrir nos services de rénovation, 
-                de nettoyage, et nos matériaux et produits pour divers secteurs 
-                (Hospitalier, Industriels, Administration et Grande Distribution)
+                Via nos partenaires, nous proposons la vente des matériaux 
+                industriels sur les réseaux construction civil, plate-forme pétrolière, 
+                hospitalière, secteur agricole, les grandes distribution pharmaceutiques, 
+                chimiques, et plus…
               </p>
             @elseif (session('locale') === 'en')
               <h2 data-aos="fade-down">Welcome to Beatriz Rénovation</h2>
@@ -24,9 +25,10 @@
             @elseif (session('locale') === 'pt')
               <h2 data-aos="fade-down">Bem-vindo à Beatriz Rénovation</h2>
               <p data-aos="fade-up">                
-                Explore nosso site para descobrir nossos serviços de renovação, 
-                limpeza, e nossos materiais e produtos para diversos setores 
-                (Hospitalar, Industrial, Administração e Distribuição Massiva)
+                Através dos nossos parceiros, oferecemos a venda de materiais 
+                redes industriais na construção civil, plataformas petrolíferas, 
+                hospitalar, setor agrícola, grande distribuição farmacêutica, 
+                produtos químicos e mais…
               </p>
             @endif
           </div>
@@ -216,9 +218,9 @@
             @case('pt')
               <h2>Serviços</h2>
               <p>
-                Nossa empresa está comprometida em fornecer 
-                soluções sob medida para atender às necessidades de nossos clientes,
-                garantindo segurança, eficiência e qualidade em cada projeto.
+                Somos especializados em equipamentos para indústrias internacionais. 
+                Gerenciamento de serviços como desmontagem e remontagem de equipamentos e também 
+                renovação e limpeza interior/exterior.
               </p>  
               @break
             @case('en')
@@ -232,9 +234,9 @@
             @default
               <h2>Services</h2>
               <p>                
-                Notre entreprise s'engage à fournir 
-                des solutions sur mesure pour répondre aux besoins de nos clients,
-                assurer la sécurité, l’efficacité et la qualité de chaque projet.
+                Nous sommes spécialisés dans le matériel à destinations des industries internationales. 
+                La gestion de services tels que les démontage des équipements et remontage et aussi la 
+                rénovation de intérieur / extérieur et nettoyage.
               </p>
         @endswitch       
       </div>
@@ -478,6 +480,83 @@
                   </div>
                 </div>
               </div>
+
+              {{-- end the game --}}
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/hospital.jpg') }}?v={{ time() }}')"></div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Equipamento Hospitalar </h4>
+                        <p>
+                          Descubra uma ampla seleção de produtos essenciais 
+                          para hospitais, clínicas cirúrgicas, clínicas 
+                          hospitais psiquiátricos e lares de idosos. Equipamento 
+                          suprimentos médicos de alta qualidade para suprimentos essenciais 
+                          para o cuidado diário, oferecemos soluções que 
+                          promover conforto, segurança e eficiência em ambientes de saúde.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Soluções de infraestrutura e segurança</h4>
+                        <p>
+                          Descubra a nossa gama completa de materiais essenciais concebidos para 
+                          aeroportos, instalações militares, serviços de processamento 
+                          água, grandes instalações administrativas e estacionamentos. 
+                          Oferecemos produtos de alta qualidade que garantem 
+                          eficiência operacional, segurança robusta e sustentabilidade.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Soluções profissionais para o setor de varejo</h4>
+                        <p>
+                          Descubra a nossa vasta gama de produtos concebidos para 
+                          atender às necessidades específicas dos shopping centers, 
+                          lojas de departamentos, supermercados e hipermercados. 
+                          Fornecemos soluções eficientes e de alta qualidade para
+                          otimizar operações, segurança e experiência do cliente.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
             </div>
           @break
           @case('en')
@@ -575,7 +654,6 @@
                 </div>
               </div>
 
-
               <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
                 <div class="card-item">
                   <div class="row">
@@ -603,11 +681,85 @@
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="row gy-4">
-              
-            </div>  
+              {{-- ISTO É TESTE --}}
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/hospital.jpg') }}?v={{ time() }}')"></div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Équipement Hospitalier </h4>
+                        <p>
+                          Découvrez une large sélection de produits essentiels 
+                          pour les hôpitaux, cliniques chirurgicales, cliniques 
+                          psychiatriques et maisons de retraite. Des équipements 
+                          médicaux de haute qualité aux fournitures essentielles 
+                          aux soins quotidiens, nous proposons des solutions qui 
+                          favorisent le confort, la sécurité et l’efficacité dans les environnements de soins de santé.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Solutions d'infrastructure et de sécurité</h4>
+                        <p>
+                          Découvrez notre gamme complète de matériaux essentiels conçus pour les 
+                          aéroports, les installations militaires, les services de traitement des 
+                          eaux, les grandes installations administratives et les parkings. 
+                          Nous proposons des produits de haute qualité qui garantissent une 
+                          efficacité opérationnelle, une sécurité robuste et une durabilité.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Solutions professionnelles pour le secteur de la vente au détail</h4>
+                        <p>
+                          Découvrez notre large gamme de produits conçus pour 
+                          répondre aux besoins spécifiques des centres commerciaux, 
+                          grands magasins, supermarchés et hypermarchés. 
+                          Nous fournissons des solutions efficaces et de haute qualité pour
+                          optimiser les opérations, la sécurité et l’expérience client.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
       @endswitch
 
     </div>
