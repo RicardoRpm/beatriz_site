@@ -452,7 +452,6 @@
                 </div>
               </div>
 
-
               <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
                 <div class="card-item">
                   <div class="row">
@@ -474,7 +473,7 @@
                     </div>
 
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpeg')"></div>
+                      <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpg')"></div>
                     </div>
 
                   </div>
@@ -513,7 +512,7 @@
                   <div class="row">
                     <div class="col-xl-7 d-flex align-items-center">
                       <div class="card-body">
-                        <h4 class="card-title"> Soluções de infraestrutura e segurança</h4>
+                        <h4 class="card-title"> Equipamentos de infraestrutura e segurança</h4>
                         <p>
                           Descubra a nossa gama completa de materiais essenciais concebidos para 
                           aeroportos, instalações militares, serviços de processamento 
@@ -525,7 +524,7 @@
                     </div>
 
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
+                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/water.jpg") }}');"></div>
                     </div>
 
                   </div>
@@ -536,13 +535,13 @@
                 <div class="card-item">
                   <div class="row">
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/varejo.jpg') }}?v={{ time() }}')"></div>
                     </div>
 
                     <div class="col-xl-7 d-flex align-items-center">
                       <div class="card-body">
                         <h4 class="card-title">
-                          Soluções profissionais para o setor de varejo</h4>
+                          Equipamentos profissionais para o setor de varejo</h4>
                         <p>
                           Descubra a nossa vasta gama de produtos concebidos para 
                           atender às necessidades específicas dos shopping centers, 
@@ -675,7 +674,7 @@
                     </div>
 
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
+                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpg") }}');"></div>
                     </div>
 
                   </div>
@@ -715,7 +714,7 @@
                     <div class="col-xl-7 d-flex align-items-center">
                       <div class="card-body">
                         <h4 class="card-title">
-                          Solutions d'infrastructure et de sécurité</h4>
+                          Équipement d'infrastructure et de sécurité</h4>
                         <p>
                           Découvrez notre gamme complète de matériaux essentiels conçus pour les 
                           aéroports, les installations militaires, les services de traitement des 
@@ -727,7 +726,7 @@
                     </div>
 
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/industrial-tools.jpeg") }}');"></div>
+                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/water.jpg") }}');"></div>
                     </div>
 
                   </div>
@@ -738,13 +737,13 @@
                 <div class="card-item">
                   <div class="row">
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/construction-tools.jpg') }}?v={{ time() }}')"></div>
+                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/varejo.jpg') }}?v={{ time() }}')"></div>
                     </div>
 
                     <div class="col-xl-7 d-flex align-items-center">
                       <div class="card-body">
                         <h4 class="card-title">
-                          Solutions professionnelles pour le secteur de la vente au détail</h4>
+                          Équipement professionnelles pour le secteur de la vente au détail</h4>
                         <p>
                           Découvrez notre large gamme de produits conçus pour 
                           répondre aux besoins spécifiques des centres commerciaux, 
