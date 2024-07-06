@@ -58,7 +58,7 @@
                             <li class="dropdown"><a href="#"><span>Línguas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
                                     <li><a href="{{ route('change-language','fr') }}">FR</a></li>
-                                    {{-- <li ><a href="{{ route('change-language','en') }}">EN</a></li> --}}
+                                    <li ><a href="{{ route('change-language','en') }}">EN</a></li>
                                     <li><a href="{{ route('change-language','pt') }}">PT</a></li>
                                 </ul>
                             </li>                            
@@ -72,7 +72,7 @@
                             <li class="dropdown"><a href="#"><span>Languages</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
                                     <li><a href="{{ route('change-language','fr') }}">FR</a></li>
-                                    {{-- <li><a href="{{ route('change-language','en') }}">EN</a></li> --}}
+                                    <li><a href="{{ route('change-language','en') }}">EN</a></li>
                                     <li><a href="{{ route('change-language','pt') }}">PT</a></li>
                                 </ul>
                             </li>
@@ -86,7 +86,7 @@
                             <li class="dropdown"><a href="#"><span>Langue</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
                                     <li><a href="{{ route('change-language','fr') }}">FR</a></li>
-                                    {{-- <li><a href="{{ route('change-language','en') }}">EN</a></li> --}}
+                                    <li><a href="{{ route('change-language','en') }}">EN</a></li>
                                     <li><a href="{{ route('change-language','pt') }}">PT</a></li>
                                 </ul>
                             </li>
@@ -133,8 +133,16 @@
                             @case('en')
                                 <span> 
                                     <strong>Address: </strong>16 rue de la broque 67000 Strasbourg <br>
-                                    <strong>Phone: </strong> +33 7 53 28 21 48<br>
-                                    <strong>E-mail: </strong> beatriz-renovation67@outlook.fr<br>
+                                    <strong>Telephones: </strong> 
+                                    <ul>
+                                        <li>+33 7 53 28 21 48</li>
+                                        <li>+33 6 01 86 65 86</li>
+                                    </ul>
+                                    <strong>E-mails: </strong> 
+                                    <ul>
+                                        <li>beatriz-renovation67@outlook.fr</li>
+                                        <li>info@beatriz-renovation.com</li>
+                                    </ul>
                                 </span>
                                 @break
                             @default
@@ -177,10 +185,10 @@
                             @case('en')
                                 <h4>Sections of Site</h4>
                                 <ul>
-                                    <li><a href="{{ route('index') }}>Home</a></li>
-                                    <li><a href="#alt-services-2">About Us</a></li>
+                                    <li><a href="{{ route('index') }}">Home</a></li>
+                                    <li><a href="#about">About Us</a></li>
                                     <li><a href="#services">Services</a></li>
-                                    <li><a href="#constructions">Products</a></li>
+                                    <li><a href="#products">Products</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
                                 @break
@@ -207,9 +215,9 @@
                         @elseif (session('locale') === 'en')
                             <h4>Our services</h4>
                             <ul>
-                                <li><a href="{{ route('services-details', 'in') }}">Industriais</a></li>                            
-                                <li><a href="{{ route('services-details', 're') }}">Renovação</a></li>                            
-                                <li><a href="{{ route('services-details', 'ne') }}">Limpeza</a></li>
+                                <li><a href="{{ route('services-details', 'in') }}">Industrial</a></li>                            
+                                <li><a href="{{ route('services-details', 're') }}">Renovation</a></li>                            
+                                <li><a href="{{ route('services-details', 'ne') }}">Cleaning</a></li>
                             </ul>
                         @elseif (session('locale') === 'pt')
                             <h4>Nossos Serviços</h4>
