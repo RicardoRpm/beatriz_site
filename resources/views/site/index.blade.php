@@ -14,26 +14,27 @@
             @if (session('locale') === 'fr')  
               <h2 data-aos="fade-down">Bienvenue chez Beatriz Rénovation</h2>
               <p data-aos="fade-up">
-                Via nos partenaires, nous proposons la vente des matériaux 
-                industriels sur les réseaux construction civil, plate-forme pétrolière, 
-                hospitalière, secteur agricole, les grandes distribution pharmaceutiques, 
-                chimiques, et plus…
+                Via nos partenaires, nous proposons la vente de matériaux 
+                industriels pour les secteurs de la construction civile, 
+                des plates-formes pétrolières, des hôpitaux, de l'agriculture, 
+                ainsi que des grandes distributions pharmaceutiques, 
+                chimiques, et bien plus encore.
               </p>
             @elseif (session('locale') === 'en')
               <h2 data-aos="fade-down">Welcome to Beatriz Rénovation</h2>
               <p data-aos="fade-up">
-                Through our partners, we offer the sale of materials 
-                industrial networks in civil construction, oil platforms, 
-                hospital, agricultural sector, large pharmaceutical distribution, 
-                chemicals and more…
+                Through our partners, we offer the sale of industrial 
+                materials for the sectors of civil construction, oil platforms, 
+                hospitals, agriculture, as well as large pharmaceutical 
+                and chemical distributions, and much more.
               </p>          
             @elseif (session('locale') === 'pt')
               <h2 data-aos="fade-down">Bem-vindo à Beatriz Rénovation</h2>
               <p data-aos="fade-up">                
-                Através dos nossos parceiros, oferecemos a venda de materiais 
-                redes industriais na construção civil, plataformas petrolíferas, 
-                hospitalar, setor agrícola, grande distribuição farmacêutica, 
-                produtos químicos e mais…
+                Através de nossos parceiros, oferecemos a venda de materiais
+                industriais para os setores de construção civil, 
+                plataformas de petróleo, hospitais, agricultura, 
+                além de grandes distribuições farmacêuticas e químicas, e muito mais.
               </p>
             @endif
           </div>
@@ -74,24 +75,26 @@
           @switch(session('locale'))
               @case('pt')
                 <p class="text-justify">
-                  Beatriz Rénovation é uma empresa que se dedica à transformação e manutenção 
-                  de espaços residenciais e comerciais. Oferecemos serviços de limpeza, 
-                  reforma e incorporação, e comercializamos uma variada gama de produtos e equipamentos para diversos setores 
-                  (Hospitalar, Industrial, Administração e Grande Varejo). Nossos engenheiros podem auxiliar suas empresas na 
-                  instalação das máquinas vendidas. Nosso objetivo é fornecer soluções eficazes e personalizadas para
-                   melhorar seus espaços de vida e de trabalho.
+                  Beatriz Rénovation é uma empresa especializada na transformação 
+                  industrial, bem como na manutenção e renovação de espaços residenciais, 
+                  comercial e industrial. Oferecemos serviços de limpeza e reforma 
+                  e layout, e vendemos uma ampla gama de materiais industriais e 
+                  equipamentos para os setores hospitalar, industrial, administrativo e saúde 
+                  distribuição em massa. Nossos engenheiros também podem ajudar seus negócios 
+                  ao instalar as máquinas. Nosso objetivo é fornecer soluções 
+                  eficiente e personalizado para melhorar seus espaços de vida e de trabalho.
                 </p>
-
-                <strong class="mb-4">Por que escolher a Beatriz Rénovation?</strong>
                 
+                <strong class="mb-4">Por que escolher Beatriz Rénovation?</strong>
+
                 <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
                   <i class="bi bi-1-circle flex-shrink-0"></i>
                   <div>
                     <h4>Qualidade e know-how</h4>
-                    <p>
-                      Oferecemos serviços de alta qualidade utilizando materiais duráveis 
-                      ​​e técnicas comprovadas. Também vendemos produtos e materiais de construção de qualidade premium. 
-                    </p>
+                    <ul>
+                      <li>Serviços de alta qualidade utilizando materiais duráveis ​​e técnicas comprovadas.</li>
+                      <li>Comercialização de produtos e materiais industriais, hospitalares, administrativos e de grande distribuição de qualidade premium.</li>
+                    </ul>
                   </div>
                 </div>
 
@@ -99,11 +102,10 @@
                   <i class="bi bi-2-circle flex-shrink-0"></i>
                   <div>
                     <h4>Abordagem personalizada</h4>
-                    <p>              
-                      Cada projeto é único. Oferecemos soluções à medida e adaptadas às suas necessidades, 
-                      seja para renovação, limpeza ou remodelação. Nossos engenheiros estão à disposição 
-                      para garantir a correta instalação de nossas máquinas no local.  
-                    </p>
+                    <ul>
+                      <li>Soluções à medida para renovação, limpeza e remodelação.</li>
+                      <li>Assistência dos nossos engenheiros para a instalação de máquinas no local.</li>
+                    </ul>
                   </div>
                 </div>
 
@@ -111,35 +113,35 @@
                   <i class="bi bi-3-circle flex-shrink-0"></i>
                   <div>
                     <h4>Respeito aos prazos</h4>
-                    <p>                      
-                      Respeitamos os prazos acordados, garantindo ao mesmo tempo um trabalho cuidado e de qualidade. 
-                      Nossa equipe se dedica a fornecer soluções completas, incluindo desmontagem, manuseio e transporte 
-                      de equipamentos.
-                    </p>
+                    <ul>
+                      <li>Respeito aos prazos acordados com trabalho cuidadoso e de qualidade.</li>
+                      <li>Serviços completos incluindo desmontagem, manuseio e transporte de equipamentos.</li>
+                    </ul>
                   </div>
-                </div>                             
+                </div>   
                 @break
               @case('en')
                   <p class="text-justify">
-                    Beatriz Rénovation is a company dedicated to the transformation and maintenance 
-                    of residential and commercial spaces. We offer cleaning services, 
-                    renovation and incorporation, and we sell a wide range of products and equipment for different sectors 
-                    (Hospital, Industrial, Administration and Large Retail). Our engineers can assist your companies in 
-                    installation of the machines sold. Our goal is to provide effective and personalized solutions for
-                    improve your living and working spaces.
+                    Beatriz Rénovation is a company specializing in the transformation 
+                    industrial as well as in the maintenance and renovation of residential spaces, 
+                    commercial and industrial. We offer cleaning and renovation services 
+                    and layout, and we sell a wide range of industrial materials and 
+                    equipment for the hospital, industrial, administrative and health sectors 
+                    mass distribution. Our engineers can also assist your businesses 
+                    when installing the machines. Our goal is to provide solutions 
+                    efficient and personalized to improve your living and working spaces.
                   </p>
-
-                  <strong class="mb-4">Why choose Beatriz Rénovation?</strong>
                   
+                  <strong class="mb-4">Why Choose Beatriz Rénovation?</strong>
+
                   <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
                     <i class="bi bi-1-circle flex-shrink-0"></i>
                     <div>
                       <h4>Quality and know-how</h4>
-                      <p>
-                        We offer high quality services using durable materials 
-                        and proven techniques. We also sell products and materials 
-                        premium quality construction.
-                      </p>
+                      <ul>
+                        <li>High quality services using durable materials and proven techniques.</li>
+                        <li>Sale of premium quality industrial, hospital, administrative and mass distribution products and materials.</li>
+                      </ul>
                     </div>
                   </div>
 
@@ -147,36 +149,34 @@
                     <i class="bi bi-2-circle flex-shrink-0"></i>
                     <div>
                       <h4>Personalized approach</h4>
-                      <p>              
-                        Each project is unique. We offer tailor-made solutions adapted to your needs, 
-                        whether for renovation, cleaning or remodeling. Our engineers are at your disposal 
-                        to ensure the correct installation of our machines on site.  
-                      </p>
+                      <ul>
+                        <li>Tailor-made solutions for renovation, cleaning and fitting out.</li>
+                        <li>Assistance from our engineers for the installation of machines on site.</li>
+                      </ul>
                     </div>
                   </div>
 
                   <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
                     <i class="bi bi-3-circle flex-shrink-0"></i>
                     <div>
-                      <h4>Respect deadlines</h4>
-                      <p>                      
-                        We respect agreed deadlines, whilst ensuring careful and quality work. 
-                        Our team is dedicated to providing complete solutions including disassembly, handling and transportation 
-                        of equipment.
-                      </p>
+                      <h4>Respect of deadlines</h4>
+                      <ul>
+                        <li>Respect of agreed deadlines with careful and quality work.</li>
+                        <li>Complete services including dismantling, handling and transportation of equipment.</li>
+                      </ul>
                     </div>
-                  </div>         
+                  </div>                    
                   @break
               @default
                 <p class="text-justify">
-                  Beatriz Rénovation est une entreprise dédiée à la transformation et à 
-                  l'entretien des espaces résidentiels et commerciaux. Nous offrons des 
-                  services de nettoyage, de rénovation, d'aménagement, et vendons une 
-                  gamme variée de produits et équipements pour divers secteurs 
-                  (Hospitalier, Industriels, Administration et Grande Distribution). 
-                  Nos ingénieurs peuvent assister vos entreprises lors de l'installation des 
-                  machines vendues. Notre objectif est de vous fournir des solutions efficaces 
-                  et personnalisées pour améliorer vos espaces de vie et de travail.
+                  Beatriz Rénovation est une entreprise spécialisée dans la transformation 
+                  industrielle ainsi que dans l'entretien et la rénovation des espaces résidentiels, 
+                  commerciaux et industriels. Nous proposons des services de nettoyage, de rénovation 
+                  et d'aménagement, et nous vendons une large gamme de matériaux industriels et 
+                  d'équipements pour les secteurs hospitalier, industriel, administratif et de la 
+                  grande distribution. Nos ingénieurs peuvent également assister vos entreprises 
+                  lors de l'installation des machines. Notre objectif est de fournir des solutions 
+                  efficaces et personnalisées pour améliorer vos espaces de vie et de travail.
                 </p>
 
                 <strong class="mb-4">Pourquoi Choisir Beatriz Rénovation?</strong>
@@ -185,11 +185,10 @@
                   <i class="bi bi-1-circle flex-shrink-0"></i>
                   <div>
                     <h4>Qualité et savoir-faire</h4>
-                    <p>
-                      Nous offrons des services de haute qualité en utilisant 
-                      des matériaux durables et des techniques éprouvées. 
-                      Nous vendons également des produits et matériaux de construction de première qualité.
-                    </p>
+                    <ul>
+                      <li>Services de haute qualité utilisant des matériaux durables et des techniques éprouvées.</li>
+                      <li>Vente de produits et de matériaux industriels, hospitaliers, administratifs et de grande distribution de première qualité.</li>
+                    </ul>
                   </div>
                 </div>
 
@@ -197,11 +196,10 @@
                   <i class="bi bi-2-circle flex-shrink-0"></i>
                   <div>
                     <h4>Approche personnalisée</h4>
-                    <p>
-                      Chaque projet est unique. Nous proposons des solutions sur mesure adaptées à vos besoins,
-                       que ce soit pour la rénovation, le nettoyage ou l'aménagement. 
-                       Nos ingénieurs sont disponibles pour assurer l'installation correcte de nos machines sur site.
-                    </p>
+                    <ul>
+                      <li>Solutions sur mesure pour la rénovation, le nettoyage et l'aménagement.</li>
+                      <li>Assistance de nos ingénieurs pour l'installation des machines sur site.</li>
+                    </ul>
                   </div>
                 </div>
 
@@ -209,11 +207,10 @@
                   <i class="bi bi-3-circle flex-shrink-0"></i>
                   <div>
                     <h4>Respect des délais</h4>
-                    <p>
-                      Nous respectons les délais convenus, tout en garantissant un travail soigné et de qualité. 
-                      Notre équipe est dédiée à fournir des solutions complètes, y compris le démontage, 
-                      la manutention et le transport des équipements.
-                    </p>
+                    <ul>
+                      <li>Respect des délais convenus avec un travail soigné et de qualité.</li>
+                      <li>Services complets incluant le démontage, la manutention et le transport des équipements.</li>
+                    </ul>
                   </div>
                 </div>                       
           @endswitch
@@ -235,25 +232,26 @@
             @case('pt')
               <h2>Serviços</h2>
               <p>
-                Somos especializados em equipamentos para indústrias internacionais. 
-                Gerenciamento de serviços como desmontagem e remontagem de equipamentos e também 
-                renovação e limpeza interior/exterior.
+                Somos especializados na venda de equipamentos para indústrias 
+                internacionais e em serviços de manuseio, como desmontagem e 
+                remontagem de equipamentos, bem como reforma e limpeza interna e externa.
               </p>  
               @break
             @case('en')
               <h2>Services</h2>
               <p>
-                We specialize in equipment for international industries. 
-                Management of services such as disassembly and reassembly of equipment and also 
-                interior/exterior renovation and cleaning.
+                We specialize in selling equipment to international industries and 
+                handling services such as dismantling and reassembling equipment, 
+                as well as interior and exterior renovation and cleaning.
               </p>
                 @break
             @default
               <h2>Services</h2>
               <p>                
-                Nous sommes spécialisés dans le matériel à destinations des industries internationales. 
-                La gestion de services tels que les démontage des équipements et remontage et aussi la 
-                rénovation de intérieur / extérieur et nettoyage.
+                Nous sommes spécialisés dans la vente de matériel destiné aux industries 
+                internationales et dans la gestion de services tels que le démontage et 
+                le remontage des équipements, ainsi que la rénovation intérieure
+                et extérieure et le nettoyage.
               </p>
         @endswitch       
       </div>
