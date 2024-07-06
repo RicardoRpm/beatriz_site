@@ -496,8 +496,9 @@
                     <div class="col-xl-5">
                       <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                         <div class="carousel-inner">
+                          
                           <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/textil.jpg')"></div>
+                            <div class="card-bg" style="background-image: url('assets/img/industrial_manufacture.jpg')"></div>
                           </div>
 
                           <div class="carousel-item">
@@ -608,7 +609,38 @@
                 <div class="card-item">
                   <div class="row">
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/varejo.jpg') }}?v={{ time() }}')"></div>
+                      
+                      <div id="super" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_4.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_3.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_2.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_1.jpg')"></div>
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#super" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#super" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+
+                      </div>
+
                     </div>
 
                     <div class="col-xl-7 d-flex align-items-center">
@@ -767,9 +799,11 @@
                     <div class="col-xl-5">
                       <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                         <div class="carousel-inner">
+                          
                           <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/textil.jpg')"></div>
+                            <div class="card-bg" style="background-image: url('assets/img/industrial_manufacture.jpg')"></div>
                           </div>
+
                           <div class="carousel-item">
                             <div class="card-bg" style="background-image: url('assets/img/farmacia.jpg')"></div>
                           </div>
@@ -875,7 +909,36 @@
                 <div class="card-item">
                   <div class="row">
                     <div class="col-xl-5">
-                      <div class="card-bg" style="background-image: url('{{ asset('assets/img/varejo.jpg') }}?v={{ time() }}')"></div>
+                      <div id="super" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_4.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_3.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_2.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_1.jpg')"></div>
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#super" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#super" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+
+                      </div>
                     </div>
 
                     <div class="col-xl-7 d-flex align-items-center">
