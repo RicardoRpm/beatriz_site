@@ -214,7 +214,7 @@
                             </ul>
                         @elseif (session('locale') === 'en')
                             <h4>Our services</h4>
-                            <ul>
+                            <ul> 
                                 <li><a href="{{ route('services-details', 'in') }}">Industrial</a></li>                            
                                 <li><a href="{{ route('services-details', 're') }}">Renovation</a></li>                            
                                 <li><a href="{{ route('services-details', 'ne') }}">Cleaning</a></li>

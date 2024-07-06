@@ -1358,71 +1358,54 @@
   <section id="stats-counter" class="stats-counter section-bg">
     @switch(session('locale'))
             @case('pt')
-            <div class="container">
-              <div class="row gy-4">
-                
-                <div class="col-lg-6 col-md-6">
-                  <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="fa-solid fa-location-dot color-green flex-shrink-0"></i>
-                    <div>
-                      <p>3 Paises (França, Angola, Portugal)</p>
+                <div class="container">
+                  <div class="row gy-4">
+                    
+                    <div class="col-lg-6 col-md-6">
+                      <div class="stats-item d-flex align-items-center w-100 h-100">
+                        <i class="fa-solid fa-location-dot color-green flex-shrink-0"></i>
+                        <div>
+                          <p>3 Paises (França, Angola, Portugal)</p>
+                        </div>
+                      </div>
                     </div>
+                    
+                    <div class="col-lg-6 col-md-6">
+                      <div class="stats-item d-flex align-items-center w-100 h-100">
+                        <i class="fa-solid fa-compass-drafting color-pink flex-shrink-0"></i>
+                        <div>
+                          <p>3 Principais serviços (Industriels, Rénovation, Nettoyage)</p>
+                        </div>
+                      </div>
+                    </div>
+            
                   </div>
                 </div>
-                
-                <div class="col-lg-6 col-md-6">
-                  <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="fa-solid fa-compass-drafting color-pink flex-shrink-0"></i>
-                    <div>
-                      <p>3 Principais serviços (Industriels, Rénovation, Nettoyage)</p>
-                    </div>
-                  </div>
-                </div>
-        
-              </div>
-            </div>
                 @break
             @case('en')
-            <div class="container">
-              <div class="row gy-4">
-                <div class="col-lg-3 col-md-6">
-                  <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="bi bi-person-vcard color-orange flex-shrink-0"></i>
-                    <div>
-                      <p>{{ $statistic[0]->employees }} Employees</p>
+                <div class="container">
+                  <div class="row gy-4">
+                    
+                    <div class="col-lg-6 col-md-6">
+                      <div class="stats-item d-flex align-items-center w-100 h-100">
+                        <i class="fa-solid fa-location-dot color-green flex-shrink-0"></i>
+                        <div>
+                          <p>3 Countries (France, Angola and Portugal)</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-        
-                <div class="col-lg-3 col-md-6">
-                  <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
-                    <div>
-                      <p>{{ count($services) }} Services</p>
+                    
+                    <div class="col-lg-6 col-md-6">
+                      <div class="stats-item d-flex align-items-center w-100 h-100">
+                        <i class="fa-solid fa-compass-drafting color-pink flex-shrink-0"></i>
+                        <div>
+                          <p>3 Main services (Industrial, Renovation and Cleaning)</p>
+                        </div>
+                      </div>
                     </div>
+            
                   </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                  <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="fa-solid fa-helmet-safety color-pink flex-shrink-0"></i>
-                    <div>
-                      <p>{{ count($projects) }} Projects</p>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="col-lg-3 col-md-6">
-                  <div class="stats-item d-flex align-items-center w-100 h-100">
-                    <i class="bi bi-people color-pink flex-shrink-0"></i>
-                    <div>
-                      <p>{{ $statistic[0]->clients }} Clients</p>
-                    </div>
-                  </div>
-                </div>
-        
-              </div>
-            </div>                
+                </div>             
                 @break
             @default
             <div class="container">
@@ -1480,11 +1463,11 @@
               </p>
                   @break
               @case('en')
-              <h2>Contact</h2>
-              <p>
-                In order to ensure greater reliability in our work
-              </p>
-                  @break
+                <h2>Contact</h2>
+                <p>
+                  To ensure greater reliability in our work
+                </p>
+                @break
               @default
               <h2>Contact</h2>
               <p>
@@ -1520,7 +1503,7 @@
                   <h3>Envia-nos um email</h3>  
                     @break
                   @case('en')
-                  <h3>Email Us</h3>                
+                  <h3>Send us an email</h3>                
                     @break
                   @default
                   <h3>Envoyez-nous un email</h3>  
