@@ -21,7 +21,12 @@
               </p>
             @elseif (session('locale') === 'en')
               <h2 data-aos="fade-down">Welcome to Beatriz Rénovation</h2>
-              <p data-aos="fade-up">Bring your renovation dreams to life and enjoy a professional and complete cleaning. Explore our site to discover our renovation and cleaning services.</p>          
+              <p data-aos="fade-up">
+                Through our partners, we offer the sale of materials 
+                industrial networks in civil construction, oil platforms, 
+                hospital, agricultural sector, large pharmaceutical distribution, 
+                chemicals and more…
+              </p>          
             @elseif (session('locale') === 'pt')
               <h2 data-aos="fade-down">Bem-vindo à Beatriz Rénovation</h2>
               <p data-aos="fade-up">                
@@ -115,43 +120,52 @@
                 </div>                             
                 @break
               @case('en')
-                  <p>
-                    We are Beatri-Rénovation, a company dedicated to transforming spaces 
-                    industrial and real estate, offering innovative solutions and high quality services.
-                    Our commitment to excellence and customer satisfaction is what drives us with each project.
+                  <p class="text-justify">
+                    Beatriz Rénovation is a company dedicated to the transformation and maintenance 
+                    of residential and commercial spaces. We offer cleaning services, 
+                    renovation and incorporation, and we sell a wide range of products and equipment for different sectors 
+                    (Hospital, Industrial, Administration and Large Retail). Our engineers can assist your companies in 
+                    installation of the machines sold. Our goal is to provide effective and personalized solutions for
+                    improve your living and working spaces.
                   </p>
-        
-                  <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-                    <i class="bi bi-easel flex-shrink-0"></i>
+
+                  <strong class="mb-4">Why choose Beatriz Rénovation?</strong>
+                  
+                  <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
+                    <i class="bi bi-1-circle flex-shrink-0"></i>
                     <div>
-                      <h4><a href="#" class="stretched-link">Vision</a></h4>
+                      <h4>Quality and know-how</h4>
                       <p>
-                        Lead the market for the renovation and transformation of industrial and real estate spaces, raising quality and innovation standards.</p>
+                        We offer high quality services using durable materials 
+                        and proven techniques. We also sell products and materials 
+                        premium quality construction.
+                      </p>
                     </div>
-                  </div><!-- End Icon Box -->
-        
-                  <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-                    <i class="bi bi-patch-check flex-shrink-0"></i>
+                  </div>
+
+                  <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
+                    <i class="bi bi-2-circle flex-shrink-0"></i>
                     <div>
-                      <h4><a href="#" class="stretched-link">Mission</a></h4>
-                      <p>Exceed customer expectations through creative solutions, technical expertise and commitment to excellence.</p>
+                      <h4>Personalized approach</h4>
+                      <p>              
+                        Each project is unique. We offer tailor-made solutions adapted to your needs, 
+                        whether for renovation, cleaning or remodeling. Our engineers are at your disposal 
+                        to ensure the correct installation of our machines on site.  
+                      </p>
                     </div>
-                  </div><!-- End Icon Box -->
-        
-                  <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-                    <i class="bi bi-brightness-high flex-shrink-0"></i>
+                  </div>
+
+                  <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
+                    <i class="bi bi-3-circle flex-shrink-0"></i>
                     <div>
-                      <h4><a href="#" class="stretched-link">Values</a></h4>
-                      <ul>
-                        <li>Excellence</li>
-                        <li>Innovation</li>
-                        <li>Quality</li>
-                        <li>Integrity</li>
-                        <li>Collaboration</li>
-                        <li>Customer satisfaction</li>
-                      </ul>
+                      <h4>Respect deadlines</h4>
+                      <p>                      
+                        We respect agreed deadlines, whilst ensuring careful and quality work. 
+                        Our team is dedicated to providing complete solutions including disassembly, handling and transportation 
+                        of equipment.
+                      </p>
                     </div>
-                  </div><!-- End Icon Box -->        
+                  </div>         
                   @break
               @default
                 <p class="text-justify">
@@ -229,9 +243,9 @@
             @case('en')
               <h2>Services</h2>
               <p>
-                Our company is committed to providing 
-                tailor-made solutions to meet the needs of our customers,
-                ensuring safety, efficiency and quality in each project.
+                We specialize in equipment for international industries. 
+                Management of services such as disassembly and reassembly of equipment and also 
+                interior/exterior renovation and cleaning.
               </p>
                 @break
             @default
@@ -247,77 +261,120 @@
       <div class="row gy-4">
         @switch(session('locale'))
             @case('en')
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                  <div class="service-item  position-relative">
+                    <div class="icon">
+                      <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
+                    </div>
+                      <h3>Industrial</h3>
+                      <p>
+                        Our industrial services are designed to modernize, 
+                        optimize and maintain your industrial facilities. 
+                        We offer complete and personalized solutions 
+                        to improve its operational performance and ensure 
+                        the sustainability of its infrastructure. Whether for installation 
+                        new equipment, updating existing systems or 
+                        routine maintenance, we have the experience to support 
+                        its industrial operations.
+                      </p>  
+                      <a href="{{ route('services-details', 'in') }}" class="readmore stretched-link">To know more <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                  <div class="service-item  position-relative">
+                    <div class="icon">
+                      <i class="fa-solid fa-paint-roller color-green flex-shrink-0"></i>
+                    </div>
+                      <h3>Renovation</h3>
+                      <p>
+                        Our renovation services aim to transform and improve your 
+                        living and working spaces, combining aesthetics and functionality. 
+                        We take care of projects of all sizes, from renovations to 
+                        small rooms to complete the renovation of large spaces. Our approach to 
+                        measurement ensures that each project reflects your needs and preferences, creating 
+                        beautiful and practical environments.
+                      </p>
+                      <a href="{{ route('services-details', 're') }}" class="readmore stretched-link">
+                        To know more <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                  <div class="service-item  position-relative">
+                    <div class="icon">
+                      <i class="fa-solid fa-broom color-green flex-shrink-0"></i>
+                    </div>
+                      <h3>Cleaning</h3>
+                      <p>
+                        We offer a full range of cleaning services for 
+                        ensure impeccable, healthy and welcoming spaces. 
+                        Our cleaning services adapt to different environments, whether residential, 
+                        commercial or industrial. We use cleaning techniques and products
+                        advanced to ensure optimal cleaning and maintain high hygiene standards.
+                      </p>  
+                      <br>
+                      <a href="{{ route('services-details', 'ne') }}" class="readmore stretched-link">
+                        To know more <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div> 
+                @break
+            @case('pt')
               <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item  position-relative">
                   <div class="icon">
                     <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
                   </div>
-                    <h3>Industriels</h3>
+                    <h3>Industrial</h3>
                     <p>
-                      Nos services industriels sont conçus pour moderniser, 
-                      optimiser et entretenir vos installations industrielles. 
-                      Nous proposons des solutions complètes pour répondre à vos 
-                      besoins opérationnels et assurer la durabilité de vos infrastructures.
+                      Nossos serviços industriais são projetados para modernizar, 
+                      otimizar e manter suas instalações industriais. 
+                      Oferecemos soluções completas e personalizadas 
+                      para melhorar seu desempenho operacional e garantir 
+                      a sustentabilidade da sua infraestrutura. Seja para instalação 
+                      novos equipamentos, atualizando sistemas existentes ou 
+                      manutenção de rotina, temos a experiência para apoiar 
+                      suas operações industriais.
                     </p>  
+                    <a href="{{ route('services-details', 'in') }}" class="readmore stretched-link">Saber mais <i class="bi bi-arrow-right"></i></a>
                 </div>
-              </div>  
-                @break
-            @case('pt')
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item  position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-compass-drafting color-green flex-shrink-0"></i>
-                </div>
-                  <h3>Industrial</h3>
-                  <p>
-                    Nossos serviços industriais são projetados para modernizar, 
-                    otimizar e manter suas instalações industriais. 
-                    Oferecemos soluções completas e personalizadas 
-                    para melhorar seu desempenho operacional e garantir 
-                    a sustentabilidade da sua infraestrutura. Seja para instalação 
-                    novos equipamentos, atualizando sistemas existentes ou 
-                    manutenção de rotina, temos a experiência para apoiar 
-                    suas operações industriais.
-                  </p>  
-                  <a href="{{ route('services-details', 'in') }}" class="readmore stretched-link">Saber mais <i class="bi bi-arrow-right"></i></a>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item  position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-paint-roller color-green flex-shrink-0"></i>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item  position-relative">
+                  <div class="icon">
+                    <i class="fa-solid fa-paint-roller color-green flex-shrink-0"></i>
+                  </div>
+                    <h3>Renovação</h3>
+                    <p>
+                      Os nossos serviços de renovação visam transformar e melhorar o seu 
+                      espaços de estar e de trabalho, aliando estética e funcionalidade. 
+                      Cuidamos de projetos de todos os portes, desde reformas de 
+                      salas pequenas para completar a reforma de grandes espaços. Nossa abordagem para 
+                      medição garante que cada projeto reflita suas necessidades e preferências, criando 
+                      ambientes bonitos e práticos.
+                    </p>
+                    <a href="{{ route('services-details', 're') }}" class="readmore stretched-link">Saber mais <i class="bi bi-arrow-right"></i></a>
                 </div>
-                  <h3>Renovação</h3>
-                  <p>
-                    Os nossos serviços de renovação visam transformar e melhorar o seu 
-                    espaços de estar e de trabalho, aliando estética e funcionalidade. 
-                    Cuidamos de projetos de todos os portes, desde reformas de 
-                    salas pequenas para completar a reforma de grandes espaços. Nossa abordagem para 
-                    medição garante que cada projeto reflita suas necessidades e preferências, criando 
-                    ambientes bonitos e práticos.
-                  </p>
-                  <a href="{{ route('services-details', 're') }}" class="readmore stretched-link">Saber mais <i class="bi bi-arrow-right"></i></a>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item  position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-broom color-green flex-shrink-0"></i>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-item  position-relative">
+                  <div class="icon">
+                    <i class="fa-solid fa-broom color-green flex-shrink-0"></i>
+                  </div>
+                    <h3>Limpeza</h3>
+                    <p>
+                      Oferecemos uma gama completa de serviços de limpeza para 
+                      garantir espaços impecáveis, saudáveis ​​e acolhedores. 
+                      Nossos serviços de limpeza se adaptam a diversos ambientes, sejam residenciais, 
+                      comercial ou industrial. Utilizamos técnicas e produtos de limpeza
+                      avançado para garantir uma limpeza ideal e manter altos padrões de higiene.
+                    </p>  
+                    <br>
+                    <a href="{{ route('services-details', 'ne') }}" class="readmore stretched-link">Saber mais <i class="bi bi-arrow-right"></i></a>
                 </div>
-                  <h3>Limpeza</h3>
-                  <p>
-                    Oferecemos uma gama completa de serviços de limpeza para 
-                    garantir espaços impecáveis, saudáveis ​​e acolhedores. 
-                    Nossos serviços de limpeza se adaptam a diversos ambientes, sejam residenciais, 
-                    comercial ou industrial. Utilizamos técnicas e produtos de limpeza
-                    avançado para garantir uma limpeza ideal e manter altos padrões de higiene.
-                  </p>  
-                  <br>
-                  <a href="{{ route('services-details', 'ne') }}" class="readmore stretched-link">Saber mais <i class="bi bi-arrow-right"></i></a>
               </div>
-            </div>
                 @break
             @default
               <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -664,30 +721,281 @@
             </div>
           @break
           @case('en')
-            <div class="section-header">
-              <h2>Projects</h2>
-              <p>Our specialized team carries out tailor-made projects, prioritizing quality, innovation and customer satisfaction.</p>
-            </div>
+          <div class="section-header">
+            <h2>Our products</h2>
+            <p>
+              We offer a diverse range of products and equipment for different sectors.
+            </p>
+          </div>
 
-            <div class="row gy-4">
-              @foreach ($projects as $project)
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                  <div class="card-item">
-                    <div class="row">
-                      <div class="col-xl-5">
-                        <div class="card-bg" style="background-image: url({{ $project->img }});"></div>
-                      </div>
-                      <div class="col-xl-7 d-flex align-items-center">
-                        <div class="card-body">
-                          <h4 class="card-title"> {{ $project->title_en }} </h4>
-                          <p>{{ $project->description_en }}</p>
-                        </div>
-                      </div>
+          <div class="row gy-4">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title"> Marble Materials </h4>
+                      <p>
+                        We provide a
+                        wide range of marbles
+                        high-quality,
+                        perfect for different
+                        construction projects and
+                        architecture. Our marbles
+                        are available
+                        in different colors and
+                        finishes, suitable
+                        to all your needs
+                        aesthetic and
+                        functional.
+                      </p>
                     </div>
                   </div>
+
+                  <div class="col-xl-5">
+                    <div class="card-bg" style="background-image: url('assets/img/granito.jpg')"></div>
+                  </div>
+
                 </div>
-              @endforeach
+              </div>
             </div>
+
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div id="IdConstruction" class="carousel slide" data-bs-touch="false">
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <div class="card-bg" style="background-image: url('assets/img/construction_1.jpg'); "></div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card-bg" style="background-image: url('assets/img/construction_2.jpg')"></div>
+                        </div>
+                        <div class="carousel-item active">
+                          <div class="card-bg" style="background-image: url('assets/img/construction_3.jpg')"></div>
+                        </div>
+                      </div>
+
+                      <button class="carousel-control-prev" type="button" data-bs-target="#IdConstruction" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#IdConstruction" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+
+                    </div>
+                  </div>
+
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">Construction Materials</h4>
+                      <p>
+                        We sell
+                        a wide variety
+                        of materials from
+                        construction, including
+                        concrete,
+                        steel, and other products
+                        essential
+                        for construction
+                        civil.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title"> Industrial Equipment </h4>
+                      <p>
+                        Discover our extensive range of materials designed to 
+                        meet the demands of the agri-food, textile, pharmaceutical, 
+                        chemical, steel, automobile and water treatment and distribution. 
+                        We offer robust and efficient products that boost productivity, 
+                        safety and sustainability in various industries.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-5">
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                      <div class="carousel-inner">
+                        
+                        <div class="carousel-item">
+                          <div class="card-bg" style="background-image: url('assets/img/industrial_manufacture.jpg')"></div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="card-bg" style="background-image: url('assets/img/farmacia.jpg')"></div>
+                        </div>
+
+                        <div class="carousel-item active">
+                          <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpg')"></div>
+                        </div>
+                      </div>
+
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            {{-- end the game --}}
+
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+
+                  <div class="col-xl-5">
+
+                    <div id="idHospital" class="carousel slide" data-bs-touch="false">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="card-bg" style="background-image: url('assets/img/hospital.jpg')"></div>
+                        </div>
+
+                        
+                        <div class="carousel-item">
+                          <div class="card-bg" style="background-image: url('assets/img/medicamentos.jpg')"></div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="card-bg" style="background-image: url('assets/img/farmacia_medica.jpg')"></div>
+                        </div>
+                      </div>
+
+                      <button class="carousel-control-prev" type="button" data-bs-target="#idHospital" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#idHospital" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                  </div>
+
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title"> Hospital Equipment </h4>
+                      <p>
+                        Discover a wide selection of essential products 
+                        for hospitals, surgical clinics, clinics 
+                        psychiatric hospitals and nursing homes. Equipment 
+                        high quality medical supplies for essential supplies 
+                        for daily care, we offer solutions that 
+                        promote comfort, safety and efficiency in healthcare environments.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title"> 
+                        Infrastructure and security equipment</h4>
+                      <p>
+                        Discover our full range of essential materials designed for 
+                        airports, military installations, processing services 
+                        water, large administrative facilities and parking lots. 
+                        We offer high quality products that guarantee 
+                        operational efficiency, robust security and sustainability.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-5">
+                    <div class="card-bg" style="background-image: url('{{ asset("assets/img/water.jpg") }}');"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    
+                    <div id="super" class="carousel slide" data-bs-touch="false">
+                      <div class="carousel-inner">
+
+                        <div class="carousel-item">
+                          <div class="card-bg" style="background-image: url('assets/img/varejo_4.jpg')"></div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="card-bg" style="background-image: url('assets/img/varejo_3.jpg')"></div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="card-bg" style="background-image: url('assets/img/varejo_2.jpg')"></div>
+                        </div>
+
+                        <div class="carousel-item active">
+                          <div class="card-bg" style="background-image: url('assets/img/varejo_1.jpg')"></div>
+                        </div>
+                      </div>
+
+                      <button class="carousel-control-prev" type="button" data-bs-target="#super" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#super" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+
+                    </div>
+
+                  </div>
+
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Professional equipment for the retail sector</h4>
+                      <p>
+                        Discover our wide range of products designed to 
+                        meet the specific needs of shopping centers, 
+                        department stores, supermarkets and hypermarkets. 
+                        We provide efficient, high-quality solutions for
+                        optimize operations, security and customer experience.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
             @break
           @default
             <div class="section-header">
