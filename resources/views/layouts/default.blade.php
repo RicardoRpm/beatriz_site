@@ -195,11 +195,11 @@
                             @default
                                 <h4>Sections du Site</h4>
                                 <ul>
-                                    <li><a href="{{ route('index') }}">Maison</a></li>
+                                    <li><a href="{{ route('index') }}">Accueil</a></li>
                                     <li><a href="#about">Qui sommes-nous</a></li>
-                                    <li><a href="#services">Service</a></li>
-                                    <li><a href="#products">Products</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#products">Des Produits</a></li>
+                                    <li><a href="#contact">Contacts</a></li>
                                 </ul>
                         @endswitch
                     </div><!-- End footer links column-->

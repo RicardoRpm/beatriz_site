@@ -458,18 +458,10 @@
                       <div class="card-body">
                         <h4 class="card-title"> Materiais de Mármore </h4>
                         <p>
-                          Disponibilizamos uma
-                          vasta gama de mármores
-                          de alta qualidade,
-                          perfeitos para diversos
-                          projetos de construção e
-                          arquitetura. Nossos mármores
-                          estão disponíveis
-                          em diferentes cores e
-                          acabamentos, adequados
-                          a todas as suas necessidades
-                          estéticas e
-                          funcionais
+                          Fornecemos uma ampla gama de mármores de alta qualidade, 
+                          perfeito para diversos projetos de construção e arquitetura. 
+                          Nossos mármores estão disponíveis em diversas cores e acabamentos, 
+                          adaptado a todas as suas necessidades estéticas e funcionais.
                         </p>
                       </div>
                     </div>
@@ -515,15 +507,9 @@
                       <div class="card-body">
                         <h4 class="card-title">Materiais de Construção</h4>
                         <p>
-                          Vendemos
-                          uma grande variedade
-                          de materiais de
-                          construção, incluindo
-                          concreto,
-                          aço, e outros produtos
-                          essenciais
-                          para a construção
-                          civil.
+                          Comercializamos uma grande variedade de materiais de construção, 
+                          incluindo concreto, aço e outros produtos essenciais 
+                          para construção civil.
                         </p>
                       </div>
                     </div>
@@ -539,11 +525,12 @@
                       <div class="card-body">
                         <h4 class="card-title"> Equipamentos Industriais </h4>
                         <p>
-                          Descubra nossa extensa gama de materiais projetados para 
-                          atender às demandas dos setores agroalimentar, têxtil, farmacêutico, 
-                          químico, siderurgia, automóvel e tratamento e distribuição de água. 
-                          Oferecemos produtos robustos e eficientes que impulsionam a produtividade, 
-                          a segurança e a sustentabilidade em diversas indústrias.
+                          DDescubra a nossa vasta gama de materiais concebidos para 
+                          satisfazer as necessidades dos sectores agro-alimentar, têxtil, 
+                          farmacêutica, processamento e distribuição de produtos químicos, 
+                          aço, automóveis e água. Oferecemos produtos 
+                          robusto e eficiente que aumenta a produtividade, a segurança e 
+                          sustentabilidade em vários setores.
                         </p>
                       </div>
                     </div>
@@ -719,281 +706,268 @@
             </div>
           @break
           @case('en')
-          <div class="section-header">
-            <h2>Our products</h2>
-            <p>
-              We offer a diverse range of products and equipment for different sectors.
-            </p>
-          </div>
-
-          <div class="row gy-4">
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title"> Marble Materials </h4>
-                      <p>
-                        We provide a
-                        wide range of marbles
-                        high-quality,
-                        perfect for different
-                        construction projects and
-                        architecture. Our marbles
-                        are available
-                        in different colors and
-                        finishes, suitable
-                        to all your needs
-                        aesthetic and
-                        functional.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('assets/img/granito.jpg')"></div>
-                  </div>
-
-                </div>
-              </div>
+            <div class="section-header">
+              <h2>Our products</h2>
+              <p>
+                We offer a diverse range of products and equipment for different sectors.
+              </p>
             </div>
 
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-5">
-                    <div id="IdConstruction" class="carousel slide" data-bs-touch="false">
-                      <div class="carousel-inner">
-                        <div class="carousel-item">
-                          <div class="card-bg" style="background-image: url('assets/img/construction_1.jpg'); "></div>
+            <div class="row gy-4">
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Marble Materials </h4>
+                        <p>                          
+                          We supply a wide range of high quality marbles, 
+                          perfect for various construction and architectural projects. 
+                          Our marbles are available in several colors and finishes, 
+                          adapted to all your aesthetic and functional needs.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('assets/img/granito.jpg')"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      <div id="IdConstruction" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/construction_1.jpg'); "></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/construction_2.jpg')"></div>
+                          </div>
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/construction_3.jpg')"></div>
+                          </div>
                         </div>
-                        <div class="carousel-item">
-                          <div class="card-bg" style="background-image: url('assets/img/construction_2.jpg')"></div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#IdConstruction" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#IdConstruction" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+
+                      </div>
+                    </div>
+
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title">Construction Materials</h4>
+                        <p>                       
+                          We sell a wide variety of building materials, 
+                          including concrete, steel and other essential products 
+                          for civil construction.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Industrial Equipment </h4>
+                        <p>
+                          Discover our wide range of materials designed to 
+                          meet the needs of the agri-food, textile, 
+                          pharmaceutical, processing and distribution of chemicals, 
+                          steel, automobiles and water. We offer products 
+                          robust and efficient that boost productivity, safety and 
+                          sustainability in various industries.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-5">
+                      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/industrial_manufacture.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/farmacia.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpg')"></div>
+                          </div>
                         </div>
-                        <div class="carousel-item active">
-                          <div class="card-bg" style="background-image: url('assets/img/construction_3.jpg')"></div>
-                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+
                       </div>
 
-                      <button class="carousel-control-prev" type="button" data-bs-target="#IdConstruction" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#IdConstruction" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-
                     </div>
-                  </div>
 
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title">Construction Materials</h4>
-                      <p>
-                        We sell
-                        a wide variety
-                        of materials from
-                        construction, including
-                        concrete,
-                        steel, and other products
-                        essential
-                        for construction
-                        civil.
-                      </p>
-                    </div>
                   </div>
-
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title"> Industrial Equipment </h4>
-                      <p>
-                        Discover our extensive range of materials designed to 
-                        meet the demands of the agri-food, textile, pharmaceutical, 
-                        chemical, steel, automobile and water treatment and distribution. 
-                        We offer robust and efficient products that boost productivity, 
-                        safety and sustainability in various industries.
-                      </p>
-                    </div>
-                  </div>
+              {{-- end the game --}}
 
-                  <div class="col-xl-5">
-                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-                      <div class="carousel-inner">
-                        
-                        <div class="carousel-item">
-                          <div class="card-bg" style="background-image: url('assets/img/industrial_manufacture.jpg')"></div>
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+
+                    <div class="col-xl-5">
+
+                      <div id="idHospital" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/hospital.jpg')"></div>
+                          </div>
+
+                          
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/medicamentos.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/farmacia_medica.jpg')"></div>
+                          </div>
                         </div>
 
-                        <div class="carousel-item">
-                          <div class="card-bg" style="background-image: url('assets/img/farmacia.jpg')"></div>
-                        </div>
-
-                        <div class="carousel-item active">
-                          <div class="card-bg" style="background-image: url('assets/img/industrial-tools.jpg')"></div>
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#idHospital" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#idHospital" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
                       </div>
 
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
+                    </div>
 
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> Hospital Equipment </h4>
+                        <p>
+                          Discover a wide selection of essential products 
+                          for hospitals, surgical clinics, clinics 
+                          psychiatric hospitals and nursing homes. Equipment 
+                          high quality medical supplies for essential supplies 
+                          for daily care, we offer solutions that 
+                          promote comfort, safety and efficiency in healthcare environments.
+                        </p>
+                      </div>
                     </div>
 
                   </div>
-
                 </div>
               </div>
-            </div>
 
-            {{-- end the game --}}
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title"> 
+                          Infrastructure and security equipment</h4>
+                        <p>
+                          Discover our full range of essential materials designed for 
+                          airports, military installations, processing services 
+                          water, large administrative facilities and parking lots. 
+                          We offer high quality products that guarantee 
+                          operational efficiency, robust security and sustainability.
+                        </p>
+                      </div>
+                    </div>
 
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
+                    <div class="col-xl-5">
+                      <div class="card-bg" style="background-image: url('{{ asset("assets/img/water.jpg") }}');"></div>
+                    </div>
 
-                  <div class="col-xl-5">
+                  </div>
+                </div>
+              </div>
 
-                    <div id="idHospital" class="carousel slide" data-bs-touch="false">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <div class="card-bg" style="background-image: url('assets/img/hospital.jpg')"></div>
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-item">
+                  <div class="row">
+                    <div class="col-xl-5">
+                      
+                      <div id="super" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_4.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_3.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_2.jpg')"></div>
+                          </div>
+
+                          <div class="carousel-item active">
+                            <div class="card-bg" style="background-image: url('assets/img/varejo_1.jpg')"></div>
+                          </div>
                         </div>
 
-                        
-                        <div class="carousel-item">
-                          <div class="card-bg" style="background-image: url('assets/img/medicamentos.jpg')"></div>
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#super" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#super" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
 
-                        <div class="carousel-item">
-                          <div class="card-bg" style="background-image: url('assets/img/farmacia_medica.jpg')"></div>
-                        </div>
                       </div>
 
-                      <button class="carousel-control-prev" type="button" data-bs-target="#idHospital" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#idHospital" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
                     </div>
 
-                  </div>
-
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title"> Hospital Equipment </h4>
-                      <p>
-                        Discover a wide selection of essential products 
-                        for hospitals, surgical clinics, clinics 
-                        psychiatric hospitals and nursing homes. Equipment 
-                        high quality medical supplies for essential supplies 
-                        for daily care, we offer solutions that 
-                        promote comfort, safety and efficiency in healthcare environments.
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title"> 
-                        Infrastructure and security equipment</h4>
-                      <p>
-                        Discover our full range of essential materials designed for 
-                        airports, military installations, processing services 
-                        water, large administrative facilities and parking lots. 
-                        We offer high quality products that guarantee 
-                        operational efficiency, robust security and sustainability.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="col-xl-5">
-                    <div class="card-bg" style="background-image: url('{{ asset("assets/img/water.jpg") }}');"></div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-item">
-                <div class="row">
-                  <div class="col-xl-5">
-                    
-                    <div id="super" class="carousel slide" data-bs-touch="false">
-                      <div class="carousel-inner">
-
-                        <div class="carousel-item">
-                          <div class="card-bg" style="background-image: url('assets/img/varejo_4.jpg')"></div>
-                        </div>
-
-                        <div class="carousel-item">
-                          <div class="card-bg" style="background-image: url('assets/img/varejo_3.jpg')"></div>
-                        </div>
-
-                        <div class="carousel-item">
-                          <div class="card-bg" style="background-image: url('assets/img/varejo_2.jpg')"></div>
-                        </div>
-
-                        <div class="carousel-item active">
-                          <div class="card-bg" style="background-image: url('assets/img/varejo_1.jpg')"></div>
-                        </div>
+                    <div class="col-xl-7 d-flex align-items-center">
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Professional equipment for the retail sector</h4>
+                        <p>
+                          Discover our wide range of products designed to 
+                          meet the specific needs of shopping centers, 
+                          department stores, supermarkets and hypermarkets. 
+                          We provide efficient, high-quality solutions for
+                          optimize operations, security and customer experience.
+                        </p>
                       </div>
-
-                      <button class="carousel-control-prev" type="button" data-bs-target="#super" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#super" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-
                     </div>
 
                   </div>
-
-                  <div class="col-xl-7 d-flex align-items-center">
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        Professional equipment for the retail sector</h4>
-                      <p>
-                        Discover our wide range of products designed to 
-                        meet the specific needs of shopping centers, 
-                        department stores, supermarkets and hypermarkets. 
-                        We provide efficient, high-quality solutions for
-                        optimize operations, security and customer experience.
-                      </p>
-                    </div>
-                  </div>
-
                 </div>
               </div>
-            </div>
 
-          </div>
+            </div>
             @break
           @default
             <div class="section-header">
@@ -1011,18 +985,10 @@
                       <div class="card-body">
                         <h4 class="card-title"> Matériaux en Marbre </h4>
                         <p>
-                          Nous fournissons un
-                          large gamme de marbres
-                          haute qualité,
-                          parfait pour différents
-                          des projets de construction et
-                          architecture. Nos billes
-                          sont disponibles
-                          en différentes couleurs et
-                          finitions, adaptées
-                          à tous vos besoins
-                          esthétique et
-                          fonctionnel
+                          Nous fournissons une large gamme de marbres de haute qualité, 
+                          parfaits pour différents projets de construction et d'architecture. 
+                          Nos marbres sont disponibles en plusieurs couleurs et finitions, 
+                          adaptées à tous vos besoins esthétiques et fonctionnels.
                         </p>
                       </div>
                     </div>
@@ -1069,15 +1035,9 @@
                         <h4 class="card-title">
                           Matériaux de Construction</h4>
                         <p>
-                          Nous vendons
-                          une grande variété
-                          de matériaux provenant de
-                          construction, y compris
-                          béton,
-                          acier et autres produits
-                          essentiel
-                          pour construction
-                          civil.
+                          Nous vendons une grande variété de matériaux de construction, 
+                          y compris le béton, l'acier et d'autres produits essentiels 
+                          pour la construction civile.
                         </p>
                       </div>
                     </div>
@@ -1094,10 +1054,11 @@
                         <h4 class="card-title"> Équipement Industriel </h4>
                         <p>
                           Découvrez notre vaste gamme de matériaux conçus pour 
-                          répondre aux demandes des secteurs agroalimentaire, textile, pharmaceutique, 
-                          traitement et distribution de produits chimiques, d'acier, d'automobile et d'eau. 
-                          Nous proposons des produits robustes et efficaces qui boostent la productivité, 
-                          sécurité et durabilité dans diverses industries.
+                          répondre aux besoins des secteurs agroalimentaire, textile, 
+                          pharmaceutique, traitement et distribution de produits chimiques, 
+                          de l'acier, de l'automobile et de l'eau. Nous proposons des produits 
+                          robustes et efficaces qui boostent la productivité, la sécurité et la 
+                          durabilité dans diverses industries.
                         </p>
                       </div>
                     </div>
@@ -1455,22 +1416,22 @@
         <div class="section-header">
           @switch(session('locale'))
               @case('pt')
-              <h2>Contacto</h2>
-              <p>
-                Para garantir maior confiabilidade em nosso trabalho
-              </p>
-                  @break
+                <h2>Contacto</h2>
+                <p>
+                  Para garantir maior confiabilidade em nosso trabalho, não hesite em nos contatar.
+                </p>
+                @break
               @case('en')
                 <h2>Contact</h2>
                 <p>
-                  To ensure greater reliability in our work
+                  To ensure greater reliability in our work, do not hesitate to contact us.
                 </p>
                 @break
               @default
-              <h2>Contact</h2>
-              <p>
-                Afin d'assurer une plus grande fiabilité dans notre travail
-              </p>
+                <h2>Contact</h2>
+                <p>
+                  Afin d'assurer une plus grande fiabilité dans notre travail, n’hésitez pas à nous contacter.
+                </p>
           @endswitch
 
         </div>
