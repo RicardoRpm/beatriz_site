@@ -1,33 +1,34 @@
-<script type="text/javascript">
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+$('#form-contact').submit(function(e) {
+    e.preventDefault();
+
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var service = $("#service").val();
+    var subject = $("#subject").val();
+    var description = $("#description").val();
+    
+    $.ajax({
+        type:'POST',
+        url: "/contact/store",
+        data: {
+            name: name,
+            email: email,
+            service: service,
+            subject: subject,
+            description: description
+        },
+        dataType: "json",
+        success: (response) => {
+            $("#name").val("");
+            $("#email").val("");
+            $("#service").val("Selecionar Serviço");
+            $("#subject").val("");
+            $("#description").val("");
+
+            $('#sucess-message').show();
+        },
+        error: function(response, data){
+            $('#error-message').show()
         }
-    });
-
-    $("#frm-create-post").validate({
-
-        submitHandler: function() {
-
-            var name = $("#name").val();
-            var description = $("#description").val();
-            var status = $("#status").val();
-
-            // processing ajax request    
-            $.ajax({
-                url: "{{ route('postSubmit') }}",
-                type: 'POST',
-                dataType: "json",
-                data: {
-                    name: name,
-                    description: description,
-                    status: status
-                },
-                success: function(data) {
-                    // log response into console
-                    console.log(data);
-                }
-            });
-        }
-    });
-</script>
+    });      
+});    

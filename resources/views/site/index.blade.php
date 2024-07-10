@@ -1514,10 +1514,29 @@
               </div>
               <div class="form-group">
                 <select class="form-control" name="service" id="service"> 
-                  <option value="">{{ $selectService }}</option>                   
-                  @foreach ($services as $service)
-                    <option value="{{ $service->title }}">{{ $service->title }}</option>                    
-                  @endforeach
+
+                  @switch (session('locale'))
+                    @case('pt')
+                      <option value="">{{ $selectService }}</option>                   
+                      @foreach ($services as $service)
+                        <option value="{{ $service->title_pt }}">{{ $service->title_pt }}</option>                    
+                      @endforeach
+
+                      @break
+                    @case('en')
+                      <option value="">{{ $selectService }}</option>                   
+                      @foreach ($services as $service)
+                        <option value="{{ $service->title_en }}">{{ $service->title_en }}</option>                    
+                      @endforeach
+                      
+                      @break
+                    @default
+                      <option value="">{{ $selectService }}</option>                   
+                      @foreach ($services as $service)
+                        <option value="{{ $service->title_fr }}">{{ $service->title_fr }}</option>                    
+                      @endforeach
+                      
+                  @endswitch
                 </select>
               </div>
               <div class="form-group">
@@ -1535,7 +1554,8 @@
                 {{ $messageError }}
               </div>
 
-               <div class="text-center"><button type="submit"> {{ $btnText }} </button></div>
+              <div class="text-center"><button type="submit"> {{ $btnText }} </button></div>
+
             </form>
           </div>
         </div>
