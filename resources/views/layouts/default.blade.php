@@ -30,8 +30,6 @@
   <!-- Template Main CSS File -->
   <link href="{{ URL::asset('assets/css/main.css') }}" rel="stylesheet">
   <link href="{{ URL::asset('assets/css/my_style.css') }}" rel="stylesheet">
-
-  <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>
 
 <body>

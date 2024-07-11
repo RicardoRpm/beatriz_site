@@ -1512,7 +1512,30 @@
                   <input type="email" class="form-control" name="email" id="email" placeholder="{{ $email }}" required>
                 </div>
               </div>
+
               <div class="form-group">
+                @switch (session('locale'))
+                  @case('pt')
+                    <select class="form-select" name="typeSolicitation" id="typeSolicitation">
+                      <option value="service">Serviço</option>
+                      <option value="product">Produto</option>
+                    </select>
+                    @break
+                  @case('en')
+                    <select class="form-select" name="typeSolicitation" id="typeSolicitation">
+                      <option value="service">Service</option>
+                      <option value="product">Product</option>
+                    </select>  
+                    @break
+                  @default
+                    <select class="form-select" name="typeSolicitation" id="typeSolicitation">
+                      <option value="service">Service</option>
+                      <option value="product">Produit</option>
+                    </select>  
+                @endswitch
+              </div>
+
+              <div class="form-group" id="section-service">
                 <select class="form-control" name="service" id="service"> 
 
                   @switch (session('locale'))
