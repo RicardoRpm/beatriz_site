@@ -1535,7 +1535,7 @@
                 @endswitch
               </div>
 
-              <div class="form-group" id="section-service">
+              <div class="form-group" id="section-service" style="display: block;">
                 <select class="form-control" name="service" id="service"> 
 
                   @switch (session('locale'))
@@ -1562,6 +1562,35 @@
                   @endswitch
                 </select>
               </div>
+
+              <div class="form-group" id="section-product" style="display: none;">
+                <select class="form-control" name="service" id="service"> 
+
+                  @switch (session('locale'))
+                    @case('pt')
+                      <option value="">{{ $selectProduct }}</option>                   
+                      @foreach ($services as $service)
+                        <option value="{{ $service->title_pt }}">{{ $service->title_pt }}</option>                    
+                      @endforeach
+
+                      @break
+                    @case('en')
+                      <option value="">{{ $selectProduct }}</option>                   
+                      @foreach ($services as $service)
+                        <option value="{{ $service->title_en }}">{{ $service->title_en }}</option>                    
+                      @endforeach
+                      
+                      @break
+                    @default
+                      <option value="">{{ $selectProduct }}</option>                   
+                      @foreach ($services as $service)
+                        <option value="{{ $service->title_fr }}">{{ $service->title_fr }}</option>                    
+                      @endforeach
+                      
+                  @endswitch
+                </select>
+              </div>
+
               <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="{{ $subject }}" required>
               </div>

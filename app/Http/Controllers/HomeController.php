@@ -30,6 +30,7 @@ class HomeController extends Controller
                 $name = 'Nome'; 
                 $email = 'Email'; 
                 $selectService = 'Selecionar Serviço'; 
+                $selectProduct = 'Produto Serviço'; 
                 $subject = 'Assunto'; 
                 $message = 'Mensagem'; 
 
@@ -41,6 +42,7 @@ class HomeController extends Controller
                 $name = 'Your Name'; 
                 $email = 'Your Email'; 
                 $selectService = 'Select Service'; 
+                $selectProduct = 'Select Product';
                 $subject = 'Subject'; 
                 $message = 'Message'; 
 
@@ -52,6 +54,7 @@ class HomeController extends Controller
                 $name = 'Votre Nom'; 
                 $email = 'Votre E-mail'; 
                 $selectService = 'Sélectionnez un Service'; 
+                $selectProduct = 'Sélectionner un produit';
                 $subject = 'Sujet'; 
                 $message = 'Message';
                 
@@ -68,6 +71,7 @@ class HomeController extends Controller
             'name' => $name, 
             'email' => $email, 
             'selectService' => $selectService, 
+            'selectProduct' => $selectProduct, 
             'subject' => $subject, 
             'message' => $message,
             'messageSuccess' => $messageSuccess,
@@ -86,7 +90,7 @@ class HomeController extends Controller
             'description' => $request->description
         ]);
 
-        
+
 
         return response()->json([
             'success' => 'Service criado com sucesso.'

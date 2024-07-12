@@ -302,6 +302,7 @@
     
     <!-- Template Main JS File -->
     <script src="{{ URL::asset('assets/js/main.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/my_js.js') }}"></script>
 </body>
 
 </html>
