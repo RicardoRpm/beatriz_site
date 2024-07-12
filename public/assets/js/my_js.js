@@ -1,34 +1,15 @@
-$('#form-contact').submit(function(e) {
-    e.preventDefault();
+const typeSolicitation = document.querySelector("#typeSolicitation");
 
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var service = $("#service").val();
-    var subject = $("#subject").val();
-    var description = $("#description").val();
-    
-    $.ajax({
-        type:'POST',
-        url: "/contact/store",
-        data: {
-            name: name,
-            email: email,
-            service: service,
-            subject: subject,
-            description: description
-        },
-        dataType: "json",
-        success: (response) => {
-            $("#name").val("");
-            $("#email").val("");
-            $("#service").val("Selecionar Serviço");
-            $("#subject").val("");
-            $("#description").val("");
+const sectionProduct = document.querySelector("#section-product");
+const sectionService = document.querySelector("#section-service");
 
-            $('#sucess-message').show();
-        },
-        error: function(response, data){
-            $('#error-message').show()
-        }
-    });      
-});    
+
+typeSolicitation.addEventListener("change", (event) => {
+    if (typeSolicitation.value == 'product') {
+        sectionService.style.display = 'none';
+        sectionProduct.style.display = 'block';
+    } else {    
+        sectionProduct.style.display = 'none';
+        sectionService.style.display = 'block';
+    }
+});

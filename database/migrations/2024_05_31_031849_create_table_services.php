@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('title_fr');
             $table->string('title_pt');
             $table->string('title_en');
-            $table->string('description_fr');
-            $table->string('description_pt');
-            $table->string('description_en');
+            $table->text('description_fr');
+            $table->text('description_pt');
+            $table->text('description_en');
             $table->timestamps();
         });
     }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Product;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Statistic;
@@ -14,6 +15,7 @@ class HomeController extends Controller
     {
         $services = Service::all();
         $projects = Project::all();
+        $products = Product::all();
         $statistic = Statistic::all();
 
         $name = ''; 
@@ -30,6 +32,7 @@ class HomeController extends Controller
                 $name = 'Nome'; 
                 $email = 'Email'; 
                 $selectService = 'Selecionar Serviço'; 
+                $selectProduct = 'Produto Serviço'; 
                 $subject = 'Assunto'; 
                 $message = 'Mensagem'; 
 
@@ -41,6 +44,7 @@ class HomeController extends Controller
                 $name = 'Your Name'; 
                 $email = 'Your Email'; 
                 $selectService = 'Select Service'; 
+                $selectProduct = 'Select Product';
                 $subject = 'Subject'; 
                 $message = 'Message'; 
 
@@ -52,6 +56,7 @@ class HomeController extends Controller
                 $name = 'Votre Nom'; 
                 $email = 'Votre E-mail'; 
                 $selectService = 'Sélectionnez un Service'; 
+                $selectProduct = 'Sélectionner un produit';
                 $subject = 'Sujet'; 
                 $message = 'Message';
                 
@@ -64,10 +69,12 @@ class HomeController extends Controller
         return View('site.index', [
             'services' => $services,
             'projects' => $projects,
+            'products' => $products,
             'statistic' => $statistic,
             'name' => $name, 
             'email' => $email, 
             'selectService' => $selectService, 
+            'selectProduct' => $selectProduct, 
             'subject' => $subject, 
             'message' => $message,
             'messageSuccess' => $messageSuccess,

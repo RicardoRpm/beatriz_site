@@ -1512,7 +1512,30 @@
                   <input type="email" class="form-control" name="email" id="email" placeholder="{{ $email }}" required>
                 </div>
               </div>
+
               <div class="form-group">
+                @switch (session('locale'))
+                  @case('pt')
+                    <select class="form-select" name="typeSolicitation" id="typeSolicitation">
+                      <option value="service">Serviço</option>
+                      <option value="product">Produto</option>
+                    </select>
+                    @break
+                  @case('en')
+                    <select class="form-select" name="typeSolicitation" id="typeSolicitation">
+                      <option value="service">Service</option>
+                      <option value="product">Product</option>
+                    </select>  
+                    @break
+                  @default
+                    <select class="form-select" name="typeSolicitation" id="typeSolicitation">
+                      <option value="service">Service</option>
+                      <option value="product">Produit</option>
+                    </select>  
+                @endswitch
+              </div>
+
+              <div class="form-group" id="section-service" style="display: block;">
                 <select class="form-control" name="service" id="service"> 
 
                   @switch (session('locale'))
@@ -1539,6 +1562,35 @@
                   @endswitch
                 </select>
               </div>
+
+              <div class="form-group" id="section-product" style="display: none;">
+                <select class="form-control" name="product" id="product"> 
+
+                  @switch (session('locale'))
+                    @case('pt')
+                      <option value="">{{ $selectProduct }}</option>                   
+                      @foreach ($products as $product)
+                        <option value="{{ $product->title_pt }}">{{ $product->title_pt }}</option>                    
+                      @endforeach
+
+                      @break
+                    @case('en')
+                      <option value="">{{ $selectProduct }}</option>                   
+                      @foreach ($products as $product)
+                        <option value="{{ $product->title_en }}">{{ $product->title_en }}</option>                    
+                      @endforeach
+                      
+                      @break
+                    @default
+                      <option value="">{{ $selectProduct }}</option>                   
+                      @foreach ($products as $product)
+                        <option value="{{ $product->title_fr }}">{{ $product->title_fr }}</option>                    
+                      @endforeach
+                      
+                  @endswitch
+                </select>
+              </div>
+
               <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="{{ $subject }}" required>
               </div>

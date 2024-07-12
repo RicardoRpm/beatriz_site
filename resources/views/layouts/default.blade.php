@@ -12,6 +12,7 @@
 
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta name="csrf-token" content="{{ csrf_token() }}">  
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -30,8 +31,6 @@
   <!-- Template Main CSS File -->
   <link href="{{ URL::asset('assets/css/main.css') }}" rel="stylesheet">
   <link href="{{ URL::asset('assets/css/my_style.css') }}" rel="stylesheet">
-
-  <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>
 
 <body>
@@ -272,9 +271,15 @@
             var name = $("#name").val();
             var email = $("#email").val();
             var service = $("#service").val();
+            var product = $("#product").val();
             var subject = $("#subject").val();
             var description = $("#description").val();
+            var typeSolicitation = $("#typeSolicitation").val();  
             
+            if (typeSolicitation === 'product') {
+                service = product;
+            } 
+
             $.ajax({
                 type:'POST',
                 url: "/contact/store",
@@ -283,7 +288,8 @@
                     email: email,
                     service: service,
                     subject: subject,
-                    description: description
+                    description: description,
+                    typeSolicitation: typeSolicitation
                 },
                 dataType: "json",
                 success: (response) => {
@@ -304,6 +310,7 @@
     
     <!-- Template Main JS File -->
     <script src="{{ URL::asset('assets/js/main.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/my_js.js') }}"></script>
 </body>
 
 </html>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 use App\Models\Project;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -48,19 +49,19 @@ class AdminController extends Controller
         $imageName = time().'.'.$request->img->extension();
         $request->img->move(public_path('assets/img'), $imageName);
 
-        $product = new Project();
-
-        $product->title_pt = $request->title_pt;
+        $product = new Product();
+        //dd($request);
         $product->title_fr = $request->title_fr;
+        $product->title_pt = $request->title_pt;
         $product->title_en = $request->title_en;
-        
+
         $product->description_fr = $request->description_fr;
         $product->description_pt = $request->description_pt;
         $product->description_en = $request->description_en;
 
-        //dd($request);
-
         $product->img = 'assets/img/'.$imageName;
+        $product->img_2 = 'assets/img/'.$imageName;
+        $product->img_3 = 'assets/img/'.$imageName;
         $product->save();
         return redirect()->route('admin.project')->with('success', 'Product created successfully.');
     }
