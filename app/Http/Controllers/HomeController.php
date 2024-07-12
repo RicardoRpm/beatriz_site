@@ -69,6 +69,7 @@ class HomeController extends Controller
         return View('site.index', [
             'services' => $services,
             'projects' => $projects,
+            'products' => $products,
             'statistic' => $statistic,
             'name' => $name, 
             'email' => $email, 
