@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Product;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Statistic;
@@ -14,6 +15,7 @@ class HomeController extends Controller
     {
         $services = Service::all();
         $projects = Project::all();
+        $products = Product::all();
         $statistic = Statistic::all();
 
         $name = ''; 

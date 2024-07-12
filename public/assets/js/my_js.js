@@ -13,5 +13,3 @@ typeSolicitation.addEventListener("change", (event) => {
         sectionService.style.display = 'block';
     }
 });
-
-
