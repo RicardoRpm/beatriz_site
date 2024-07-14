@@ -1269,7 +1269,7 @@
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Eurofarma_.png" class="img-fluid partner" alt="">
+          <img src="assets/img/partners/eurofarma-logo.png" class="img-fluid partner" alt="">
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
