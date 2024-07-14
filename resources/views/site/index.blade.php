@@ -1295,9 +1295,21 @@
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
           <img src="assets/img/partners/IFP-Trainig.png" class="img-fluid partner" alt="IFP Training">
         </div><!-- End Team Member -->
-
+        
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
           <img src="assets/img/partners/Camargo-Correa.png" class="img-fluid partner" alt="Construtora Camargo Corrêa">
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/logo-mga.png" class="img-fluid partner" alt="MGA Tecnologies">
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/Constlab_ger.png" class="img-fluid partner" alt="MGA Tecnologies">
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/logo-hzc-v2.png" class="img-fluid partner" alt="MGA Tecnologies">
         </div><!-- End Team Member -->
       </div>
     </div>
