@@ -1265,39 +1265,39 @@
 
       <div class="row gy-5">
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Petrobras_br.png" class="img-fluid partner" alt="">
+          <img src="assets/img/partners/Petrobras_br.png" class="img-fluid partner" alt="Petrobras">
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/eurofarma-logo.png" class="img-fluid partner" alt="">
+          <img src="assets/img/partners/eurofarma-logo.png" class="img-fluid partner" alt="Eurofarma">
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Gerdau.png" class="img-fluid partner" alt="">
+          <img src="assets/img/partners/Gerdau.png" class="img-fluid partner" alt="Gerdau">
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Karl_Storz_Endoskope.png" class="img-fluid partner" alt="">
+          <img src="assets/img/partners/Karl_Storz_Endoskope.png" class="img-fluid partner" alt="Karl Storz - Endoskope">
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Schott.png" class="img-fluid partner" alt="">
+          <img src="assets/img/partners/Schott.png" class="img-fluid partner" alt="Schott">
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Röchling.png" class="img-fluid partner" alt="">
+          <img src="assets/img/partners/Röchling.png" class="img-fluid partner" alt="Rochling">
         </div><!-- End Team Member -->
       
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Kuhn.png" class="img-fluid partner" alt="">
+          <img src="assets/img/partners/Kuhn.png" class="img-fluid partner" alt="Kuhn">
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/IFP-Trainig.png" class="img-fluid partner" alt="">
+          <img src="assets/img/partners/IFP-Trainig.png" class="img-fluid partner" alt="IFP Training">
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Camargo-Correa.png" class="img-fluid partner" alt="">
+          <img src="assets/img/partners/Camargo-Correa.png" class="img-fluid partner" alt="Construtora Camargo Corrêa">
         </div><!-- End Team Member -->
       </div>
     </div>
