@@ -1233,84 +1233,76 @@
   </section><!-- End Our Projects Section -->    
 
   <!-- ======= Our Team Section ======= -->
-  {{-- <section id="team" class="team section-bg">
+  <section id="team" class="team section-bg">
     <div class="container" data-aos="fade-up">
       @switch(session('locale'))
           @case('pt')
             <div class="section-header">
-              <h2>Nosso Time</h2>
-              <p>Conheça alguns membros da nossa equipe</p>
+              <h2>Nossos Parceiros</h2>
+              <p>
+                Colaboramos com empresas de renome mundial para lhe fornecer serviços superiores.
+              </p>
             </div>              
             @break
           @case('en')
           <div class="section-header">
-            <h2>Our Team</h2>
-            <p>Meet some members of our team</p>
+            <h2>Our Partners</h2>
+            <p>
+              We collaborate with world-renowned companies 
+              to provide you with superior services.
+            </p>
           </div>  
             @break
           @default
           <div class="section-header">
-            <h2>Notre Équipe</h2>
-            <p>Rencontrez quelques membres de notre équipe</p>
+            <h2>Nos Partenaires</h2>
+            <p>
+              Nous collaborons avec des entreprises de renommée 
+              mondiale pour vous offrir des services de qualité supérieure.
+            </p>
           </div>
       @endswitch
 
       <div class="row gy-5">
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <div class="member-img">
-            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur</p>
-          </div>
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/Petrobras_br.png" class="img-fluid partner" alt="">
         </div><!-- End Team Member -->
 
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
-          <div class="member-img">
-            <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Brian Doe</h4>
-            <span>Marketing</span>
-            <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit</p>
-          </div>
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/Eurofarma_.png" class="img-fluid partner" alt="">
         </div><!-- End Team Member -->
 
-        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-          <div class="member-img">
-            <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info text-center">
-            <h4>Josepha Palas</h4>
-            <span>Operation</span>
-            <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
-          </div>
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/Gerdau.png" class="img-fluid partner" alt="">
         </div><!-- End Team Member -->
 
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/Karl_Storz_Endoskope.png" class="img-fluid partner" alt="">
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/Schott.png" class="img-fluid partner" alt="">
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/Röchling.png" class="img-fluid partner" alt="">
+        </div><!-- End Team Member -->
+      
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/Kuhn.png" class="img-fluid partner" alt="">
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/IFP-Trainig.png" class="img-fluid partner" alt="">
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/img/partners/Camargo-Correa.png" class="img-fluid partner" alt="">
+        </div><!-- End Team Member -->
       </div>
-
     </div>
-  </section><!-- End Our Team Section --> --}}
+  </section>
+  <!-- End Our Team Section -->
 
 
   <!-- ======= Stats Counter Section ======= -->
