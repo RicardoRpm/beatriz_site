@@ -8,6 +8,7 @@ use App\Models\Project;
 use App\Models\Service;
 use App\Models\Statistic;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -93,7 +94,13 @@ class HomeController extends Controller
             'description' => $request->description
         ]);
 
-        $email = new 
+        $email = new Mail();
+
+        $email->to("ricardomiguel190@gmail.com");
+
+        
+
+        $email->send();
 
         return response()->json([
             'success' => 'Service criado com sucesso.'
