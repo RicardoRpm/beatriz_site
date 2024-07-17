@@ -93,6 +93,8 @@ class HomeController extends Controller
             'description' => $request->description
         ]);
 
+        $email = new 
+
         return response()->json([
             'success' => 'Service criado com sucesso.'
         ]);
