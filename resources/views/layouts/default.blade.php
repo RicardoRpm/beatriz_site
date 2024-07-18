@@ -303,6 +303,8 @@
                 },
                 error: function(response, data){
                     $('#error-message').show()
+                    alert(response);
+                    console.log(response);
                 }
             });      
         });    

@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\OrderShipped;
 use App\Models\Contact;
 use App\Models\Product;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Statistic;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -86,25 +88,28 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-        Contact::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'service' => $request->service,
-            'subject' => $request->subject,
-            'description' => $request->description
-        ]);
-
-        $email = new Mail();
-
-        $email->to("ricardomiguel190@gmail.com");
-
-        
-
-        $email->send();
-
-        return response()->json([
-            'success' => 'Service criado com sucesso.'
-        ]);
+        try {
+            Contact::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'service' => $request->service,
+                'subject' => $request->subject,
+                'description' => $request->description
+            ]);
+    
+            Mail::to("ricardomiguel190@gmail.com")->send(new OrderShipped([
+                'title' => 'The Title',
+                'body' => 'The Body'
+            ]));
+    
+            return response()->json([
+                'success' => 'Service criado com sucesso.'
+            ]);
+        } catch(\Exception $e) {
+            return response()->json([
+                'error' => $e
+            ]);
+        }   
     }
 
     public function services(string $detail)

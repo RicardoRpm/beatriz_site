@@ -41,7 +41,7 @@ return [
             'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
             'username' => env('teste@beatriz-renovation.com'),
             'password' => env('Beatriz@123.'),
-            'timeout' => null,
+            'timeout' => 3600,
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
         ],
 
