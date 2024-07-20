@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\OrderShipped;
+use App\Models\CategoryService;
 use App\Models\Contact;
 use App\Models\Product;
 use App\Models\Project;
@@ -17,9 +18,11 @@ class HomeController extends Controller
     public function index()
     {
         $services = Service::all();
+        $categoryService = CategoryService::all();
         $projects = Project::all();
         $products = Product::all();
         $statistic = Statistic::all();
+
 
         $name = ''; 
         $email = ''; 
@@ -83,6 +86,7 @@ class HomeController extends Controller
             'selectService' => $selectService, 
             'selectProduct' => $selectProduct, 
             'selectCategoryService' => $selectCategoryService,
+            'categoryServices' => $categoryService,
             'subject' => $subject, 
             'message' => $message,
             'messageSuccess' => $messageSuccess,
@@ -168,5 +172,9 @@ class HomeController extends Controller
                     break;
             
         }
+    }
+
+    public function loadServices(string $id){
+        $services = Service::all()->where('', '=', $id);
     }
 }

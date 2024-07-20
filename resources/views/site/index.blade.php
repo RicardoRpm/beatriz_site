@@ -1545,22 +1545,21 @@
                     @switch (session('locale'))
                       @case('pt')
                         <option value="">{{ $selectCategoryService }}</option>                   
-                        @foreach ($services as $service)
-                          <option value="{{ $service->title_pt }}">{{ $service->title_pt }}</option>                    
+                        @foreach ($categoryServices as $categoryService)
+                          <option value="{{ $categoryService->id }}">{{ $categoryService->title_pt }}</option>                    
                         @endforeach
                         @break
                       @case('en')
                         <option value="">{{ $selectCategoryService }}</option>                   
-                        @foreach ($services as $service)
+                        @foreach ($categoryServices as $categoryService)
                           <option value="{{ $service->title_en }}">{{ $service->title_en }}</option>                    
                         @endforeach
                         @break
                       @default
                         <option value="">{{ $selectCategoryService }}</option>                   
-                        @foreach ($services as $service)
-                          <option value="{{ $service->title_fr }}">{{ $service->title_fr }}</option>                    
-                        @endforeach
-                        
+                        @foreach ($categoryServices as $categoryService)
+                          <option value="{{ $categoryService->id }}">{{ $categoryService->title_fr }}</option>                    
+                        @endforeach                        
                     @endswitch
                   </select>
                 </div>
@@ -1587,7 +1586,6 @@
                         @foreach ($services as $service)
                           <option value="{{ $service->title_fr }}">{{ $service->title_fr }}</option>                    
                         @endforeach
-                        
                     @endswitch
                   </select>
                 </div>

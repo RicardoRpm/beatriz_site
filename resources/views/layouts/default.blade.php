@@ -265,6 +265,7 @@
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
+
         $('#form-contact').submit(function(e) {
             e.preventDefault();
 
@@ -308,6 +309,35 @@
                 }
             });      
         });    
+
+        $('#categoryService').change(function(e) {
+            e.preventDefault();
+
+            var idCategoryService = $("#categoryService").val();  
+
+            $.ajax({
+                type:'POST',
+                url: "/categoryServices/load-services",
+                data: {
+                    id: idCategoryService,
+                },
+                dataType: "json",
+                success: (response) => {
+                    $("#name").val("");
+                    $("#email").val("");
+                    $("#service").val("Selecionar Serviço");
+                    $("#subject").val("");
+                    $("#description").val("");
+
+                    $('#sucess-message').show();
+                },
+                error: function(response, data){
+                    $('#error-message').show()
+                    alert(response);
+                    console.log(response);
+                }
+            });      
+        });
     </script>
     
     <!-- Template Main JS File -->

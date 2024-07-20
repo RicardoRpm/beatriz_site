@@ -16,6 +16,8 @@ Route::post('/'.  session('locale') . 'admin-beatriz/projects', [AdminController
 
 Route::get('download-catalog/{serv}', [HomeController::class, 'catalog'])->name('download-catalog');
 
+Route::get('/categoryServices/load-services/{id}', [HomeController::class, 'loadServices'])->name('load-services');
+
 Route::group(['middleware' => ['setLocale']], function () {
     Route::get('/', [HomeController::class, 'index'])->name('index');
 });
