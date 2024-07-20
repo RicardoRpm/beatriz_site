@@ -1540,25 +1540,23 @@
               </div>
 
               <div id="section-service" style="display: block;">
-                <div class="form-group" >
-                  <select class="form-control" name="service" id="service">   
+                <div class="form-group">
+                  <select class="form-control" name="categoryService" id="categoryService">   
                     @switch (session('locale'))
                       @case('pt')
-                        <option value="">{{ $selectService }}</option>                   
+                        <option value="">{{ $selectCategoryService }}</option>                   
                         @foreach ($services as $service)
                           <option value="{{ $service->title_pt }}">{{ $service->title_pt }}</option>                    
                         @endforeach
-                        
                         @break
                       @case('en')
-                        <option value="">{{ $selectService }}</option>                   
+                        <option value="">{{ $selectCategoryService }}</option>                   
                         @foreach ($services as $service)
                           <option value="{{ $service->title_en }}">{{ $service->title_en }}</option>                    
                         @endforeach
-                        
                         @break
                       @default
-                        <option value="">{{ $selectService }}</option>                   
+                        <option value="">{{ $selectCategoryService }}</option>                   
                         @foreach ($services as $service)
                           <option value="{{ $service->title_fr }}">{{ $service->title_fr }}</option>                    
                         @endforeach

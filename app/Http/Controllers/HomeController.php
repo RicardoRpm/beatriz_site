@@ -23,6 +23,7 @@ class HomeController extends Controller
 
         $name = ''; 
         $email = ''; 
+        $selectCategoryService = ''; 
         $selectService = ''; 
         $subject = ''; 
         $message = ''; 
@@ -39,6 +40,7 @@ class HomeController extends Controller
                 $subject = 'Assunto'; 
                 $message = 'Mensagem'; 
 
+                $selectCategoryService = "Selecionar categoria do serviço";
                 $messageSuccess = 'Mensagem envida com sucesso';
                 $messageError = 'Não foi possível enviar a mensgem';
                 $btnText = 'Enviar Mensagem';
@@ -51,6 +53,7 @@ class HomeController extends Controller
                 $subject = 'Subject'; 
                 $message = 'Message'; 
 
+                $selectCategoryService = "Select service category";
                 $messageSuccess = 'Message sent successfully';
                 $messageError = 'Unable to send message';
                 $btnText = 'Send Message';
@@ -63,6 +66,7 @@ class HomeController extends Controller
                 $subject = 'Sujet'; 
                 $message = 'Message';
                 
+                $selectCategoryService = "Sélectionnez la catégorie de service";
                 $messageSuccess = 'Message envoyé avec succès';
                 $messageError = 'Impossible d`envoyer le message';
                 $btnText = 'Envoyer le Message';
@@ -78,6 +82,7 @@ class HomeController extends Controller
             'email' => $email, 
             'selectService' => $selectService, 
             'selectProduct' => $selectProduct, 
+            'selectCategoryService' => $selectCategoryService,
             'subject' => $subject, 
             'message' => $message,
             'messageSuccess' => $messageSuccess,
