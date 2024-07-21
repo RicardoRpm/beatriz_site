@@ -16,7 +16,17 @@
        
         @csrf
         <h2 class="mb-4">Serviço</h2>
-
+            
+        <div class="row">
+            <div class="col-6">
+                <select class="form-control" name="idCategoryService" id="idCategoryService">
+                    @foreach ($categoryServices as $categoryService)
+                          <option value="{{ $categoryService->id }}">{{ $categoryService->title_pt }}</option>                    
+                        @endforeach   
+                </select>
+            </div>
+        </div>
+        
         <div class="row">
             <div class="col-4">
                 <div class="mb-3">

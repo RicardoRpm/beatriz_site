@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/contact/store', [HomeController::class, 'store'])->name('contact.store');
@@ -28,3 +29,7 @@ Route::get('change-language/{lang}', function($lang){
     }
     return back(); 
 })->name('change-language');
+
+Route::get('/run-migrations-all', function () {
+    return Artisan::call('migrate', ["--force" => true ]);
+});

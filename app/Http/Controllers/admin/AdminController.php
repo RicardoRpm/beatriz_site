@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\CategoryService;
 use App\Models\Product;
 use App\Models\Project;
 use App\Models\Service;
@@ -15,7 +16,11 @@ class AdminController extends Controller
     }
 
     public function services() {
-        return view('admin.services');
+        $categoryService = CategoryService::all();
+
+        return view('admin.services', [
+            'categoryServices' => $categoryService
+        ]);
     }
 
     public function store(Request $request) {
@@ -28,6 +33,8 @@ class AdminController extends Controller
         $service->description_fr = $request->description_fr;
         $service->description_pt = $request->description_pt;
         $service->description_en = $request->description_en;
+
+        $service->idCategoryService = $request->idCategoryService;
 
         $service->save();
         return redirect()->route('admin.service')->with('status', 'Blog Post Form Data Has Been inserted');

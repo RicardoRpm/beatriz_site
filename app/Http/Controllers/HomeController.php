@@ -18,6 +18,7 @@ class HomeController extends Controller
     public function index()
     {
         $categoryService = CategoryService::all();
+        
         $projects = Project::all();
         $products = Product::all();
         $statistic = Statistic::all();
