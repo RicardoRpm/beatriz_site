@@ -1566,27 +1566,7 @@
 
                 <div class="form-group" >
                   <select class="form-control" name="service" id="service">   
-                    @switch (session('locale'))
-                      @case('pt')
-                        <option value="">{{ $selectService }}</option>                   
-                        @foreach ($services as $service)
-                          <option value="{{ $service->title_pt }}">{{ $service->title_pt }}</option>                    
-                        @endforeach
-                        
-                        @break
-                      @case('en')
-                        <option value="">{{ $selectService }}</option>                   
-                        @foreach ($services as $service)
-                          <option value="{{ $service->title_en }}">{{ $service->title_en }}</option>                    
-                        @endforeach
-                        
-                        @break
-                      @default
-                        <option value="">{{ $selectService }}</option>                   
-                        @foreach ($services as $service)
-                          <option value="{{ $service->title_fr }}">{{ $service->title_fr }}</option>                    
-                        @endforeach
-                    @endswitch
+                    <option value="">{{ $selectService }}</option>                   
                   </select>
                 </div>
               </div>

@@ -17,7 +17,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $services = Service::all();
         $categoryService = CategoryService::all();
         $projects = Project::all();
         $products = Product::all();
@@ -77,7 +76,6 @@ class HomeController extends Controller
         }
 
         return View('site.index', [
-            'services' => $services,
             'projects' => $projects,
             'products' => $products,
             'statistic' => $statistic,
@@ -175,6 +173,58 @@ class HomeController extends Controller
     }
 
     public function loadServices(string $id){
-        $services = Service::all()->where('', '=', $id);
+        $services = Service::where('idCategoryService', '=', $id)->get(); 
+        $servicesReturned = collect([]);
+
+        switch (session('locale')) {
+            case 'pt':
+                $servicesReturned->push([
+                    'key'=> "",
+                    'name'=> "Selecionar Serviço"
+                ]);
+
+                foreach ($services as $service) {
+                    $servicesReturned->push([
+                        'key'=> $service->title_pt,
+                        'name'=> $service->title_pt
+                    ]);
+                }
+                break;
+            case 'en':   
+                $servicesReturned->push([
+                    'key'=> "",
+                    'name'=> "Select Service"
+                ]);
+
+                foreach ($services as $service) {
+                    $servicesReturned->push([
+                        'key'=> $service->title_en,
+                        'name'=> $service->title_en
+                    ]);
+                }
+                break;
+            
+            default:
+                $servicesReturned->push([
+                    'key'=> "",
+                    'name'=> "Sélectionnez un Service"
+                ]);
+
+                foreach ($services as $service) {
+                    $servicesReturned->push([
+                        'key'=> $service->title_fr,
+                        'name'=> $service->title_fr
+                    ]);
+                }
+                break;
+        }
+
+        return response()->json($servicesReturned);
     }
 }
+
+class Item {
+    public $key;
+    public $name;
+}
+

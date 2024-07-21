@@ -310,30 +310,32 @@
             });      
         });    
 
+
         $('#categoryService').change(function(e) {
             e.preventDefault();
 
             var idCategoryService = $("#categoryService").val();  
 
             $.ajax({
-                type:'POST',
-                url: "/categoryServices/load-services",
-                data: {
-                    id: idCategoryService,
-                },
+                type:'GET',
+                url: "/categoryServices/load-services/" + idCategoryService,
                 dataType: "json",
                 success: (response) => {
-                    $("#name").val("");
-                    $("#email").val("");
-                    $("#service").val("Selecionar Serviço");
-                    $("#subject").val("");
-                    $("#description").val("");
+                    $("#service").empty();
+                    console.log("============= Sucesso =============");
+                    console.log(response);
 
-                    $('#sucess-message').show();
+                    for (const item of response) {
+                        if (item.key == '') {
+                            $("#service").append("<option selected value='"+item.key+"'>"+item.name+"</option>");
+                        } else {
+                            $("#service").append("<option value='"+item.key+"'>"+item.key+"</option>");
+                        }
+                    }
                 },
-                error: function(response, data){
-                    $('#error-message').show()
-                    alert(response);
+                error: function(response, data) {
+                    console.log("============= Erro =============");
+                    console.log(data);
                     console.log(response);
                 }
             });      
