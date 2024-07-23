@@ -18,7 +18,7 @@ class HomeController extends Controller
     public function index()
     {
         $categoryService = CategoryService::all();
-        
+
         $projects = Project::all();
         $products = Product::all();
         $statistic = Statistic::all();
@@ -223,9 +223,3 @@ class HomeController extends Controller
         return response()->json($servicesReturned);
     }
 }
-
-class Item {
-    public $key;
-    public $name;
-}
-

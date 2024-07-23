@@ -12,7 +12,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
             @if (session('locale') === 'fr')  
-              <h2 data-aos="fade-down">Bienvenue chez Beatriz Rénovation</h2>
+              <h2 data-aos="fade-down">Bienvenue chez BR Groupe</h2>
               <p data-aos="fade-up">
                 Via nos partenaires, nous proposons la vente de matériaux 
                 industriels pour les secteurs de la construction civile, 
@@ -21,7 +21,7 @@
                 chimiques, et bien plus encore.
               </p>
             @elseif (session('locale') === 'en')
-              <h2 data-aos="fade-down">Welcome to Beatriz Rénovation</h2>
+              <h2 data-aos="fade-down">Welcome to BR Groupe</h2>
               <p data-aos="fade-up">
                 Through our partners, we offer the sale of industrial 
                 materials for the sectors of civil construction, oil platforms, 
@@ -29,7 +29,7 @@
                 and chemical distributions, and much more.
               </p>          
             @elseif (session('locale') === 'pt')
-              <h2 data-aos="fade-down">Bem-vindo à Beatriz Rénovation</h2>
+              <h2 data-aos="fade-down">Bem-vindo à BR Groupe</h2>
               <p data-aos="fade-up">                
                 Através de nossos parceiros, oferecemos a venda de materiais
                 industriais para os setores de construção civil, 
@@ -75,7 +75,7 @@
           @switch(session('locale'))
               @case('pt')
                 <p class="text-justify">
-                  Beatriz Rénovation é uma empresa especializada na transformação 
+                  BR Groupe é uma empresa especializada na transformação 
                   industrial, bem como na manutenção e renovação de espaços residenciais, 
                   comercial e industrial. Oferecemos serviços de limpeza e reforma 
                   e layout, e vendemos uma ampla gama de materiais industriais e 
@@ -85,7 +85,7 @@
                   eficiente e personalizado para melhorar seus espaços de vida e de trabalho.
                 </p>
                 
-                <strong class="mb-4">Por que escolher Beatriz Rénovation?</strong>
+                <strong class="mb-4">Por que escolher BR Groupe?</strong>
 
                 <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
                   <i class="bi bi-1-circle flex-shrink-0"></i>
@@ -122,7 +122,7 @@
                 @break
               @case('en')
                   <p class="text-justify">
-                    Beatriz Rénovation is a company specializing in the transformation 
+                    BR Groupe is a company specializing in the transformation 
                     industrial as well as in the maintenance and renovation of residential spaces, 
                     commercial and industrial. We offer cleaning and renovation services 
                     and layout, and we sell a wide range of industrial materials and 
@@ -132,7 +132,7 @@
                     efficient and personalized to improve your living and working spaces.
                   </p>
                   
-                  <strong class="mb-4">Why Choose Beatriz Rénovation?</strong>
+                  <strong class="mb-4">Why Choose BR Groupe?</strong>
 
                   <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
                     <i class="bi bi-1-circle flex-shrink-0"></i>
@@ -169,7 +169,7 @@
                   @break
               @default
                 <p class="text-justify">
-                  Beatriz Rénovation est une entreprise spécialisée dans la transformation 
+                  BR Groupe est une entreprise spécialisée dans la transformation 
                   industrielle ainsi que dans l'entretien et la rénovation des espaces résidentiels, 
                   commerciaux et industriels. Nous proposons des services de nettoyage, de rénovation 
                   et d'aménagement, et nous vendons une large gamme de matériaux industriels et 
@@ -179,7 +179,7 @@
                   efficaces et personnalisées pour améliorer vos espaces de vie et de travail.
                 </p>
 
-                <strong class="mb-4">Pourquoi Choisir Beatriz Rénovation?</strong>
+                <strong class="mb-4">Pourquoi Choisir BR Groupe?</strong>
 
                 <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
                   <i class="bi bi-1-circle flex-shrink-0"></i>
