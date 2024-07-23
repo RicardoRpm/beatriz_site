@@ -8,7 +8,7 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 
-  <title>@yield('title', 'Beatriz')</title>
+  <title>@yield('title', 'BR Groupe')</title>
 
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -39,7 +39,7 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
     
             <a href="{{ route('index') }}" class="logo d-flex align-items-center">
-                <h1>Beatriz-Rénovation<span>.</span></h1>
+                <h1>BR Groupe<span>.</span></h1>
             </a>
     
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -237,7 +237,7 @@
         <div class="footer-legal text-center position-relative">
             <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>Beatriz-Rénovation</span></strong>. All rights reserved
+                &copy; Copyright <strong><span>BR Groupe</span></strong>. All rights reserved
             </div>
             </div>
         </div>
@@ -322,9 +322,6 @@
                 dataType: "json",
                 success: (response) => {
                     $("#service").empty();
-                    console.log("============= Sucesso =============");
-                    console.log(response);
-
                     for (const item of response) {
                         if (item.key == '') {
                             $("#service").append("<option selected value='"+item.key+"'>"+item.name+"</option>");
@@ -334,9 +331,6 @@
                     }
                 },
                 error: function(response, data) {
-                    console.log("============= Erro =============");
-                    console.log(data);
-                    console.log(response);
                 }
             });      
         });
