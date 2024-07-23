@@ -102,9 +102,9 @@
                                     <p>                                      
                                       Our architects were selected for their ability to understand your 
                                       needs and adapt projects to your budget. We have a local network 
-                                      of qualified artisans through the partnership with La B.R.I (Beatriz Rénovation Industrielle) de Strasbourg, 
+                                      of qualified artisans through the partnership with La B.R.I (BR Groupe Industrielle) de Strasbourg, 
                                       ensuring seriousness and quality in each service. 
-                                      Carry out your project with peace of mind with B.R.I (Beatriz Rénovation Industrielle) Architectes!
+                                      Carry out your project with peace of mind with B.R.I (BR Groupe Industrielle) Architectes!
                                     </p>
                                   </div>
                                 </div>
@@ -129,7 +129,7 @@
                                     <h4 class="card-title">Agriculture</h4>
                                     <p>
                                       Meet your needs with our expertise in agricultural sales. 
-                                      At B.R.I (Beatriz Rénovation Industrielle), we prioritize team management and offer machines 
+                                      At B.R.I (BR Groupe Industrielle), we prioritize team management and offer machines 
                                       personalized and quality services that add value. 
                                       We use our know-how to develop your projects, helping you to 
                                       prosper in the profession and face future challenges with confidence.
@@ -542,9 +542,9 @@
                                     <p>
                                       Nossos arquitetos foram selecionados pela habilidade de entender suas 
                                       necessidades e adaptar projetos ao seu orçamento. Contamos com uma rede local 
-                                      de artesãos qualificados através da parceria com La B.R.I (Beatriz Rénovation Industrielle) de Estrasburgo, 
+                                      de artesãos qualificados através da parceria com La B.R.I (BR Groupe Industrielle) de Estrasburgo, 
                                       garantindo seriedade e qualidade em cada serviço. 
-                                      Realize seu projeto com tranquilidade junto à B.R.I (Beatriz Rénovation Industrielle) Architectes!
+                                      Realize seu projeto com tranquilidade junto à B.R.I (BR Groupe Industrielle) Architectes!
                                     </p>
                                   </div>
                                 </div>
@@ -569,7 +569,7 @@
                                     <h4 class="card-title">Agricultura</h4>
                                     <p>
                                       Atenda suas necessidades com nossa expertise em vendas agrícolas. 
-                                      Na B.R.I (Beatriz Rénovation Industrielle), priorizamos a gestão de equipe e oferecemos máquinas 
+                                      Na B.R.I (BR Groupe Industrielle), priorizamos a gestão de equipe e oferecemos máquinas 
                                       personalizadas e serviços de qualidade que agregam valor. 
                                       Utilizamos nosso know-how para desenvolver seus projetos, ajudando-o a 
                                       prosperar na profissão e enfrentar os desafios futuros com confiança.
@@ -987,9 +987,9 @@
                                       capacité à comprendre vos besoins et à adapter 
                                       les projets à votre budget. Nous disposons d'un 
                                       réseau local d'artisans qualifiés au travers d'un 
-                                      partenariat avec La B.R.I (Beatriz Rénovation Industrielle) à Strasbourg, garantissant 
+                                      partenariat avec La B.R.I (BR Groupe Industrielle) à Strasbourg, garantissant 
                                       sérieux et qualité dans chaque prestation. 
-                                      Réalisez votre projet en toute sérénité avec B.R.I (Beatriz Rénovation Industrielle) Architectes !
+                                      Réalisez votre projet en toute sérénité avec B.R.I (BR Groupe Industrielle) Architectes !
                                     </p>
                                   </div>
                                 </div>
@@ -1014,7 +1014,7 @@
                                     <h4 class="card-title">Agriculture</h4>
                                     <p>
                                       Répondez à vos besoins grâce à notre expertise en vente agricole. 
-                                      Chez B.R.I (Beatriz Rénovation Industrielle), nous priorisons la gestion d’équipe et proposons des 
+                                      Chez B.R.I (BR Groupe Industrielle), nous priorisons la gestion d’équipe et proposons des 
                                       machines personnalisées et des services de qualité qui ajoutent de la valeur.
                                       Nous mettons notre savoir-faire au service du développement de vos projets, 
                                       vous aidant à vous épanouir dans la profession et à affronter les défis 
@@ -1220,7 +1220,7 @@
                     <div class="p-3">
                       <h4>Nettoyage</h4>
                       <p class="text-justify">
-                        Chez Beatriz Rénovation, nous offrons une large gamme 
+                        Chez BR Groupe, nous offrons une large gamme 
                         de services de nettoyage pour répondre à tous vos besoins, 
                         qu'ils soient résidentiels, commerciaux ou industriels. 
                         Notre équipe dévouée utilise des techniques et des équipements 

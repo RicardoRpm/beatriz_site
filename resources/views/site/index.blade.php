@@ -12,7 +12,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
             @if (session('locale') === 'fr')  
-              <h2 data-aos="fade-down">Bienvenue chez Beatriz Rénovation</h2>
+              <h2 data-aos="fade-down">Bienvenue chez <br> BR Groupe</h2>
               <p data-aos="fade-up">
                 Via nos partenaires, nous proposons la vente de matériaux 
                 industriels pour les secteurs de la construction civile, 
@@ -21,7 +21,7 @@
                 chimiques, et bien plus encore.
               </p>
             @elseif (session('locale') === 'en')
-              <h2 data-aos="fade-down">Welcome to Beatriz Rénovation</h2>
+              <h2 data-aos="fade-down">Welcome to <br> BR Groupe</h2>
               <p data-aos="fade-up">
                 Through our partners, we offer the sale of industrial 
                 materials for the sectors of civil construction, oil platforms, 
@@ -29,7 +29,7 @@
                 and chemical distributions, and much more.
               </p>          
             @elseif (session('locale') === 'pt')
-              <h2 data-aos="fade-down">Bem-vindo à Beatriz Rénovation</h2>
+              <h2 data-aos="fade-down">Bem-vindo à <br> BR Groupe</h2>
               <p data-aos="fade-up">                
                 Através de nossos parceiros, oferecemos a venda de materiais
                 industriais para os setores de construção civil, 
@@ -75,7 +75,7 @@
           @switch(session('locale'))
               @case('pt')
                 <p class="text-justify">
-                  Beatriz Rénovation é uma empresa especializada na transformação 
+                  BR Groupe é uma empresa especializada na transformação 
                   industrial, bem como na manutenção e renovação de espaços residenciais, 
                   comercial e industrial. Oferecemos serviços de limpeza e reforma 
                   e layout, e vendemos uma ampla gama de materiais industriais e 
@@ -85,7 +85,7 @@
                   eficiente e personalizado para melhorar seus espaços de vida e de trabalho.
                 </p>
                 
-                <strong class="mb-4">Por que escolher Beatriz Rénovation?</strong>
+                <strong class="mb-4">Por que escolher BR Groupe?</strong>
 
                 <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
                   <i class="bi bi-1-circle flex-shrink-0"></i>
@@ -122,7 +122,7 @@
                 @break
               @case('en')
                   <p class="text-justify">
-                    Beatriz Rénovation is a company specializing in the transformation 
+                    BR Groupe is a company specializing in the transformation 
                     industrial as well as in the maintenance and renovation of residential spaces, 
                     commercial and industrial. We offer cleaning and renovation services 
                     and layout, and we sell a wide range of industrial materials and 
@@ -132,7 +132,7 @@
                     efficient and personalized to improve your living and working spaces.
                   </p>
                   
-                  <strong class="mb-4">Why Choose Beatriz Rénovation?</strong>
+                  <strong class="mb-4">Why Choose BR Groupe?</strong>
 
                   <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
                     <i class="bi bi-1-circle flex-shrink-0"></i>
@@ -169,7 +169,7 @@
                   @break
               @default
                 <p class="text-justify">
-                  Beatriz Rénovation est une entreprise spécialisée dans la transformation 
+                  BR Groupe est une entreprise spécialisée dans la transformation 
                   industrielle ainsi que dans l'entretien et la rénovation des espaces résidentiels, 
                   commerciaux et industriels. Nous proposons des services de nettoyage, de rénovation 
                   et d'aménagement, et nous vendons une large gamme de matériaux industriels et 
@@ -179,7 +179,7 @@
                   efficaces et personnalisées pour améliorer vos espaces de vie et de travail.
                 </p>
 
-                <strong class="mb-4">Pourquoi Choisir Beatriz Rénovation?</strong>
+                <strong class="mb-4">Pourquoi Choisir BR Groupe?</strong>
 
                 <div class="icon-box d-flex position-relative mb-2" data-aos="fade-up" data-aos-delay="100">
                   <i class="bi bi-1-circle flex-shrink-0"></i>
@@ -1265,51 +1265,75 @@
 
       <div class="row gy-5">
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Petrobras_br.png" class="img-fluid partner" alt="Petrobras">
+          <a href="https://petrobras.com.br/" target="blank">
+            <img src="assets/img/partners/Petrobras_br.png" class="img-fluid partner" alt="Petrobras">
+          </a>
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/eurofarma-logo.png" class="img-fluid partner" alt="Eurofarma">
+          <a href="https://eurofarma.com/" target="blank">
+            <img src="assets/img/partners/eurofarma-logo.png" class="img-fluid partner" alt="Eurofarma">
+          </a>  
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Gerdau.png" class="img-fluid partner" alt="Gerdau">
+          <a href="https://www2.gerdau.com/" target="blank">
+            <img src="assets/img/partners/Gerdau.png" class="img-fluid partner" alt="Gerdau">
+          </a>
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Karl_Storz_Endoskope.png" class="img-fluid partner" alt="Karl Storz - Endoskope">
+          <a href="https://www.karlstorz.com/" target="blank">
+            <img src="assets/img/partners/Karl_Storz_Endoskope.png" class="img-fluid partner" alt="Karl Storz - Endoskope">
+          </a>  
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Schott.png" class="img-fluid partner" alt="Schott">
+          <a href="https://www.schott.com/" target="blank">
+            <img src="assets/img/partners/Schott.png" class="img-fluid partner" alt="Schott">
+          </a>
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Röchling.png" class="img-fluid partner" alt="Rochling">
+          <a href="https://www.roechling.com/" target="blank">
+            <img src="assets/img/partners/Röchling.png" class="img-fluid partner" alt="Rochling">
+          </a>
         </div><!-- End Team Member -->
       
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Kuhn.png" class="img-fluid partner" alt="Kuhn">
+          <a href="https://www.kuhn.com/" target="blank">
+            <img src="assets/img/partners/Kuhn.png" style="height: 4rem" class="img-fluid partner" alt="Kuhn">
+          </a>  
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/IFP-Trainig.png" class="img-fluid partner" alt="IFP Training">
+          <a href="https://www.ifptraining.com/" target="blank">
+            <img src="assets/img/partners/IFP-Trainig.png" class="img-fluid partner" alt="IFP Training">
+          </a>  
         </div><!-- End Team Member -->
         
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Camargo-Correa.png" class="img-fluid partner" alt="Construtora Camargo Corrêa">
+          <a href="https://construtoracamargocorrea.com.br/" target="blank">
+            <img src="assets/img/partners/Camargo-Correa.png" class="img-fluid partner" alt="Construtora Camargo Corrêa">
+          </a>  
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/logo-mga.png" class="img-fluid partner" alt="MGA Tecnologies">
+          <a href="https://www.mga-tech.com/" target="blank">
+            <img src="assets/img/partners/logo-mga.png" class="img-fluid partner" alt="MGA Tecnologies">
+          </a>  
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/Constlab_ger.png" class="img-fluid partner" alt="MGA Tecnologies">
+          <a href="https://constab.com/" target="blank">        
+            <img src="assets/img/partners/Constlab_ger.png" style="height: 2.5rem" class="img-fluid partner" alt="CONSTAB GER">
+          </a>  
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/partners/logo-hzc-v2.png" class="img-fluid partner" alt="MGA Tecnologies">
+          <a href="https://www.hzc-power.com/" target="blank">                
+            <img src="assets/img/partners/logo-hzc-v2.png" style="height: 2.5rem" class="img-fluid partner" alt="HZC POWER">
+          </a>  
         </div><!-- End Team Member -->
       </div>
     </div>
