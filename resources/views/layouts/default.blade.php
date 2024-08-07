@@ -160,9 +160,9 @@
                             @endswitch
                             <br>
                             <div class="social-links d-flex mt-6">
-                                <a href="https://wa.me/+33601866586" class="d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+                                <a href="https://wa.me/+33601866586" target="blank" class="d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+                                <a href="https://instagram.com/beatriz_renovation67" target="blank" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
                                 {{-- <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-                                <a href="beatriz_renovation67" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
                                 <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a> --}}
                             </div>
                         </div>
