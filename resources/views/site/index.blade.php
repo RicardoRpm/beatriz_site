@@ -1307,7 +1307,7 @@
         </div><!-- End Team Member -->
 
         <div class="col-lg-3 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-          <a href="https://www.ifptraining.com/" target="blank">
+          <a href="https://www.ifptraining.com/" target="blank">  
             <img src="assets/img/partners/IFP-Trainig.png" class="img-fluid partner" alt="IFP Training">
           </a>  
         </div><!-- End Team Member -->
@@ -1495,7 +1495,7 @@
                   @default
                   <h3>Envoyez-nous un email</h3>  
               @endswitch
-              <p>beatriz-renovation67@outlook.fr</p>
+              <p>br-groupe@outlook.com</p>
             </div>
           </div><!-- End Info Item -->
 
