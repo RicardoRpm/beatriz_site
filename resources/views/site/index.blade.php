@@ -1495,7 +1495,7 @@
                   @default
                   <h3>Envoyez-nous un email</h3>  
               @endswitch
-              <p>beatriz-renovation67@outlook.fr</p>
+              <p>br-groupe@outlook.com</p>
             </div>
           </div><!-- End Info Item -->
 

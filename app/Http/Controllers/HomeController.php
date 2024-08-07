@@ -143,7 +143,7 @@ class HomeController extends Controller
                         return response()->download(public_path('assets/catalogs/INDUSTRIAL - FR.pdf') , 'INDDUSTRIAL-FR.pdf', $headers);
                         break;
                     case 'en':
-                        return response()->download(public_path('assets/catalogs/INDUSTRIAL - EN.pdf.pdf') , 'INDDUSTRIAL-FR.pdf', $headers);
+                        return response()->download(public_path('assets/catalogs/INDUSTRIAL - EN.pdf') , 'INDDUSTRIAL-FR.pdf', $headers);
                         break;                    
                 }
                 break;
@@ -166,10 +166,10 @@ class HomeController extends Controller
                             return response()->download(public_path('assets/catalogs/LIMPEZA - PT.pdf') , 'LIMPEZA-PT.pdf', $headers);
                             break;
                         case 'fr':
-                            return response()->download(public_path('assets/catalogs/LIMPEZA - FR.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
+                            return response()->download(public_path('assets/catalogs/LIMPEZA - FR.pdf') , 'LIMPEZA-FR.pdf', $headers);
                             break;                    
                         case 'en':
-                            return response()->download(public_path('assets/catalogs/LIMPEZA - PT.pdf') , 'RENOVACAO-PT.pdf', $headers);
+                            return response()->download(public_path('assets/catalogs/LIMPEZA - PT.pdf') , 'LIMPEZA-EN.pdf', $headers);
                             break;                    
                     }
                     break;

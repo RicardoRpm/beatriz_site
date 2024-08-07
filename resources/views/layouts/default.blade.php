@@ -108,64 +108,64 @@
                 <div class="row">
 
                     <div class="col-md-4">
-                    <div class="footer-info">
-                        <image src="{{ URL::asset('assets/img/logo.png') }}" style="width: 12rem;" /> 
-                        <br>
-                        <br>
-                        @switch(session('locale'))
-                            @case('pt')
-                                <span> 
-                                    <strong>Endereço: </strong>16 rue de la broque 67000 Strasbourg <br>
-                                    <strong>Telefones: </strong> 
-                                    <ul>
-                                        <li>+33 7 53 28 21 48</li>
-                                        <li>+33 6 01 86 65 86</li>
-                                    </ul>
-                                    <strong>E-mails: </strong> 
-                                    <ul>
-                                        <li>beatriz-renovation67@outlook.fr</li>
-                                        <li>info@beatriz-renovation.com</li>
-                                    </ul>
-                                </span>
-                                @break
-                            @case('en')
-                                <span> 
-                                    <strong>Address: </strong>16 rue de la broque 67000 Strasbourg <br>
-                                    <strong>Telephones: </strong> 
-                                    <ul>
-                                        <li>+33 7 53 28 21 48</li>
-                                        <li>+33 6 01 86 65 86</li>
-                                    </ul>
-                                    <strong>E-mails: </strong> 
-                                    <ul>
-                                        <li>beatriz-renovation67@outlook.fr</li>
-                                        <li>info@beatriz-renovation.com</li>
-                                    </ul>
-                                </span>
-                                @break
-                            @default
-                                <span> 
-                                    <strong>Adresse: </strong>16 rue de la broque 67000 Strasbourg <br>
-                                    <strong>Téléphones: </strong> 
-                                    <ul>
-                                        <li>+33 7 53 28 21 48</li>
-                                        <li>+33 6 01 86 65 86</li>
-                                    </ul>
-                                    <strong>E-mails: </strong> 
-                                    <ul>
-                                        <li>beatriz-renovation67@outlook.fr</li>
-                                        <li>info@beatriz-renovation.com</li>
-                                    </ul>
-                                </span>
-                        @endswitch
-                        <br>
-                        <div class="social-links d-flex mt-6">
-                            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-                            <a href="beatriz_renovation67" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                        <div class="footer-info">
+                            <image src="{{ URL::asset('assets/img/logo.png') }}" style="width: 12rem;" /> 
+                            <br>
+                            <br>
+                            @switch(session('locale'))
+                                @case('pt')
+                                    <span> 
+                                        <strong>Endereço: </strong>16 rue de la broque 67000 Strasbourg <br>
+                                        <strong>Telefones: </strong> 
+                                        <ul>
+                                            <li>+33 7 53 28 21 48</li>
+                                            <li>+33 6 01 86 65 86</li>
+                                        </ul>
+                                        <strong>E-mails: </strong> 
+                                        <ul>
+                                            <li>br-groupe@outlook.com</li>
+                                            <li>info@beatriz-renovation.com</li>
+                                        </ul>
+                                    </span>
+                                    @break
+                                @case('en')
+                                    <span> 
+                                        <strong>Address: </strong>16 rue de la broque 67000 Strasbourg <br>
+                                        <strong>Telephones: </strong> 
+                                        <ul>
+                                            <li>+33 7 53 28 21 48</li>
+                                            <li>+33 6 01 86 65 86</li>
+                                        </ul>
+                                        <strong>E-mails: </strong> 
+                                        <ul>
+                                            <li>br-groupe@outlook.com</li>
+                                            <li>info@beatriz-renovation.com</li>
+                                        </ul>
+                                    </span>
+                                    @break
+                                @default
+                                    <span> 
+                                        <strong>Adresse: </strong>16 rue de la broque 67000 Strasbourg <br>
+                                        <strong>Téléphones: </strong> 
+                                        <ul>
+                                            <li>+33 7 53 28 21 48</li>
+                                            <li>+33 6 01 86 65 86</li>
+                                        </ul>
+                                        <strong>E-mails: </strong> 
+                                        <ul>
+                                            <li>br-groupe@outlook.com</li>
+                                            <li>info@beatriz-renovation.com</li>
+                                        </ul>
+                                    </span>
+                            @endswitch
+                            <br>
+                            <div class="social-links d-flex mt-6">
+                                <a href="https://wa.me/+33601866586" class="d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+                                {{-- <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                                <a href="beatriz_renovation67" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a> --}}
+                            </div>
                         </div>
-                    </div>
                     </div><!-- End footer info column-->
 
                     <div class="col-md-4 footer-links footer-menu-align">
