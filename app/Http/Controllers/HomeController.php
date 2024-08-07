@@ -143,7 +143,7 @@ class HomeController extends Controller
                         return response()->download(public_path('assets/catalogs/INDUSTRIAL - FR.pdf') , 'INDDUSTRIAL-FR.pdf', $headers);
                         break;
                     case 'en':
-                        return response()->download(public_path('assets/catalogs/INDUSTRIAL - EN.pdf') , 'INDDUSTRIAL-FR.pdf', $headers);
+                        return response()->download(public_path('assets/catalogs/INDUSTRIAL - EN.pdf') , 'INDDUSTRIAL-EN.pdf', $headers);
                         break;                    
                 }
                 break;
