@@ -137,35 +137,39 @@ class HomeController extends Controller
             case 'in':
                 switch (session('locale')) {
                     case 'pt':
-                        return response()->download(public_path('assets/catalogs/INDUSTRIAL - PT.pdf') , 'CATALOGO-INDDUSTRIAL-PT.pdf', $headers);
+                        return response()->download(public_path('assets/catalogs/INDUSTRIAL - PT.pdf') , 'INDDUSTRIAL-PT.pdf', $headers);
                         break;
                     case 'fr':
-                        return response()->download(public_path('assets/catalogs/INDUSTRIAL - PT.pdf') , 'CATALOGO-INDDUSTRIAL-PT.pdf', $headers);
+                        return response()->download(public_path('assets/catalogs/INDUSTRIAL - FR.pdf') , 'INDDUSTRIAL-FR.pdf', $headers);
+                        break;
+                    case 'en':
+                        return response()->download(public_path('assets/catalogs/INDUSTRIAL - EN.pdf.pdf') , 'INDDUSTRIAL-FR.pdf', $headers);
                         break;                    
                 }
                 break;
                 case 're':
                     switch (session('locale')) {
                         case 'pt':
-
-                            return response()->download(public_path('assets/catalogs/RENOVATION - PT.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
-
+                            return response()->download(public_path('assets/catalogs/RENOVATION - PT.pdf') , 'RENOVACAO-PT.pdf', $headers);
                             break;
                         case 'fr':
-                            return response()->download(public_path('assets/catalogs/RENOVATION - FR.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
-
+                            return response()->download(public_path('assets/catalogs/RENOVATION - FR.pdf') , 'RENOVATION-FR.pdf', $headers);
+                            break;                    
+                        case 'en':
+                            return response()->download(public_path('assets/catalogs/RENOVATION - EN.pdf') , 'RENOVACAO-EN.pdf', $headers);
                             break;                    
                     }
                     break;
                 case 'ne':
                     switch (session('locale')) {
                         case 'pt':
-                                return response()->download(public_path('assets/catalogs/INDUSTRIAL - PT.pdf') , 'CATALOGO-LIMPEZA-PT.pdf', $headers);
+                            return response()->download(public_path('assets/catalogs/LIMPEZA - PT.pdf') , 'LIMPEZA-PT.pdf', $headers);
                             break;
                         case 'fr':
-    
-                                return response()->download(public_path('assets/catalogs/INDUSTRIAL - PT.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
-
+                            return response()->download(public_path('assets/catalogs/LIMPEZA - FR.pdf') , 'CATALOGO-RENOVACAO-PT.pdf', $headers);
+                            break;                    
+                        case 'en':
+                            return response()->download(public_path('assets/catalogs/LIMPEZA - PT.pdf') , 'RENOVACAO-PT.pdf', $headers);
                             break;                    
                     }
                     break;

@@ -17,8 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Favicons -->
-  <link href="{{ URL::asset('assets/img/logo_2.svg') }}" rel="icon">
-  <link href="{{ URL::asset('assets/img/logo_2.svg') }}" rel="icon">
+  <link href="{{ URL::asset('assets/img/logo.png') }}" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="{{ URL::asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -110,7 +109,7 @@
 
                     <div class="col-md-4">
                     <div class="footer-info">
-                        <image src="{{ URL::asset('assets/img/logo_2.svg') }}" style="width: 20rem;" /> 
+                        <image src="{{ URL::asset('assets/img/logo.png') }}" style="width: 12rem;" /> 
                         <br>
                         <br>
                         @switch(session('locale'))
@@ -225,11 +224,8 @@
                                 <li><a href="{{ route('services-details', 're') }}">Renovação</a></li>                            
                                 <li><a href="{{ route('services-details', 'ne') }}">Limpeza</a></li>                            
                             </ul>
-                        @endif    
-                        
+                        @endif                            
                     </div><!-- End footer links column-->
-
-
                 </div>
             </div>
         </div>
