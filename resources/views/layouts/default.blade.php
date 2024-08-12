@@ -109,7 +109,7 @@
 
                     <div class="col-md-4">
                         <div class="footer-info">
-                            <image src="{{ URL::asset('assets/img/logo.svg') }}" style="width: 12rem;" /> 
+                            <img src="{{ URL::asset('assets/img/logo.svg') }}" style="width: 12rem;" alt="br-groupe">
                             <br>
                             <br>
                             @switch(session('locale'))
