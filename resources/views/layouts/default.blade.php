@@ -79,7 +79,7 @@
                             <li><a href="{{ route('index') }}">Accueil </a></li>
                             <li><a href="#about">Qui sommes-nous</a></li>
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#products">Des Produits</a></li>
+                            <li><a href="#products">Produits</a></li>
                             <li><a href="#contact">Contacts </a></li>
                             <li class="dropdown"><a href="#"><span>Langue</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
@@ -124,7 +124,7 @@
                                         <strong>E-mails: </strong> 
                                         <ul>
                                             <li>br-groupe@outlook.com</li>
-                                            <li>info@beatriz-renovation.com</li>
+                                            <li>info@br-groupe.com</li>
                                         </ul>
                                     </span>
                                     @break
@@ -139,7 +139,7 @@
                                         <strong>E-mails: </strong> 
                                         <ul>
                                             <li>br-groupe@outlook.com</li>
-                                            <li>info@beatriz-renovation.com</li>
+                                            <li>info@br-groupe.com</li>
                                         </ul>
                                     </span>
                                     @break
@@ -154,7 +154,7 @@
                                         <strong>E-mails: </strong> 
                                         <ul>
                                             <li>br-groupe@outlook.com</li>
-                                            <li>info@beatriz-renovation.com</li>
+                                            <li>info@br-groupe.com</li>
                                         </ul>
                                     </span>
                             @endswitch
