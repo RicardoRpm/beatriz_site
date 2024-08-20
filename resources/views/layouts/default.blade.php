@@ -17,7 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Favicons -->
-  <link href="{{ URL::asset('assets/img/logo.svg') }}" rel="icon">
+  <link href="{{ URL::asset('assets/img/logo-3.png') }}" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="{{ URL::asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -79,7 +79,7 @@
                             <li><a href="{{ route('index') }}">Accueil </a></li>
                             <li><a href="#about">Qui sommes-nous</a></li>
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#products">Des Produits</a></li>
+                            <li><a href="#products">Produits</a></li>
                             <li><a href="#contact">Contacts </a></li>
                             <li class="dropdown"><a href="#"><span>Langue</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul>
@@ -109,7 +109,7 @@
 
                     <div class="col-md-4">
                         <div class="footer-info">
-                            <img src="{{ URL::asset('assets/img/logo.svg') }}" style="width: 12rem;" alt="br-groupe">
+                            <img src="{{ URL::asset('assets/img/logo-3.png') }}" style="width: 12rem;" alt="br-groupe">
                             <br>
                             <br>
                             @switch(session('locale'))
@@ -124,7 +124,7 @@
                                         <strong>E-mails: </strong> 
                                         <ul>
                                             <li>br-groupe@outlook.com</li>
-                                            <li>info@beatriz-renovation.com</li>
+                                            <li>info@br-groupe.com</li>
                                         </ul>
                                     </span>
                                     @break
@@ -139,7 +139,7 @@
                                         <strong>E-mails: </strong> 
                                         <ul>
                                             <li>br-groupe@outlook.com</li>
-                                            <li>info@beatriz-renovation.com</li>
+                                            <li>info@br-groupe.com</li>
                                         </ul>
                                     </span>
                                     @break
@@ -154,7 +154,7 @@
                                         <strong>E-mails: </strong> 
                                         <ul>
                                             <li>br-groupe@outlook.com</li>
-                                            <li>info@beatriz-renovation.com</li>
+                                            <li>info@br-groupe.com</li>
                                         </ul>
                                     </span>
                             @endswitch
