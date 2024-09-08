@@ -109,7 +109,7 @@
 
                         <div class="col-md-4">
                             <div class="footer-info">
-                                <img src="assets/img/logo-3.png" style="width: 12rem;" alt="br-groupe">
+                                <img src="{{url('assets/img/logo-3.png')}}" style="width: 12rem;" alt="br-groupe">
                                 <br>
                                 <br>
                                 @switch(session('locale'))
@@ -277,9 +277,12 @@
                     service = product;
                 } 
 
+                $('#sending-msg').show();
+                $('#default-text').hide();
+
                 $.ajax({
                     type:'POST',
-                    url: "/contact/store",
+                    url: "{{route('contact.store')}}",
                     data: {
                         name: name,
                         email: email,
@@ -297,15 +300,19 @@
                         $("#description").val("");
 
                         $('#sucess-message').show();
+                        $('#sending-msg').hide();
+                        $('#default-text').show();
                     },
                     error: function(response, data){
-                        $('#error-message').show()
-                        alert(response);
-                        console.log(response);
+                        $('#error-message').show();
+                        
+                        $('#sending-msg').hide();
+                        $('#default-text').show();
+                        //alert(response);
+                        //console.log(response);
                     }
                 });      
             });    
-
 
             $('#categoryService').change(function(e) {
                 e.preventDefault();

@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
+    public $email;
+
     public function index()
     {
         $categoryService = CategoryService::all();
@@ -48,7 +50,7 @@ class HomeController extends Controller
                 $messageError = 'Não foi possível enviar a mensgem';
                 $btnText = 'Enviar Mensagem';
                 break;
-            case 'en':
+            case 'eng':
                 $name = 'Your Name'; 
                 $email = 'Your Email'; 
                 $selectService = 'Select Service'; 
@@ -94,6 +96,18 @@ class HomeController extends Controller
         ]);
     }
 
+    public function storeSendEmail () {
+        // Mail::raw('Esta é uma mensagem de teste!', function ($message) {
+        //     $message->to('ricardomiguel190@gmail.com')
+        //             ->subject('Teste de E-mail');
+        // }); 
+
+        Mail::send('welcome', [], function($message){ 
+            $message->from('contact@brgroupe.com')->to('ricardomiguel190@gmail.com')->subject('laravel mail'); });
+        
+        return back();
+    }
+
     public function store(Request $request)
     {
         try {
@@ -104,11 +118,52 @@ class HomeController extends Controller
                 'subject' => $request->subject,
                 'description' => $request->description
             ]);
-    
-            Mail::to("ricardomiguel190@gmail.com")->send(new OrderShipped([
-                'title' => 'The Title',
-                'body' => 'The Body'
-            ]));
+            
+            $this->email = $request->input('email');
+            
+            switch (session('locale')) {
+                case 'pt':
+                    Mail::raw('Recebemos a tua solicitação, entraremos em contacto o mais rápido possível.', function($message) { 
+                        $message->from('contact@brgroupe.com')
+                                ->to($this->email)
+                                ->subject('BR Groupe');
+                    });
+                    break;
+                case 'eng':
+                    Mail::raw('We have received your request and will contact you as soon as possible.', function($message) { 
+                        $message->from('contact@brgroupe.com')
+                                ->to($this->email)
+                                ->subject('BR Groupe');
+                    });
+                    break;
+                default:
+                    Mail::raw('Nous avons reçu votre demande, nous vous contacterons dans les plus brefs délais.', function($message) { 
+                        $message->from('contact@brgroupe.com')
+                                ->to($this->email)
+                                ->subject('BR Groupe');
+                    });
+                    break;
+            }
+
+            // Mail::send('Email', [
+            //     'title' => 'Título do E-mail',
+            //     'heading' => 'Cabeçalho do E-mail',
+            //     'message' => 'Este é o corpo do e-mail em HTML.'
+            // ], function($message) { 
+            //     $message->from('contact@brgroupe.com') 
+            //             ->to('ricardomiguel190@gmail.com')
+            //             ->subject('BR Groupe');});
+
+            // Mail::send('welcome', [], function($message) { 
+            //     $message->from('contact@brgroupe.com')
+            //             ->to('ricardomiguel190@gmail.com')
+            //             ->subject('BR Groupe');
+            // });
+            
+            // Mail::to("ricardomiguel190@gmail.com")->send(new OrderShipped([
+            //     'title' => 'The Title',
+            //     'body' => 'The Body'
+            // ]));
     
             return response()->json([
                 'success' => 'Service criado com sucesso.'
@@ -142,7 +197,7 @@ class HomeController extends Controller
                     case 'fr':
                         return response()->download(public_path('assets/catalogs/INDUSTRIAL - FR.pdf') , 'INDDUSTRIAL-FR.pdf', $headers);
                         break;
-                    case 'en':
+                    case 'eng':
                         return response()->download(public_path('assets/catalogs/INDUSTRIAL - EN.pdf') , 'INDDUSTRIAL-EN.pdf', $headers);
                         break;                    
                 }
@@ -155,7 +210,7 @@ class HomeController extends Controller
                         case 'fr':
                             return response()->download(public_path('assets/catalogs/RENOVATION - FR.pdf') , 'RENOVATION-FR.pdf', $headers);
                             break;                    
-                        case 'en':
+                        case 'eng':
                             return response()->download(public_path('assets/catalogs/RENOVATION - EN.pdf') , 'RENOVACAO-EN.pdf', $headers);
                             break;                    
                     }
@@ -168,7 +223,7 @@ class HomeController extends Controller
                         case 'fr':
                             return response()->download(public_path('assets/catalogs/LIMPEZA - FR.pdf') , 'LIMPEZA-FR.pdf', $headers);
                             break;                    
-                        case 'en':
+                        case 'eng':
                             return response()->download(public_path('assets/catalogs/LIMPEZA - PT.pdf') , 'LIMPEZA-EN.pdf', $headers);
                             break;                    
                     }
@@ -195,7 +250,7 @@ class HomeController extends Controller
                     ]);
                 }
                 break;
-            case 'en':   
+            case 'eng':   
                 $servicesReturned->push([
                     'key'=> "",
                     'name'=> "Select Service"

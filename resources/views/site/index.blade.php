@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Beatriz')
+@section('title', 'Br-Groupe')
 
 @section('content')
 
@@ -522,7 +522,7 @@
                       <div class="card-body">
                         <h4 class="card-title"> Equipamentos Industriais </h4>
                         <p>
-                          DDescubra a nossa vasta gama de materiais concebidos para 
+                          Descubra a nossa vasta gama de materiais concebidos para 
                           satisfazer as necessidades dos sectores agro-alimentar, têxtil, 
                           farmacêutica, processamento e distribuição de produtos químicos, 
                           aço, automóveis e água. Oferecemos produtos 
@@ -1629,8 +1629,20 @@
                 {{ $messageError }}
               </div>
 
-              <div class="text-center"><button type="submit"> {{ $btnText }} </button></div>
+              <div class="text-center">
+                <button type="submit">
+                  <span id="default-text">{{ $btnText }}</span>
 
+                  <span id="sending-msg" class="gap-3" style="display: none">
+                    <span>Enviando</span>
+                    <img src="assets/img/three-dots.svg" width="60">
+                  </span>
+                </button></div>
+                
+                
+                @if ($btnText)
+                
+                @endif
             </form>
           </div>
         </div>
