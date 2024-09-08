@@ -56,7 +56,7 @@
                                 <li class="dropdown"><a href="#"><span>Línguas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                                     <ul>
                                         <li><a href="{{ route('change-language','fr') }}">FR</a></li>
-                                        <li ><a href="{{ route('change-language','eng') }}">EN</a></li>
+                                        <li><a href="{{ route('change-language','eng') }}">EN</a></li>
                                         <li><a href="{{ route('change-language','pt') }}">PT</a></li>
                                     </ul>
                                 </li>                            
