@@ -1633,7 +1633,7 @@
                 <button type="submit">
                   <span id="default-text">{{ $btnText }}</span>
                   <span id="sending-msg" class="gap-3" style="display: none">
-                    <img src="{{url('assets/img/three-dots.svg')}}" width="65">
+                    <img src="public/assets/img/three-dots.svg" width="65">
                   </span>
                 </button></div>
             </form>
