@@ -5,7 +5,9 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
-Route::post('/contact/store', [HomeController::class, 'store'])->name('contact.store');
+Route::post('/contact', [HomeController::class, 'store'])->name('contact.store');
+
+Route::get('/storeSendEmail', [HomeController::class, 'storeSendEmail'])->name('contact.storeSendEmail');
 
 Route::get('/admin-beatriz', [AdminController::class, 'index'])->name('admin');
 Route::get('/admin-beatriz/services', [AdminController::class, 'services'])->name('admin.service');

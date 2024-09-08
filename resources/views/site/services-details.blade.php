@@ -1,11 +1,11 @@
 @extends('layouts.default')
 
-@section('title', 'Beatriz')
+@section('title', 'Br-Groupe')
 
 @section('content')
 
 @switch(session('locale'))
-  @case('en')
+  @case('eng')
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{{ asset("assets/img/services-details.jpg") }}');">     
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
         <h2>Services Details</h2>
@@ -332,7 +332,7 @@
                     <div class="p-3">
                       <h4>Cleaning</h4>
                       <p class="text-justify">
-                        At Beatriz Renovação, we offer a wide range of 
+                        At Br-Groupe Renovação, we offer a wide range of 
                         cleaning to meet all your needs, whether 
                         residential, commercial or industrial. 
                         Our dedicated team uses cutting-edge techniques and equipment
@@ -775,7 +775,7 @@
                     <div class="p-3">
                       <h4>Limpeza</h4>
                       <p class="text-justify">
-                        Na Beatriz Renovação, oferecemos uma ampla gama de serviços de 
+                        Na Br-Groupe Renovação, oferecemos uma ampla gama de serviços de 
                         limpeza para atender a todas as suas necessidades, sejam elas 
                         residenciais, comerciais ou industriais. 
                         Nossa equipe dedicada utiliza técnicas e equipamentos de ponta
