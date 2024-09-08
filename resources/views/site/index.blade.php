@@ -20,7 +20,7 @@
                 ainsi que des grandes distributions pharmaceutiques, 
                 chimiques, et bien plus encore.
               </p>
-            @elseif (session('locale') === 'en')
+            @elseif (session('locale') === 'eng')
               <h2 data-aos="fade-down">Welcome to <br> BR Groupe</h2>
               <p data-aos="fade-up">
                 Through our partners, we offer the sale of industrial 
@@ -120,7 +120,7 @@
                   </div>
                 </div>   
                 @break
-              @case('en')
+              @case('eng')
                   <p class="text-justify">
                     BR Groupe is a company specializing in the transformation 
                     industrial as well as in the maintenance and renovation of residential spaces, 
@@ -237,7 +237,7 @@
                 remontagem de equipamentos, bem como reforma e limpeza interna e externa.
               </p>  
               @break
-            @case('en')
+            @case('eng')
               <h2>Services</h2>
               <p>
                 We specialize in selling equipment to international industries and 
@@ -258,7 +258,7 @@
 
       <div class="row gy-4">
         @switch(session('locale'))
-            @case('en')
+            @case('eng')
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                   <div class="service-item  position-relative">
                     <div class="icon">
@@ -481,9 +481,6 @@
                       <div id="IdConstruction" class="carousel slide" data-bs-touch="false">
                         <div class="carousel-inner">
                           <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/construction_1.jpg'); "></div>
-                          </div>
-                          <div class="carousel-item">
                             <div class="card-bg" style="background-image: url('assets/img/construction_2.jpg')"></div>
                           </div>
                           <div class="carousel-item active">
@@ -705,7 +702,7 @@
 
             </div>
           @break
-          @case('en')
+          @case('eng')
             <div class="section-header">
               <h2>Our products</h2>
               <p>
@@ -743,9 +740,6 @@
                     <div class="col-xl-5">
                       <div id="IdConstruction" class="carousel slide" data-bs-touch="false">
                         <div class="carousel-inner">
-                          <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/construction_1.jpg'); "></div>
-                          </div>
                           <div class="carousel-item">
                             <div class="card-bg" style="background-image: url('assets/img/construction_2.jpg')"></div>
                           </div>
@@ -1008,9 +1002,6 @@
                       <div id="IdConstruction" class="carousel slide" data-bs-touch="false">
                         <div class="carousel-inner">
                           <div class="carousel-item">
-                            <div class="card-bg" style="background-image: url('assets/img/construction_1.jpg'); background-size: cover; background-position: center;"></div>
-                          </div>
-                          <div class="carousel-item">
                             <div class="card-bg" style="background-image: url('assets/img/construction_2.jpg'); background-size: cover; background-position: center;"></div>
                           </div>
                           <div class="carousel-item active">
@@ -1244,7 +1235,7 @@
               </p>
             </div>              
             @break
-          @case('en')
+          @case('eng')
           <div class="section-header">
             <h2>Our Partners</h2>
             <p>
@@ -1369,7 +1360,7 @@
                   </div>
                 </div>
                 @break
-            @case('en')
+            @case('eng')
                 <div class="container">
                   <div class="row gy-4">
                     
@@ -1449,7 +1440,7 @@
                   Para garantir maior confiabilidade em nosso trabalho, não hesite em nos contatar.
                 </p>
                 @break
-              @case('en')
+              @case('eng')
                 <h2>Contact</h2>
                 <p>
                   To ensure greater reliability in our work, do not hesitate to contact us.
@@ -1472,7 +1463,7 @@
                   @case('pt')
                     <h3>Nosso Endereço</h3>  
                     @break
-                  @case('en')
+                  @case('eng')
                     <h3>Our Address</h3>                
                     @break
                   @default
@@ -1489,8 +1480,8 @@
                   @case('pt')
                   <h3>Envia-nos um email</h3>  
                     @break
-                  @case('en')
-                  <h3>Send us an email</h3>                
+                  @case('eng')
+                    <h3>Send us an email</h3>                
                     @break
                   @default
                   <h3>Envoyez-nous un email</h3>  
@@ -1506,7 +1497,7 @@
                 @case('pt')
                 <h3>Ligue para nós</h3>  
                   @break
-                @case('en')
+                @case('eng')
                 <h3>Call Us</h3>                
                   @break
                 @default
@@ -1549,7 +1540,7 @@
                       <option value="product">Produto</option>
                     </select>
                     @break
-                  @case('en')
+                  @case('eng')
                     <select class="form-select" name="typeSolicitation" id="typeSolicitation">
                       <option value="service">Service</option>
                       <option value="product">Product</option>
@@ -1573,7 +1564,7 @@
                           <option value="{{ $categoryService->id }}">{{ $categoryService->title_pt }}</option>                    
                         @endforeach
                         @break
-                      @case('en')
+                      @case('eng')
                         <option value="">{{ $selectCategoryService }}</option>                   
                         @foreach ($categoryServices as $categoryService)
                           <option value="{{ $service->title_en }}">{{ $service->title_en }}</option>                    
@@ -1606,7 +1597,7 @@
                       @endforeach
 
                       @break
-                    @case('en')
+                    @case('eng')
                       <option value="">{{ $selectProduct }}</option>                   
                       @foreach ($products as $product)
                         <option value="{{ $product->title_en }}">{{ $product->title_en }}</option>                    
