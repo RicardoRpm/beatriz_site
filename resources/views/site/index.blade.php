@@ -1632,17 +1632,10 @@
               <div class="text-center">
                 <button type="submit">
                   <span id="default-text">{{ $btnText }}</span>
-
                   <span id="sending-msg" class="gap-3" style="display: none">
-                    <span>Enviando</span>
-                    <img src="assets/img/three-dots.svg" width="60">
+                    <img src="{{url('assets/img/three-dots.svg')}}" width="65">
                   </span>
                 </button></div>
-                
-                
-                @if ($btnText)
-                
-                @endif
             </form>
           </div>
         </div>
