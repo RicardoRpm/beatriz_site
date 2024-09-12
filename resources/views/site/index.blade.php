@@ -1567,7 +1567,7 @@
                       @case('eng')
                         <option value="">{{ $selectCategoryService }}</option>                   
                         @foreach ($categoryServices as $categoryService)
-                          <option value="{{ $service->title_en }}">{{ $service->title_en }}</option>                    
+                          <option value="{{ $categoryService->id }}">{{ $categoryService->title_en }}</option>          
                         @endforeach
                         @break
                       @default
