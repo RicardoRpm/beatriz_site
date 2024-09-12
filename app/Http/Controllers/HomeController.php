@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Mail;
 class HomeController extends Controller
 {
     public $email;
+    public $typeSolicitation;
+    public $name;    
 
     public function index()
     {
@@ -120,7 +122,23 @@ class HomeController extends Controller
             ]);
             
             $this->email = $request->input('email');
+            $this->name = $request->input('name');
+            $this->typeSolicitation = $request->input('typeSolicitation');
             
+            if ($this->typeSolicitation == 'Service') {
+                Mail::raw('Recebemos a solicitação de prestação de serviço do Sr.: ' . $this->name, function($message) { 
+                    $message->from('contact@brgroupe.com')
+                            ->to('services@brgroupe.com')
+                            ->subject('BR Groupe');
+                });
+            } else {
+                Mail::raw('Recebemos a solicitação de produto do Sr.: ' . $this->name, function($message) { 
+                    $message->from('contact@brgroupe.com')
+                            ->to('produits@brgroupe.com')
+                            ->subject('BR Groupe');
+                });
+            }
+
             switch (session('locale')) {
                 case 'pt':
                     Mail::raw('Recebemos a tua solicitação, entraremos em contacto o mais rápido possível.', function($message) { 
