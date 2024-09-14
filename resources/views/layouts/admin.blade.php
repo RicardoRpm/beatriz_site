@@ -49,10 +49,18 @@
                 </a>
                 
                 <div class="navbar-nav w-100">
-                    <a href="{{ route('admin') }}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <a href="{{ route('admin.service') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Serviços</a>
-                    <a href="{{ route('admin.produtos') }}" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Projectos</a>
-                    <a href="{{ route('admin.contactos') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Contactos</a>
+                    <a href="{{ route('admin') }}" class="nav-item nav-link {{ request()->routeIs('admin') ? 'active' : '' }}">
+                        <i class="fa fa-tachometer-alt me-2"></i>Dashboard
+                    </a>
+                    <a href="{{ route('admin.service') }}" class="nav-item nav-link {{ request()->routeIs('admin.service') ? 'active' : '' }}">
+                        <i class="fa fa-th me-2"></i>Serviços
+                    </a>
+                    <a href="{{ route('admin.produtos') }}" class="nav-item nav-link {{ request()->routeIs('admin.produtos') ? 'active' : '' }}">
+                        <i class="fa fa-keyboard me-2"></i>Produtos
+                    </a>
+                    <a href="{{ route('admin.contactos') }}" class="nav-item nav-link {{ request()->routeIs('admin.contactos') ? 'active' : '' }}">
+                        <i class="fa fa-table me-2"></i>Contactos
+                    </a>
                 </div>
             </nav>
         </div>
@@ -70,7 +78,7 @@
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img class="rounded-circle me-lg-2" src="{{ URL::asset('assets/admin/img/avatar_icon.png') }}" alt="" style="width: 40px; height: 40px;">
+                            <img class="rounded-circle me-lg-2" src="{{ asset('assets/admin/img/avatar_icon.png') }}" alt="" style="width: 40px; height: 40px;">
                             <span class="d-none d-lg-inline-flex">{{ Auth::user()->name }}</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
