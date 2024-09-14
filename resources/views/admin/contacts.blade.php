@@ -15,7 +15,8 @@
                                 <th scope="col">Nome do Cliente</th>
                                 <th scope="col">Email do Cliente</th>
                                 <th scope="col">Serviço/Produto Solicitado</th>
-                                <th scope="col">Opções</th>
+                                <th scope="col">Data</th>
+                                {{-- <th scope="col">Opções</th> --}}
                             </tr>
                         </thead>
                         <tbody>
@@ -25,9 +26,10 @@
                                     <td>{{ $contact->name }}</td>
                                     <td>{{ $contact->email }}</td>
                                     <td>{{ $contact->service }}</td>
-                                    <td>
+                                    <td>{{ $contact->created_at->format('Y-m-d H:i:s') }}</td>
+                                    {{-- <td>
                                         <button class="btn btn-primary">Detalhar</button>
-                                    </td>
+                                    </td> --}}
                                 </tr>
                             @endforeach
                         </tbody>
