@@ -110,8 +110,7 @@ class HomeController extends Controller
         return back();
     }
 
-    public function store(Request $request)
-    {
+    public function store(Request $request) {
         try {
             Contact::create([
                 'name' => $request->name,

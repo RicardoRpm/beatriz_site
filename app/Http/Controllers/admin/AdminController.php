@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\CategoryService;
+use App\Models\Contact;
 use App\Models\Product;
 use App\Models\Project;
 use App\Models\Service;
@@ -12,7 +13,15 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
     public function index() {
-        return view('admin.index');
+        $totalServicos = Service::count();
+        $totalContatos = Contact::count();
+        $totalProdutos = Product::count();
+
+        return view('admin.index', [
+            'totalServicos' =>  $totalServicos,
+            'totalProdutos' =>  $totalProdutos,
+            'totalContatos' =>  $totalContatos
+        ]);
     }
 
     public function services() {
@@ -43,6 +52,14 @@ class AdminController extends Controller
     //PROJECTS 
     public function projects() {
         return view('admin.projects');
+    }
+
+    public function contacts() {
+        $contacts = Contact::all()->sortByDesc('id');
+
+        return view('admin.contacts', [
+            'contacts' => $contacts
+        ]);
     }
 
     public function storeProjects(Request $request) {
