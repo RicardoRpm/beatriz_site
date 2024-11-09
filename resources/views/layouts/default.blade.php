@@ -3,33 +3,45 @@
 <html lang="en">
 
     <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">  
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">  
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
+        <title>@yield('title', 'BRgroupe')</title>
 
-    <title>@yield('title', 'BR Groupe')</title>
+        <link rel="alternate" hreflang="pt-BR" href="https://www.brgroupe.com/pt/" />
+        <link rel="alternate" hreflang="en-US" href="https://www.brgroupe.com/en/" />
+        <link rel="alternate" hreflang="fr-be" href="https://www.brgroupe.com/fr/" />
 
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-    <meta name="csrf-token" content="{{ csrf_token() }}">  
+        <meta name="title" content="Welcome to BR Groupe">
+        <meta name="description" content="Through our partners, we offer the sale of industrial materials for the sectors of civil construction, oil platforms, hospitals, agriculture, as well as large pharmaceutical and chemical distributions, and much more.">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="titulo" content="Bem-vindo à BR Groupe">
+        <meta name="descrição" content="Através de nossos parceiros, oferecemos a venda de materiais industriais para os setores de construção civil, plataformas de petróleo, hospitais, agricultura, além de grandes distribuições farmacêuticas e químicas, e muito mais.">
 
-    <!-- Favicons -->
-    <link href="assets/img/logo-3.png" rel="icon">
+        <meta name="titre" content="Bienvenue chez BR Groupe">
+        <meta name="description" content="Via nos partenaires, nous proposons la vente de matériaux industriels pour les secteurs de la construction civile, des plates-formes pétrolières, des hôpitaux, de l'agriculture, ainsi que des grandes distributions pharmaceutiques, chimiques, et bien plus encore.">
 
-    <!-- Vendor CSS Files -->
-    <link href="{{ URL::asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+        <meta name="keywords" content="Br, Br Groupe, BRgroupe, construction civile, des plates-formes pétrolières, des hôpitaux, de l'agriculture, pharmaceutiques, chimiques, construção civil, plataformas de petróleo, hospitais, agricultura, farmacêuticas, químicas, pharmaceutical, chemical, agriculture, hospitals, oil platforms, civil construction">
 
-    <!-- Template Main CSS File -->
-    <link href="{{ URL::asset('assets/css/main.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/my_style.css') }}" rel="stylesheet">
+        <meta name="csrf-token" content="{{ csrf_token() }}">  
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Favicons -->
+        <link href="assets/img/logo-3.png" rel="icon">
+
+        <!-- Vendor CSS Files -->
+        <link href="{{ URL::asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ URL::asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+        <link href="{{ URL::asset('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+        <link href="{{ URL::asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
+        <link href="{{ URL::asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+        <link href="{{ URL::asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+        <!-- Template Main CSS File -->
+        <link href="{{ URL::asset('assets/css/main.css') }}" rel="stylesheet">
+        <link href="{{ URL::asset('assets/css/my_style.css') }}" rel="stylesheet">
     </head>
 
     <body>

@@ -24,7 +24,7 @@
                                 <tr>
                                     {{-- <th scope="row">{{ $contact->id }}</th> --}}
                                     <td>{{ $contact->name }}</td>
-                                    <td>{{ $contact->email }}</td>
+                                    <td>{{ $conta ct->email }}</td>
                                     <td>{{ $contact->service }}</td>
                                     <td>{{ $contact->created_at->format('Y-m-d H:i:s') }}</td>
                                     {{-- <td>
