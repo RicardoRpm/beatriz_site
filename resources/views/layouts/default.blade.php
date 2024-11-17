@@ -7,7 +7,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">  
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-        <title>@yield('title', 'BRgroupe')</title>
+        <title>@yield('title', 'Brgroupe')</title>
 
         <link rel="alternate" hreflang="pt-BR" href="https://www.brgroupe.com/pt/" />
         <link rel="alternate" hreflang="en-US" href="https://www.brgroupe.com/en/" />

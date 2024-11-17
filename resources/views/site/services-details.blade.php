@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Br-Groupe')
+@section('title', 'Brgroupe')
 
 @section('content')
 

@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Beatriz')
+@section('title', 'Brgroupe')
 
 @section('content')
   <!-- ======= Breadcrumbs ======= -->
